@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 GenAI Engineer Roadmap — 9 Month Journey
 
 > Building real-world AI applications, mastering Python, DSA, and becoming a production-ready GenAI Engineer.
@@ -80,3 +81,7 @@ Solving LeetCode problems daily in Java/Python covering:
 ## 🙌 Author
 
 Built with ❤️ as part of the **GenAI Engineer 9-Month Roadmap**.
+=======
+# GenAI-Engineer-Roadmap
+A structured 9-month journey to become a production-ready GenAI Engineer.  Covers Python, DSA (LeetCode), LangChain, LangGraph, RAG pipelines,  FastAPI, Docker, PostgreSQL, Redis, CI/CD, and real-world AI projects.
+>>>>>>> b60ac19a84585bf23315c2a55cf11a57d4e07556
