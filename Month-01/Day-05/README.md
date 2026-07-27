@@ -21,6 +21,22 @@
 ## What I Learned
 Today I built my first FastAPI applications and learned how to expose AI models as REST APIs. On the DSA side, I mastered binary search variants on rotated and mountain arrays.
 
+## API Endpoints — AI Chat API
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Health check |
+| POST | `/chat` | Send message, get AI reply |
+| DELETE | `/chat/{session_id}` | Clear conversation history |
+
+## Example Request
+
+```bash
+curl -X POST http://127.0.0.1:8000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "What is RAG?", "session_id": "user1"}'
+```
+
 ---
 
 ## Folder Structure
