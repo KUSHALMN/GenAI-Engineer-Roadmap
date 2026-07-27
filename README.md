@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🤖 GenAI Engineer Roadmap — 9 Month Journey
 
 > Building real-world AI applications, mastering Python, DSA, and becoming a production-ready GenAI Engineer.
@@ -35,6 +34,20 @@ Day-XX/
 
 ---
 
+## ✅ Progress Tracker
+
+### Month 01 — Foundations
+| Day | Topics | Status |
+|-----|--------|--------|
+| Day-01 | AI/ML Basics, Python OOP, Groq Chatbot, HashMap DSA | ✅ Done |
+| Day-02 | NLP, Embeddings, ChromaDB, Two Pointers DSA | ✅ Done |
+| Day-03 | RAG Pipeline, Chunking, PDF Search, Binary Search DSA | ✅ Done |
+| Day-04 | Prompt Engineering, Q&A Bot, Binary Search DSA | ✅ Done |
+| Day-05 | FastAPI, REST APIs, AI Chat API, Rotated Array DSA | ✅ Done |
+| Day-06 to Day-30 | Coming Soon... | 🔜 |
+
+---
+
 ## 🗓️ Monthly Overview
 
 | Month | Theme | Key Topics |
@@ -48,11 +61,13 @@ Day-XX/
 
 ## 🧩 DSA Progress
 
-Solving LeetCode problems daily in Java/Python covering:
-- Arrays, Strings, HashMaps
-- Linked Lists, Stacks, Queues
-- Binary Search, Trees, Graphs
-- Dynamic Programming, Heaps
+Solving LeetCode problems daily in Java covering:
+- Arrays, Strings, HashMaps ✅
+- Binary Search ✅
+- Two Pointers, Sliding Window ✅
+- Linked Lists, Stacks, Queues 🔜
+- Trees, Graphs 🔜
+- Dynamic Programming, Heaps 🔜
 
 ---
 
@@ -81,7 +96,3 @@ Solving LeetCode problems daily in Java/Python covering:
 ## 🙌 Author
 
 Built with ❤️ as part of the **GenAI Engineer 9-Month Roadmap**.
-=======
-# GenAI-Engineer-Roadmap
-A structured 9-month journey to become a production-ready GenAI Engineer.  Covers Python, DSA (LeetCode), LangChain, LangGraph, RAG pipelines,  FastAPI, Docker, PostgreSQL, Redis, CI/CD, and real-world AI projects.
->>>>>>> b60ac19a84585bf23315c2a55cf11a57d4e07556
