@@ -54,3 +54,37 @@
 
 ## Key Takeaway
 FastAPI makes building production-ready APIs incredibly fast. Binary search on rotated arrays requires identifying which half is sorted first — that's the key insight.
+
+---
+
+## FastAPI Cheatsheet
+
+```python
+# GET with path param
+@app.get("/user/{id}")
+def get_user(id: int): ...
+
+# GET with query param
+@app.get("/search")
+def search(q: str, limit: int = 10): ...
+
+# POST with body
+@app.post("/create")
+def create(data: BaseModel): ...
+
+# Error handling
+raise HTTPException(status_code=404, detail="Not found")
+```
+
+## Binary Search Template (Java)
+
+```java
+int left = 0, right = nums.length - 1;
+while (left <= right) {
+    int mid = left + (right - left) / 2;
+    if (nums[mid] == target) return mid;
+    else if (nums[mid] < target) left = mid + 1;
+    else right = mid - 1;
+}
+return -1;
+```
