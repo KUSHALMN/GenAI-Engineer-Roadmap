@@ -56,4 +56,14 @@
 
 ---
 
+### Day 06
+- **Date:** Day 6
+- **Topics:** SQL Basics, PostgreSQL, psycopg2, CRUD operations, DSA (HashMap & HashSet)
+- **What I built:** Full CRUD user database with Python + PostgreSQL
+- **Key insight:** SQL is the language of data — every AI app needs a database
+- **Struggled with:** Managing DB connections and handling duplicate entries
+- **Tomorrow's goal:** Learn LangChain basics and build an AI chain
+
+---
+
 <!-- Copy the Day template above for each day -->
