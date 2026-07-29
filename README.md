@@ -44,7 +44,8 @@ Day-XX/
 | Day-03 | RAG Pipeline, Chunking, PDF Search, Binary Search DSA | ✅ Done |
 | Day-04 | Prompt Engineering, Q&A Bot, Binary Search DSA | ✅ Done |
 | Day-05 | FastAPI, REST APIs, AI Chat API, Rotated Array DSA | ✅ Done |
-| Day-06 to Day-30 | Coming Soon... | 🔜 |
+| Day-06 | SQL Basics, PostgreSQL, Python CRUD, HashMap DSA | ✅ Done |
+| Day-07 to Day-30 | Coming Soon... | 🔜 |
 
 ---
 
