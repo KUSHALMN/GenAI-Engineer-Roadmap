@@ -70,6 +70,8 @@ Solving LeetCode problems daily in Java covering:
 - Trees, Graphs 🔜
 - Dynamic Programming, Heaps 🔜
 
+**Total problems solved: 17**
+
 ---
 
 ## 🛠️ Tech Stack
