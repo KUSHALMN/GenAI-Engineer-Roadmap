@@ -66,4 +66,12 @@
 
 ---
 
+## 📊 Week 1 Summary
+- **Days completed:** 6/30
+- **Projects built:** 6
+- **DSA problems solved:** 17
+- **Tech used:** Python, Java, Groq, ChromaDB, FastAPI, PostgreSQL
+
+---
+
 <!-- Copy the Day template above for each day -->
