@@ -45,7 +45,8 @@ Day-XX/
 | Day-04 | Prompt Engineering, Q&A Bot, Binary Search DSA | ✅ Done |
 | Day-05 | FastAPI, REST APIs, AI Chat API, Rotated Array DSA | ✅ Done |
 | Day-06 | SQL Basics, PostgreSQL, Python CRUD, HashMap DSA | ✅ Done |
-| Day-07 to Day-30 | Coming Soon... | 🔜 |
+| Day-07 | PDF RAG Chatbot, Python Decorators, Interview Prep, DSA | ✅ Done |
+| Day-08 to Day-30 | Coming Soon... | 🔜 |
 
 ---
 
@@ -70,7 +71,7 @@ Solving LeetCode problems daily in Java covering:
 - Trees, Graphs 🔜
 - Dynamic Programming, Heaps 🔜
 
-**Total problems solved: 17**
+**Total problems solved: 19**
 
 ---
 
