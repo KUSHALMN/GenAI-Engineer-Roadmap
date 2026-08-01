@@ -1,6 +1,6 @@
 # Week 1 Review — Month 01
 
-## ✅ What I Completed (Day 01 - 06)
+## ✅ What I Completed (Day 01 - 07)
 
 | Day | Topics | Project Built |
 |-----|--------|--------------|
@@ -10,10 +10,11 @@
 | 04 | Prompt Engineering | AI Q&A Bot |
 | 05 | FastAPI, REST APIs | AI Chat API |
 | 06 | SQL, PostgreSQL, psycopg2 | User CRUD Database |
+| 07 | PDF RAG Chatbot, Decorators, Interview Prep | PDF RAG Chatbot |
 
 ---
 
-## 🧩 DSA Problems Solved (17 total)
+## 🧩 DSA Problems Solved (19 total)
 
 | Pattern | Problems |
 |---------|---------|
@@ -23,7 +24,7 @@
 | Sliding Window | Longest Substring, Longest Substring No Repeat |
 | Binary Search | Binary Search, Search Insert, First Bad Version |
 | Binary Search (Advanced) | Find Min Rotated, Search Rotated, Peak Index |
-| Greedy | Best Time to Buy Stock |
+| Greedy | Best Time to Buy Stock (x2) |
 | String | Longest Common Prefix, Valid Anagram |
 
 ---
@@ -47,7 +48,7 @@
 
 ---
 
-## 🎯 Goals for Week 2 (Day 07-14)
+## 🎯 Goals for Week 2 (Day 08-14)
 
 - LangChain basics and chains
 - Agents and tools
