@@ -66,10 +66,20 @@
 
 ---
 
+### Day 07
+- **Date:** Day 7
+- **Topics:** PDF RAG Chatbot, Python Decorators, Interview Prep, DSA (Sliding Window, Greedy)
+- **What I built:** Full PDF RAG Chatbot — pypdf + ChromaDB + Groq
+- **Key insight:** A PDF RAG chatbot is the most practical GenAI portfolio project
+- **Struggled with:** Choosing optimal chunk size for retrieval quality
+- **Tomorrow's goal:** Learn LangChain and build an AI agent
+
+---
+
 ## 📊 Week 1 Summary
-- **Days completed:** 6/30
-- **Projects built:** 6
-- **DSA problems solved:** 17
+- **Days completed:** 7/30
+- **Projects built:** 7
+- **DSA problems solved:** 19
 - **Tech used:** Python, Java, Groq, ChromaDB, FastAPI, PostgreSQL
 
 ---
