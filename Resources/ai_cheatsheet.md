@@ -57,3 +57,33 @@ DELETE FROM users WHERE id = 1;
 | FastAPI | Build REST APIs |
 | psycopg2 | Connect Python to PostgreSQL |
 | pypdf | Extract text from PDFs |
+
+## Python Decorator Patterns
+
+```python
+import functools, time
+
+# Timer decorator
+def timer(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} took {time.time() - start:.4f}s")
+        return result
+    return wrapper
+
+# Retry decorator
+def retry(max_attempts=3, delay=1):
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            for attempt in range(1, max_attempts + 1):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    if attempt < max_attempts: time.sleep(delay)
+            raise Exception(f"Failed after {max_attempts} attempts")
+        return wrapper
+    return decorator
+```
