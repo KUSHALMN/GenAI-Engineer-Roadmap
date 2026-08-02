@@ -84,3 +84,7 @@ while (left < right) {
 | 852 | Peak Index Mountain | Binary Search | Medium |
 | 349 | Intersection of Arrays | HashSet | Easy |
 | 347 | Top K Frequent | HashMap + Heap | Medium |
+| 3 | Longest Substring (Day-07) | Sliding Window | Medium |
+| 121 | Best Time to Buy Stock (Day-07) | Greedy | Easy |
+
+**Total: 19 problems solved**
