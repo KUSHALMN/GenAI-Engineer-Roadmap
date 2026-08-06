@@ -43,10 +43,28 @@
 - **What it does:** Chat with any PDF using RAG pipeline
 - **Key concept:** Full RAG — extract, chunk, embed, retrieve, generate
 
+## Project 8 — Modular RAG Chatbot
+- **Day:** 08
+- **Tech:** pypdf, ChromaDB, Sentence Transformers, Groq API
+- **What it does:** Refactored RAG chatbot with embedding.py and vector_store.py
+- **Key concept:** Single Responsibility Principle, lazy loading
+
+## Project 9 — Full Pipeline RAG Chatbot
+- **Day:** 09
+- **Tech:** pypdf, ChromaDB, Sentence Transformers, Groq API
+- **What it does:** RAG chatbot with retriever, prompt builder, pipeline orchestrator
+- **Key concept:** Modular pipeline, retrieval with distance scores
+
+## Project 10 — Chain Architecture RAG Chatbot ⭐⭐
+- **Day:** 10
+- **Tech:** pypdf, ChromaDB, Sentence Transformers, Groq API
+- **What it does:** Full 9-module RAG chatbot with chain.py as LLM execution layer
+- **Key concept:** Chain pattern, paragraph splitting, query_with_context()
+
 ---
 
 ## 📊 Stats
-- **Total Projects:** 7
+- **Total Projects:** 10
 - **Languages:** Python, Java
 - **AI Tools:** Groq, ChromaDB, Sentence Transformers
 - **APIs:** FastAPI, REST
