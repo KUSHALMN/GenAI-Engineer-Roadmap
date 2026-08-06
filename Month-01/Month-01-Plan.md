@@ -13,13 +13,13 @@
 | 06 | SQL, PostgreSQL, CRUD | ✅ |
 | 07 | PDF RAG Chatbot, Decorators, Interview Prep | ✅ |
 
-### Week 2 (Day 08-14) 🔜
+### Week 2 (Day 08-14)
 | Day | Topic | Status |
 |-----|-------|--------|
-| 08 | LangChain Basics | 🔜 |
-| 09 | LangChain Chains | 🔜 |
-| 10 | LangChain Agents | 🔜 |
-| 11 | Docker Basics | 🔜 |
+| 08 | Modular RAG, Binary Search DSA | ✅ |
+| 09 | Full RAG Pipeline, Two Pointers DSA | ✅ |
+| 10 | Chain Architecture, Stack DSA | ✅ |
+| 11 | LangChain Basics | 🔜 |
 | 12 | JWT Authentication | 🔜 |
 | 13 | Redis Caching | 🔜 |
 | 14 | Week 2 Project | 🔜 |
@@ -39,11 +39,12 @@
 ---
 
 ## 🎯 Month-01 Goals
-- [x] Build 7+ real AI projects
-- [x] Solve 19+ DSA problems
+- [x] Build 10+ real AI projects
+- [x] Solve 23+ DSA problems
 - [x] Master Python fundamentals
 - [x] Learn FastAPI and REST APIs
 - [x] Learn SQL and PostgreSQL
+- [x] Build modular RAG pipeline
 - [ ] Learn LangChain and Agents
 - [ ] Learn Docker
 - [ ] Build a capstone project
