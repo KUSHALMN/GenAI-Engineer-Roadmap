@@ -46,7 +46,10 @@ Day-XX/
 | Day-05 | FastAPI, REST APIs, AI Chat API, Rotated Array DSA | ✅ Done |
 | Day-06 | SQL Basics, PostgreSQL, Python CRUD, HashMap DSA | ✅ Done |
 | Day-07 | PDF RAG Chatbot, Python Decorators, Interview Prep, DSA | ✅ Done |
-| Day-08 to Day-30 | Coming Soon... | 🔜 |
+| Day-08 | Modular RAG Chatbot, Binary Search DSA, Interview Prep | ✅ Done |
+| Day-09 | Full RAG Pipeline, Two Pointers DSA, Interview Prep | ✅ Done |
+| Day-10 | Chain Architecture RAG, Stack DSA, Interview Prep | ✅ Done |
+| Day-11 to Day-30 | Coming Soon... | 🔜 |
 
 ---
 
@@ -71,7 +74,9 @@ Solving LeetCode problems daily in Java covering:
 - Trees, Graphs 🔜
 - Dynamic Programming, Heaps 🔜
 
-**Total problems solved: 19**
+**Total problems solved: 23**
+
+- Stacks ✅
 
 ---
 
