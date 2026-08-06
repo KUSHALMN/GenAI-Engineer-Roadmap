@@ -86,5 +86,11 @@ while (left < right) {
 | 347 | Top K Frequent | HashMap + Heap | Medium |
 | 3 | Longest Substring (Day-07) | Sliding Window | Medium |
 | 121 | Best Time to Buy Stock (Day-07) | Greedy | Easy |
+| 704 | Binary Search (Day-08) | Binary Search | Easy |
+| 35 | Search Insert Position (Day-08) | Binary Search | Easy |
+| 125 | Valid Palindrome (Day-09) | Two Pointers | Easy |
+| 88 | Merge Sorted Array (Day-09) | Two Pointers | Easy |
+| 20 | Valid Parentheses (Day-10) | Stack | Easy |
+| 155 | Min Stack (Day-10) | Stack | Easy |
 
-**Total: 19 problems solved**
+**Total: 23 problems solved**
