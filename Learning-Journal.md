@@ -76,11 +76,41 @@
 
 ---
 
-## 📊 Week 1 Summary
-- **Days completed:** 7/30
-- **Projects built:** 7
-- **DSA problems solved:** 19
-- **Tech used:** Python, Java, Groq, ChromaDB, FastAPI, PostgreSQL
+### Day 08
+- **Date:** Day 8
+- **Topics:** Modular RAG architecture, Lazy loading, Binary Search DSA
+- **What I built:** Refactored RAG chatbot — embedding.py, vector_store.py modules
+- **Key insight:** Good code is modular code — single responsibility per file
+- **Struggled with:** Managing global state across modules
+- **Tomorrow's goal:** Add retriever and prompt builder modules
+
+---
+
+### Day 09
+- **Date:** Day 9
+- **Topics:** Full RAG pipeline, retriever with scores, Two Pointers DSA
+- **What I built:** RAG chatbot with retriever.py, prompt_builder.py, rag_pipeline.py
+- **Key insight:** Production RAG = 8 focused modules, not one script
+- **Struggled with:** Distance scores interpretation in ChromaDB
+- **Tomorrow's goal:** Add chain.py as LLM execution layer
+
+---
+
+### Day 10
+- **Date:** Day 10
+- **Topics:** Chain architecture, paragraph splitting, Stack DSA
+- **What I built:** RAG chatbot with chain.py — full 9-module architecture
+- **Key insight:** Stack = LIFO — perfect for bracket matching and min tracking
+- **Struggled with:** Min Stack two-stack approach
+- **Tomorrow's goal:** Learn LangChain basics
+
+---
+
+## 📊 Week 2 Summary (Day 08-10)
+- **Days completed:** 10/30
+- **Projects built:** 10
+- **DSA problems solved:** 23
+- **Tech used:** Python, Java, ChromaDB, Groq, Sentence Transformers
 
 ---
 
