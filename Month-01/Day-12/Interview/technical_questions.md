@@ -1,31 +1,26 @@
 # Technical Questions — Day 12
 
-## JWT Authentication
+## Stack DSA
 
-**Q: What is JWT?**
-> JSON Web Token — a compact, self-contained token for securely transmitting information. Contains header, payload, and signature. Used for stateless authentication.
+**Q: What is a monotonic stack?**
+A stack where elements are maintained in increasing or decreasing order. Used for "next greater/smaller element" problems.
 
-**Q: What is the difference between authentication and authorization?**
-> Authentication = verifying who you are (login). Authorization = verifying what you can do (permissions).
+**Q: Time complexity of Daily Temperatures solution?**
+O(n) — each element is pushed and popped at most once.
 
-**Q: Why hash passwords with bcrypt?**
-> Bcrypt is a slow hashing algorithm designed for passwords. It adds a salt automatically and is resistant to brute-force attacks. Never store plain text passwords.
+**Q: How does Evaluate RPN work?**
+Push numbers onto stack. On operator, pop two operands, apply operator, push result. Final stack top is the answer.
 
-**Q: What is OAuth2PasswordBearer in FastAPI?**
-> A FastAPI security utility that extracts the JWT token from the `Authorization: Bearer <token>` header and passes it to the dependency.
+**Q: Why use stack for Valid Parentheses?**
+LIFO matches the nesting structure — the most recently opened bracket must be closed first.
 
-**Q: What does `Depends(get_current_user)` do?**
-> FastAPI dependency injection — automatically calls `get_current_user()` before the route handler, validates the JWT, and injects the user object into the route.
+## RAG Pipeline
 
----
+**Q: What does source_handler.py do?**
+Loads PDF, extracts text, and splits into overlapping chunks for better context preservation.
 
-## Linked List DSA
+**Q: Why overlap chunks?**
+Prevents losing context at chunk boundaries — a sentence split across chunks is still retrievable.
 
-**Q: How do you reverse a linked list iteratively?**
-> Use three pointers: `prev=None`, `curr=head`. At each step: save `next`, point `curr.next` to `prev`, move `prev` to `curr`, move `curr` to saved `next`.
-
-**Q: How do you find the middle of a linked list?**
-> Fast & Slow pointer technique. `slow` moves 1 step, `fast` moves 2 steps. When `fast` reaches end, `slow` is at middle. O(n) time, O(1) space.
-
-**Q: What is the time complexity of linked list operations?**
-> Access: O(n), Search: O(n), Insert at head: O(1), Insert at tail: O(n), Delete: O(n).
+**Q: What is the role of prompt_builder.py?**
+Formats retrieved chunks + user query into a structured prompt that guides the LLM to answer from context only.

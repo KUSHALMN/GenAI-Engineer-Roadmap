@@ -1,71 +1,48 @@
 # Coding Questions — Day 12
 
-## Q1: Reverse Linked List (Java)
+## Java — Stack
+
+### Valid Parentheses (Easy)
 ```java
-public ListNode reverseList(ListNode head) {
-    ListNode prev = null, curr = head;
-    while (curr != null) {
-        ListNode next = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = next;
+// Use stack, push open brackets, pop and match on close
+Stack<Character> stack = new Stack<>();
+for (char c : s.toCharArray()) {
+    if (c == '(' || c == '{' || c == '[') stack.push(c);
+    else {
+        if (stack.isEmpty()) return false;
+        char top = stack.pop();
+        if (c == ')' && top != '(') return false;
     }
-    return prev;
+}
+return stack.isEmpty();
+```
+
+### Daily Temperatures (Medium)
+```java
+// Monotonic decreasing stack of indices
+Stack<Integer> stack = new Stack<>();
+for (int i = 0; i < n; i++) {
+    while (!stack.isEmpty() && temps[i] > temps[stack.peek()])
+        result[stack.pop()] = i - stack.peek(); // wrong, fix:
+    stack.push(i);
 }
 ```
 
-## Q2: Middle of Linked List (Java)
+### Evaluate RPN (Medium)
 ```java
-public ListNode middleNode(ListNode head) {
-    ListNode slow = head, fast = head;
-    while (fast != null && fast.next != null) {
-        slow = slow.next;
-        fast = fast.next.next;
-    }
-    return slow;
+// Push numbers, pop two on operator
+switch (token) {
+    case "+" -> stack.push(stack.pop() + stack.pop());
+    case "-" -> { int b = stack.pop(), a = stack.pop(); stack.push(a - b); }
 }
 ```
 
-## Q3: Hash Password (Python)
+## Python — RAG
+
+### How to chunk text with overlap?
 ```python
-from passlib.context import CryptContext
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
-def hash_password(password: str) -> str:
-    return pwd_context.hash(password)
-
-def verify_password(plain: str, hashed: str) -> bool:
-    return pwd_context.verify(plain, hashed)
-```
-
-## Q4: Create JWT Token (Python)
-```python
-from jose import jwt
-from datetime import datetime, timedelta
-
-def create_access_token(data: dict, secret: str, expire_minutes: int = 30) -> str:
-    to_encode = data.copy()
-    to_encode["exp"] = datetime.utcnow() + timedelta(minutes=expire_minutes)
-    return jwt.encode(to_encode, secret, algorithm="HS256")
-```
-
-## Q5: Protected Route with FastAPI (Python)
-```python
-from fastapi import Depends
-from auth import get_current_user
-
-@app.get("/protected")
-def protected_route(user: dict = Depends(get_current_user)):
-    return {"message": f"Hello {user['username']}"}
-```
-
-## Q6: Reverse Linked List Recursive (Python)
-```python
-def reverse_list(head):
-    if not head or not head.next:
-        return head
-    new_head = reverse_list(head.next)
-    head.next.next = head
-    head.next = None
-    return new_head
+chunks, start = [], 0
+while start < len(text):
+    chunks.append(text[start:start + CHUNK_SIZE])
+    start += CHUNK_SIZE - CHUNK_OVERLAP
 ```
