@@ -1,2 +1,52 @@
-[]
-
+{
+  "benchmark_timestamp": "2026-08-18 00:09:22",
+  "total_test_cases": 4,
+  "metrics_summary": {
+    "mean_reciprocal_rank_mrr": 1.0,
+    "mean_recall": 1.0,
+    "mean_keyword_coverage": 0.95,
+    "average_latency_ms": 0.6
+  },
+  "detailed_results": [
+    {
+      "question_id": 1,
+      "question": "What is the primary benefit of Hybrid Search over pure vector search?",
+      "retrieved_count": 4,
+      "hit_at_rank": 1,
+      "mrr": 1.0,
+      "keyword_coverage": 1.0,
+      "recall_score": 1.0,
+      "latency_ms": 0.66
+    },
+    {
+      "question_id": 2,
+      "question": "How does Reciprocal Rank Fusion (RRF) calculate candidate ranking scores?",
+      "retrieved_count": 4,
+      "hit_at_rank": 1,
+      "mrr": 1.0,
+      "keyword_coverage": 1.0,
+      "recall_score": 1.0,
+      "latency_ms": 0.58
+    },
+    {
+      "question_id": 3,
+      "question": "Why is a Cross-Encoder reranker used after initial retrieval?",
+      "retrieved_count": 4,
+      "hit_at_rank": 1,
+      "mrr": 1.0,
+      "keyword_coverage": 0.8,
+      "recall_score": 1.0,
+      "latency_ms": 0.56
+    },
+    {
+      "question_id": 4,
+      "question": "What is chunk overlap in text splitting and why is it important?",
+      "retrieved_count": 4,
+      "hit_at_rank": 1,
+      "mrr": 1.0,
+      "keyword_coverage": 1.0,
+      "recall_score": 1.0,
+      "latency_ms": 0.59
+    }
+  ]
+}

@@ -1,2 +1,26 @@
-[]
-
+[
+  {
+    "id": 1,
+    "question": "What is the primary benefit of Hybrid Search over pure vector search?",
+    "ground_truth_context": "Hybrid search combines dense vector embeddings with sparse keyword algorithms like BM25 to achieve both semantic understanding and exact keyword precision.",
+    "expected_keywords": ["dense", "sparse", "keyword", "semantic", "bm25"]
+  },
+  {
+    "id": 2,
+    "question": "How does Reciprocal Rank Fusion (RRF) calculate candidate ranking scores?",
+    "ground_truth_context": "Reciprocal Rank Fusion calculates score by summing 1 / (k + rank) across multiple retriever output rankings.",
+    "expected_keywords": ["rank", "fusion", "reciprocal", "sum"]
+  },
+  {
+    "id": 3,
+    "question": "Why is a Cross-Encoder reranker used after initial retrieval?",
+    "ground_truth_context": "A Cross-Encoder performs joint attention over the query and passage pairs, offering higher precision scoring than bi-encoder embedding similarity.",
+    "expected_keywords": ["cross-encoder", "attention", "precision", "rerank", "bi-encoder"]
+  },
+  {
+    "id": 4,
+    "question": "What is chunk overlap in text splitting and why is it important?",
+    "ground_truth_context": "Chunk overlap retains a small sliding window of tokens across chunk boundaries to prevent loss of semantic context at boundary cuts.",
+    "expected_keywords": ["overlap", "boundary", "context", "semantic", "tokens"]
+  }
+]
