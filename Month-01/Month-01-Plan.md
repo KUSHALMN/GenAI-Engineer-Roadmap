@@ -24,11 +24,16 @@
 | 13 | Redis Caching | 🔜 |
 | 14 | Week 2 Project | 🔜 |
 
-### Week 3 (Day 15-21) 🔜
-- Advanced RAG techniques
-- LangGraph
-- CI/CD basics
-- Advanced DSA
+### Week 3 (Day 15-21) ✅ COMPLETED
+| Day | Topic | Status |
+|-----|-------|--------|
+| 15 | Advanced RAG Techniques | ✅ |
+| 16 | Hybrid Search & Re-ranking | ✅ |
+| 17 | Agent Tool Calling & Function Execution | ✅ |
+| 18 | Multi-Hop Question Answering | ✅ |
+| 19 | Memory & Conversational Buffer Systems | ✅ |
+| 20 | Autonomous Research Agents | ✅ |
+| 21 | StateGraph Agent Architecture & Graph DSA | ✅ |
 
 ### Week 4 (Day 22-30) 🔜
 - Month-01 capstone project
