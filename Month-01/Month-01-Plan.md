@@ -35,11 +35,18 @@
 | 20 | Autonomous Research Agents | ✅ |
 | 21 | StateGraph Agent Architecture & Graph DSA | ✅ |
 
-### Week 4 (Day 22-30) 🔜
-- Month-01 capstone project
-- Review and revision
-- Interview preparation
-- Planning Month-02
+### Week 4 (Day 22-30) 🚀 IN PROGRESS
+| Day | Topic | Status |
+|-----|-------|--------|
+| 22 | Persistent StateGraph with Memory & Multi-Source BFS | ✅ |
+| 23 | Capstone Project Architecture & Design | 🔜 |
+| 24 | Capstone Backend & Advanced Agent Tooling | 🔜 |
+| 25 | Capstone Frontend & Streaming UI | 🔜 |
+| 26 | CI/CD, Containerization & Evaluation | 🔜 |
+| 27 | Full Review, Revision & Benchmark Suite | 🔜 |
+| 28 | Comprehensive System Design Interviews | 🔜 |
+| 29 | Month-01 Project Showcase & Documentation | 🔜 |
+| 30 | Month-02 Planning & Advanced Agentic Roadmap | 🔜 |
 
 ---
 
