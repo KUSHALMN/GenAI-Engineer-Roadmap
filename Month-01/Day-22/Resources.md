@@ -1,28 +1,33 @@
-# Day 22 Resources: Agent Memory & Checkpointing + Multi-Source Graph Algorithms
-
-A curated collection of documentation, research papers, and DSA practice references for Day 22.
+# 🔗 Day 22 - Curated Resources & References
 
 ---
 
-## 🤖 AI & Agent State Persistence
-
-### Official Documentation & Guides
-- **[LangGraph Persistence & Checkpointing](https://langchain-ai.github.io/langgraph/how-tos/persistence/)**: Guide to configuring memory savers, PostgreSQL checkpointers, and time-travel state replay.
-- **[LangChain Memory Concepts](https://python.langchain.com/docs/concepts/memory/)**: Overview of buffer memory, summary memory, and vector-backed memory.
-- **[Redis for AI Agents](https://redis.io/solutions/ai/)**: High-throughput session caching and state serialization.
-
-### Seminal Research Papers
-- **[Generative Agents: Interactive Simulacra of Human Behavior (Park et al., 2023)](https://arxiv.org/abs/2304.03442)**: The landmark paper on agent memory stream architectures, reflection, and memory retrieval scoring.
-- **[MemGPT: Towards LLMs as Operating Systems (Packer et al., 2023)](https://arxiv.org/abs/2310.08560)**: Hierarchical memory management (main context working memory vs external archival storage).
+### 🤖 Generative AI & RAG Architectures
+1. **Hybrid Search & RRF**:
+   - [Pinecone Hybrid Search Guide](https://www.pinecone.io/learn/hybrid-search-intro/)
+   - [Elasticsearch Reciprocal Rank Fusion (RRF)](https://www.elastic.co/guide/en/elasticsearch/reference/current/rrf.html)
+2. **Server-Sent Events & Streaming APIs**:
+   - [MDN Web Docs: Using Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+   - [FastAPI StreamingResponse Documentation](https://fastapi.tiangolo.com/advanced/custom-response/#streamingresponse)
+3. **Advanced Chunking Strategies**:
+   - [LangChain Recursive Character Text Splitter](https://python.langchain.com/docs/how_to/recursive_text_splitter/)
 
 ---
 
-## 🧩 Data Structures & Algorithms (Graph Mastery)
+### ☕ Data Structures & Algorithms (Java Sliding Window)
+1. **LeetCode 3 - Longest Substring Without Repeating Characters**:
+   - [LeetCode Problem 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+2. **LeetCode 424 - Longest Repeating Character Replacement**:
+   - [LeetCode Problem 424](https://leetcode.com/problems/longest-repeating-character-replacement/)
+3. **LeetCode 76 - Minimum Window Substring**:
+   - [LeetCode Problem 76](https://leetcode.com/problems/minimum-window-substring/)
+   - [NeetCode Sliding Window Masterclass](https://neetcode.io/practice)
 
-### LeetCode Practice References
-- **[LeetCode 547: Number of Provinces](https://leetcode.com/problems/number-of-provinces/)** (Medium):
-  - Connected components on Adjacency Matrix using DFS, BFS, and Union-Find.
-- **[LeetCode 994: Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)** (Medium):
-  - Multi-Source Breadth-First Search (BFS) level-by-level propagation.
-- **[LeetCode 207: Course Schedule](https://leetcode.com/problems/course-schedule/)** (Medium):
-  - Cycle detection and Topological Sorting using Kahn's Algorithm and 3-State DFS.
+---
+
+### 🐳 DevOps, Testing & Containerization
+1. **Docker Best Practices for Python Applications**:
+   - [Docker Multi-stage Builds](https://docs.docker.com/build/building/multi-stage/)
+   - [OWASP Container Security Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+2. **Pytest & FastAPI TestClient**:
+   - [FastAPI Testing Tutorial](https://fastapi.tiangolo.com/tutorial/testing/)

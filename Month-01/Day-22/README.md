@@ -1,84 +1,49 @@
-# Month 1 - Day 22
+# 📅 Day 22: Enterprise PDF RAG Chatbot, SSE Streaming & Sliding Window DSA
 
-## 📚 Topics Learned
-- **Persistent StateGraph Architecture & Memory**: Step-level checkpointing, state serialization, and multi-turn conversational session management.
-- **Time-Travel Debugging**: Snapshotting immutable state records (`thread_id`, `checkpoint_id`) for rollbacks and branch exploration.
-- **Context Compaction**: Sliding-window buffer memory and structured fact extraction for long-running research sessions.
-- **Multi-Source Graph BFS**: Simultaneous multi-origin wave expansion and level-by-level timing (*Rotting Oranges*).
-- **Connected Component Analysis**: Adjacency matrix component discovery using DFS, BFS, and DSU (*Number of Provinces*).
+Welcome to **Day 22** of the **GenAI Engineer Roadmap**! Today focuses on building a production-grade PDF RAG Chatbot with FastAPI, hybrid dense/sparse retrieval with Reciprocal Rank Fusion (RRF), real-time Server-Sent Events (SSE) streaming, and mastering Hard-level Sliding Window DSA problems in Java.
 
 ---
 
-## 🤖 AI Project: Persistent StateGraph Research Agent with Memory (`AI/research-agent/`)
-
-A stateful research agent equipped with file-backed state checkpointing and multi-turn episodic memory buffers. It investigates complex AI topics, retains verified facts across conversation turns, evaluates mathematical expressions via safe AST, and outputs grounded reports.
-
-```mermaid
-graph TD
-    START([START]) --> AgentNode[Agent Node: Memory-Aware Reasoning]
-    AgentNode -->|Checkpoint 1| MemoryStore[(MemoryStore: Disk / JSON)]
-    AgentNode -->|action_type == 'call_tool'| ToolNode[Tool Node: BM25 / AST Calc]
-    ToolNode -->|Checkpoint 2| MemoryStore
-    ToolNode -->|Loop back with observations| AgentNode
-    AgentNode -->|action_type == 'finish' or max_steps| AnswerNode[Answer Node: Grounded Synthesis]
-    AnswerNode -->|Checkpoint 3| MemoryStore
-    AnswerNode --> UpdateMem[Update SessionManager Buffer]
-    UpdateMem --> END([END: Grounded Report])
-```
-
----
-
-## 🧩 DSA (Java): Graph Algorithms
-1. **Number of Provinces** (`DSA/number_of_provinces.java`): LeetCode 547 - DFS $O(N^2)$, BFS $O(N^2)$, and Disjoint Set Union $O(N^2 \cdot \alpha(N))$.
-2. **Rotting Oranges** (`DSA/rotting_oranges.java`): LeetCode 994 - Multi-Source BFS level-by-level infection wave propagation in $O(M \times N)$ time.
-3. **Course Schedule** (`DSA/course_schedule.java`): LeetCode 207 - Kahn's BFS In-Degree Topological Sort and 3-State DFS Cycle Detection.
-
----
-
-## 📝 Interview Preparation
-- **Technical Questions (`Interview/technical_questions.md`)**: Production checkpointing design, context window saturation management, Single-Source vs Multi-Source BFS, and time-travel state replay.
-- **Coding Questions (`Interview/coding_questions.md`)**: Multi-Source BFS optimality in Rotting Oranges, Number of Provinces DSU vs DFS trade-offs, and streaming graph updates.
-- **Recruiter Questions (`Interview/recruiter_questions.md`)**: STAR-format responses for fault-tolerant agent state persistence and multi-turn context compaction.
-
----
-
-## 📁 Folder Structure
+## 📁 Day 22 Project Structure
 
 ```
 Day-22/
-│
 ├── Notes/
 │   └── day22_notes.md
 │
 ├── AI/
-│   └── research-agent/
-│       ├── app.py
-│       ├── graph.py
-│       ├── state.py
-│       ├── memory/
-│       │   ├── memory_store.py
-│       │   └── session_manager.py
-│       ├── nodes/
-│       │   ├── agent_node.py
-│       │   ├── tool_node.py
-│       │   └── answer_node.py
-│       ├── tools/
-│       │   ├── document_search.py
-│       │   └── calculator.py
-│       ├── schemas.py
-│       ├── config.py
+│   └── pdf-rag-chatbot/
+│       ├── app/
+│       │   ├── main.py              # FastAPI application & REST endpoints
+│       │   ├── rag_pipeline.py      # End-to-end RAG orchestrator & citations
+│       │   ├── streaming.py         # Async Server-Sent Events (SSE) token generator
+│       │   └── config.py            # Environment & model configurations
+│       │
+│       ├── retrieval/
+│       │   ├── __init__.py
+│       │   ├── pdf_loader.py        # PDF page extractor with metadata
+│       │   ├── chunking.py          # Recursive character text splitter
+│       │   ├── vector_store.py      # Dense vector store with cosine search
+│       │   └── hybrid_retriever.py  # BM25 + Dense RRF fusion retriever
+│       │
+│       ├── tests/
+│       │   ├── __init__.py
+│       │   ├── test_rag.py          # Unit tests for chunking & retrieval
+│       │   └── test_api.py          # API integration tests with TestClient
+│       │
 │       ├── requirements.txt
+│       ├── Dockerfile
 │       └── README.md
 │
 ├── DSA/
-│   ├── number_of_provinces.java
-│   ├── rotting_oranges.java
-│   └── course_schedule.java
+│   ├── longest_substring.java       # LeetCode 3: Longest Substring Without Repeating
+│   ├── character_replacement.java   # LeetCode 424: Longest Repeating Character Replacement
+│   └── minimum_window_substring.java # LeetCode 76: Minimum Window Substring (Hard)
 │
 ├── Interview/
-│   ├── technical_questions.md
-│   ├── coding_questions.md
-│   └── recruiter_questions.md
+│   ├── technical_questions.md       # RAG, Hybrid Search & SSE Streaming Q&A
+│   ├── coding_questions.md          # Sliding Window algorithmic deep dives
+│   └── recruiter_questions.md       # Behavioral & system design talking points
 │
 ├── Resources.md
 └── README.md
@@ -86,36 +51,32 @@ Day-22/
 
 ---
 
-## 🚀 How to Run
+## ⚡ Highlights & Key Capabilities
 
-### 1. AI StateGraph Research Agent with Memory:
+1. **Hybrid Retrieval with Reciprocal Rank Fusion (RRF)**:
+   - Fuses Okapi BM25 keyword matches with Dense Vector semantic embeddings.
+2. **Server-Sent Events (SSE) Token Streaming**:
+   - Real-time token streaming via `/api/v1/query/stream` with TTFT metrics.
+3. **Verifiable Citations**:
+   - Exact source, page number, and chunk references returned with every answer.
+4. **Full Test Suite & Dockerization**:
+   - Multi-stage non-root container and comprehensive automated pytest suite.
+5. **Java Sliding Window Solutions**:
+   - Multiple optimal implementations with exhaustive unit tests and complexity analysis.
+
+---
+
+## 🚀 Quick Execution Commands
+
+### Run Python RAG Tests
 ```bash
-cd Month-01/Day-22/AI/research-agent
-pip install -r requirements.txt
-
-# Run automated multi-turn memory benchmark:
-python app.py --demo
-
-# Run single query with markdown export:
-python app.py --query "Analyze DeepSeek-V3 MoE architecture and calculate activated parameter percentage ratio" --export report.md
-
-# Run interactive multi-turn shell:
-python app.py
+pytest Month-01/Day-22/AI/pdf-rag-chatbot/tests/ -v
 ```
 
-### 2. DSA (Java Solutions & Test Suites):
+### Run Java DSA Solutions
 ```bash
-cd Month-01/Day-22/DSA
-
-# Number of Provinces
-javac number_of_provinces.java
-java number_of_provinces
-
-# Rotting Oranges
-javac rotting_oranges.java
-java rotting_oranges
-
-# Course Schedule
-javac course_schedule.java
-java course_schedule
+javac Month-01/Day-22/DSA/*.java
+java -cp Month-01/Day-22/DSA longest_substring
+java -cp Month-01/Day-22/DSA character_replacement
+java -cp Month-01/Day-22/DSA minimum_window_substring
 ```
