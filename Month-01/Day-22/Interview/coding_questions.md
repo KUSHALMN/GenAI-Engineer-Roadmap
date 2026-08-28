@@ -1,32 +1,65 @@
-# Day 22: Coding Interview Questions & Answers
-## Focus: Connected Components, Multi-Source BFS, and Graph Matrix Traversal
+# 💻 Day 22 - Coding Interview Preparation: Sliding Window & Two Pointers
 
 ---
 
-### Q1: In LeetCode 994 (*Rotting Oranges*), why must we track `freshCount` and why is running independent BFS passes from each rotten orange sub-optimal?
+### Problem 1: Longest Substring Without Repeating Characters (LeetCode 3 - Medium)
+- **Problem Statement**: Given a string `s`, find the length of the longest substring without duplicate characters.
+- **Core Pattern**: Variable-size Sliding Window with HashMap / ASCII Index lookup.
+- **Key Insight**: Maintain the last seen index of each character. When a duplicate `s[right]` is encountered at index `prev`, update `left = max(left, prev + 1)`.
+- **Complexity**:
+  - Time: $O(N)$ (single pass)
+  - Space: $O(\min(N, \Sigma))$ where $\Sigma$ is character set size ($O(1)$ for ASCII).
 
-**Answer:**
-1. **Flaw of Independent BFS Passes**:
-   - If we ran a standard BFS from each rotten orange independently, we would have to record distance matrices for every rotten orange and take the minimum across all of them:
-     $$\text{Time Complexity} = O(K \times M \times N)$$
-     where $K$ is the number of rotten oranges (up to $M \times N$), yielding worst-case $O((MN)^2)$ time.
-2. **Optimality of Multi-Source BFS**:
-   - Enqueueing all $K$ rotten oranges at $T = 0$ guarantees that each cell is visited **at most once** as the closest wave reaches it.
-   - **Time Complexity**: Exactly $O(M \times N)$.
-3. **Role of `freshCount`**:
-   - If `freshCount == 0` initially, we can immediately return `0` without queue iterations.
-   - If `freshCount > 0` after the BFS queue empties, unreachable oranges exist $\implies$ return `-1`.
+```java
+public int lengthOfLongestSubstring(String s) {
+    int[] last = new int[128];
+    Arrays.fill(last, -1);
+    int maxLen = 0, left = 0;
+    for (int right = 0; right < s.length(); right++) {
+        char c = s.charAt(right);
+        if (last[c] >= left) {
+            left = last[c] + 1;
+        }
+        last[c] = right;
+        maxLen = Math.max(maxLen, right - left + 1);
+    }
+    return maxLen;
+}
+```
 
 ---
 
-### Q2: Compare solving *Number of Provinces* (LeetCode 547) via DFS vs Disjoint Set Union (Union-Find). What are the space-time trade-offs?
+### Problem 2: Longest Repeating Character Replacement (LeetCode 424 - Medium)
+- **Problem Statement**: Given string `s` and integer `k`, find the max length of a substring with identical characters after performing at most `k` character replacements.
+- **Invariant**: `(window_size - max_frequency) <= k` must hold for a valid window.
+- **Optimization**: The window does not need to shrink! It only slides forward if invalid, preserving maximum valid size achieved so far.
+- **Complexity**:
+  - Time: $O(N)$
+  - Space: $O(26) = O(1)$
 
-**Answer:**
-1. **DFS on Adjacency Matrix**:
-   - **Time Complexity**: $O(N^2)$ because we examine every cell $(i, j)$ in the $N \times N$ matrix.
-   - **Space Complexity**: $O(N)$ for the `visited` array + recursion stack.
-2. **Disjoint Set Union (DSU)**:
-   - **Time Complexity**: $O(N^2 \cdot \alpha(N))$ because we iterate over the upper triangle of the matrix ($N(N-1)/2$ pairs) and execute `union()`. Since $\alpha(N) \le 4$, this is effectively $O(N^2)$.
-   - **Space Complexity**: $O(N)$ for `parent` and `rank` arrays without any recursion call stack.
-3. **Dynamic Streaming Graphs**:
-   - If edges are arriving dynamically in a real-time stream (e.g. social network connections added one by one), **DSU is strictly superior** because adding an edge takes $O(\alpha(N)) \approx O(1)$ incremental time without re-running full graph traversals.
+```java
+public int characterReplacement(String s, int k) {
+    int[] count = new int[26];
+    int maxFreq = 0, left = 0, right = 0;
+    for (; right < s.length(); right++) {
+        maxFreq = Math.max(maxFreq, ++count[s.charAt(right) - 'A']);
+        if ((right - left + 1) - maxFreq > k) {
+            count[s.charAt(left++) - 'A']--;
+        }
+    }
+    return right - left;
+}
+```
+
+---
+
+### Problem 3: Minimum Window Substring (LeetCode 76 - Hard)
+- **Problem Statement**: Given strings `s` and `t`, return the minimum window in `s` that contains all characters of `t` (including duplicates).
+- **Core Pattern**: Two-pointer Sliding Window with `have` vs `need` frequency matching.
+- **Algorithm**:
+  1. Count character frequencies of `t` in `need[128]`. Count distinct characters as `uniqueNeeded`.
+  2. Expand `right`: Add `s[right]` to `window[128]`. If `window[c] == need[c]`, increment `matched`.
+  3. While `matched == uniqueNeeded`: record minimum window, remove `s[left]` and increment `left`.
+- **Complexity**:
+  - Time: $O(|S| + |T|)$
+  - Space: $O(1)$ (fixed 128 integer arrays).

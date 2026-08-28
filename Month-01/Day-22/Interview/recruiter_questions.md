@@ -1,40 +1,31 @@
-# Day 22: Behavioral & Recruiter Interview Questions (STAR Method)
-## Focus: Multi-Turn Conversation Systems, Checkpoint Persistence, and Production Fault Tolerance
+# 💼 Day 22 - Recruiter & Behavioral Interview Preparation
 
 ---
 
-### Scenario 1: Implementing Fault Tolerance & State Persistence in Production AI Workflows
-
-**Question:**
-*"Describe a situation where you designed a system to withstand infrastructure failures without degrading user experience or losing progress."*
-
-**Answer (STAR Method):**
-- **Situation:** Our autonomous agent was processing complex legal analysis workflows taking 30–60 seconds across multiple tool steps. During cloud spot-instance terminations and microservice restarts, user workflows were dropping, forcing users to restart their analysis from scratch and wasting expensive API compute.
-- **Task:** My objective was to implement a durable state checkpointing mechanism that could seamlessly recover agent execution with zero data loss.
-- **Action:**
-  - Designed an append-only JSON/PostgreSQL checkpointer for our StateGraph engine.
-  - Implemented automatic state snapshotting before and after every tool invocation, indexed by `thread_id` and `checkpoint_id`.
-  - Configured worker processes to query the checkpointer upon startup, detect dangling unfinished threads, and resume graph execution from the exact last successful node.
-- **Result:**
-  - Eliminated 100% of workflow loss during pod recycles.
-  - Slashed redundant LLM and tool compute costs by 35% on transient network retries.
+### 1. "Can you describe a challenging GenAI engineering project you built from scratch?"
+**STAR Response Strategy**:
+- **Situation**: Organizations face massive document fatigue where employees spend hours searching through unstructured PDF policies, financial filings, and technical specs, leading to operational friction.
+- **Task**: I architected an enterprise-grade PDF RAG Chatbot supporting multi-format ingestion, hybrid dense-sparse retrieval, real-time token streaming, and citation grounding.
+- **Action**: 
+  - Designed a FastAPI asynchronous backend with a recursive character chunker preserving paragraph and page semantics.
+  - Implemented Hybrid Search combining Okapi BM25 for domain-specific acronyms and Dense Vector embeddings for semantic similarity, fused via Reciprocal Rank Fusion (RRF).
+  - Built an async Server-Sent Events (SSE) streaming engine reducing Time-To-First-Token (TTFT) by over 65%.
+  - Packaged the service into a secure, multi-stage non-root Docker container with comprehensive automated pytest coverage.
+- **Result**: Reduced average answer lookup latency from minutes to under 800ms while maintaining verifiable citations and eliminating hallucinations.
 
 ---
 
-### Scenario 2: Managing Multi-Turn Context Window Saturation
+### 2. "How do you evaluate and maintain code quality and production readiness in AI systems?"
+**Key Talking Points**:
+- **Automated Testing**: Implement unit tests for chunking algorithms, similarity indexing, and API endpoints using `pytest` and `TestClient`.
+- **Latency & Reliability Guardrails**: Measure and log TTFT, total generation latency, and token throughput per request.
+- **Data Privacy & Security**: Enforce container non-root execution, input sanitization, and Pydantic validation schemas to protect against prompt injection and malicious payload uploads.
+- **CI/CD & Containerization**: Standardize deployments via Docker multi-stage builds with explicit healthcheck probes.
 
-**Question:**
-*"How do you handle multi-turn conversational agents when user sessions grow very long and risk exceeding model context limits?"*
+---
 
-**Answer (STAR Method):**
-- **Situation:** Users engaging in prolonged research sessions with our assistant were hitting token window limits, causing latency degradation, increased token bills, and prompt truncation errors.
-- **Task:** I needed to build an adaptive conversational memory system that preserved essential facts while bounding token consumption.
-- **Action:**
-  - Implemented an episodic memory compaction pipeline within our `SessionManager`.
-  - Structured memory into a 3-tier system:
-    1. Short-term verbatim buffer for the last 2 turns.
-    2. Condensed episodic fact bullet points extracted from turns 3–10.
-    3. Semantic vector search for any queries referencing older historical sessions.
-- **Result:**
-  - Reduced average prompt token volume by 62% on multi-turn sessions.
-  - Maintained 96% factual recall accuracy across 20+ turn research conversations.
+### 3. "How do you approach learning complex algorithmic concepts like Hard sliding window problems?"
+**Key Talking Points**:
+- **Identify Invariants**: For problems like Minimum Window Substring, formulate the exact condition where a window transitions from invalid to valid (`have == need`).
+- **Dry-run on Edge Cases**: Test with single-character strings, sparse matching targets, and duplicates to eliminate off-by-one errors.
+- **Optimize Space & Constants**: Transition from generic hash tables to fixed-size direct primitive arrays (e.g. `int[128]`) to minimize heap allocations in latency-critical production systems.
