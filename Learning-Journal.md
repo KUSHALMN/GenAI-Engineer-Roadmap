@@ -106,12 +106,74 @@
 
 ---
 
-## 📊 Week 2 Summary (Day 08-10)
-- **Days completed:** 10/30
-- **Projects built:** 10
-- **DSA problems solved:** 23
-- **Tech used:** Python, Java, ChromaDB, Groq, Sentence Transformers
+---
+
+### Day 23
+- **Topics:** ⚡ LLM Streaming + Async APIs, Server-Sent Events (SSE), WebSockets, TTFT Optimization, LRU Cache DSA (LeetCode 146)
+- **What I built:** Asynchronous FastAPI token streaming service with TTFT metrics, client cancellation handling, and O(1) Java LRU Cache.
+- **Key insight:** Streaming reduces perceived user latency from 6s to 400ms by pushing tokens as they are decoded.
 
 ---
 
-<!-- Copy the Day template above for each day -->
+### Day 24
+- **Topics:** 🧠 Production Prompt Engineering, Few-Shot In-Context Learning, Chain-of-Thought (CoT), Automated Metrics (BLEU, ROUGE-L, Cosine Similarity), Word Break DSA (LeetCode 139)
+- **What I built:** Versioned prompt template engine, automated quantitative evaluation harness, and Java Word Break DP/Trie solution.
+- **Key insight:** Treat prompts as software with golden regression test suites and quantitative benchmarks.
+
+---
+
+### Day 25
+- **Topics:** 📦 Structured Outputs + Pydantic V2, JSON Auto-Repair, Instructor Feedback Loop, Trapping Rain Water DSA (LeetCode 42)
+- **What I built:** Pydantic V2 validation gateway with automatic markdown fence stripping, JSON bracket healing, and Java Two-Pointer Trapping Rain Water.
+- **Key insight:** Never pass raw LLM text downstream; validate with strict schemas and feed back error traces for self-healing retries.
+
+---
+
+### Day 26
+- **Topics:** 🛡️ Error Handling + Guardrails, Input/Output Safety Filters, PII Redaction, Exponential Backoff with Jitter, Model Fallback Cascades, Merge k Sorted Lists DSA (LeetCode 23)
+- **What I built:** Multi-tier safety gateway, regex/heuristic injection blocker, full jitter backoff retry orchestrator, and Java Min-Heap Merge k Lists.
+- **Key insight:** Jitter prevents the thundering-herd retry storm during provider rate limits.
+
+---
+
+### Day 27
+- **Topics:** 🔍 LLM Observability, OpenTelemetry Distributed Spans, Latency Percentiles (p50/p95/p99), Token Accounting, Median of Two Sorted Arrays DSA (LeetCode 4)
+- **What I built:** In-memory OpenTelemetry tracer, dollar cost calculator, percentile aggregator, and Java Binary Search Partition Median algorithm.
+- **Key insight:** Mean latency hides catastrophic tail spikes; monitor p95 and real-time dollar cost attribution.
+
+---
+
+### Day 28
+- **Topics:** 🔐 GenAI Security, OWASP Top 10 for LLMs, Prompt Injection Firewall, Canary Token Tripwires, Word Ladder DSA (LeetCode 127)
+- **What I built:** Security proxy detecting delimiter spoofing, Base64 obfuscations, canary token leaks, and Java Bidirectional BFS Word Ladder.
+- **Key insight:** Canary tokens act as active tripwires detecting confidential prompt extraction before response delivery.
+
+---
+
+### Day 29
+- **Topics:** 🚀 Production RAG Optimization, Cross-Encoder Reranking, Sub-15ms Semantic Caching, RAGAS Metrics, Binary Tree Codec DSA (LeetCode 297)
+- **What I built:** Two-stage RAG pipeline, in-memory cosine semantic cache, Cross-Encoder reranker, and Java BFS Binary Tree Serializer.
+- **Key insight:** Semantic caching cuts cloud inference costs by 35% by serving recurring queries without calling LLMs.
+
+---
+
+### Day 30
+- **Topics:** 🏗️ GenAI System Design, Multi-Tenant Architecture, Dual Token Bucket Rate Limiting (RPM + TPM), Dynamic Model Routing, Search Autocomplete DSA (LeetCode 642)
+- **What I built:** Multi-tenant gateway with Token Bucket quotas, intent-based dynamic model router, and Java Trie Search Autocomplete system.
+- **Key insight:** Restricting both requests (RPM) and token volume (TPM) is mandatory to prevent tenant exhaustion.
+
+---
+
+### Day 31
+- **Topics:** 🏆 GenAI Capstone + FAANG Interview Playbook, LFU Cache DSA (LeetCode 460)
+- **What I built:** **Enterprise Autonomous Support Copilot** unifying all 8 architectural pillars, master 50-question FAANG interview guide, and O(1) Java LFU Cache.
+- **Key insight:** Month 01 complete! Built full production-ready, observable, secure, and optimized GenAI infrastructure.
+
+---
+
+## 📊 Month 01 Final Summary (Days 01–31)
+- **Days completed:** 31/31 (100% COMPLETE! 🏆)
+- **Production Projects Built:** 25+
+- **DSA Problems Solved (Java):** 40+ LeetCode Medium & Hard problems
+- **Core Stacks Mastered:** Python (FastAPI, asyncio, Pydantic V2, LangChain, LangGraph), Java, PostgreSQL, ChromaDB, Redis, OpenTelemetry, Docker.
+

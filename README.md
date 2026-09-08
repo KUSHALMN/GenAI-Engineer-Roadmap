@@ -36,20 +36,22 @@ Day-XX/
 
 ## ✅ Progress Tracker
 
-### Month 01 — Foundations
-| Day | Topics | Status |
-|-----|--------|--------|
-| Day-01 | AI/ML Basics, Python OOP, Groq Chatbot, HashMap DSA | ✅ Done |
-| Day-02 | NLP, Embeddings, ChromaDB, Two Pointers DSA | ✅ Done |
-| Day-03 | RAG Pipeline, Chunking, PDF Search, Binary Search DSA | ✅ Done |
-| Day-04 | Prompt Engineering, Q&A Bot, Binary Search DSA | ✅ Done |
-| Day-05 | FastAPI, REST APIs, AI Chat API, Rotated Array DSA | ✅ Done |
-| Day-06 | SQL Basics, PostgreSQL, Python CRUD, HashMap DSA | ✅ Done |
-| Day-07 | PDF RAG Chatbot, Python Decorators, Interview Prep, DSA | ✅ Done |
-| Day-08 | Modular RAG Chatbot, Binary Search DSA, Interview Prep | ✅ Done |
-| Day-09 | Full RAG Pipeline, Two Pointers DSA, Interview Prep | ✅ Done |
-| Day-10 | Chain Architecture RAG, Stack DSA, Interview Prep | ✅ Done |
-| Day-11 to Day-30 | Coming Soon... | 🔜 |
+### Month 01 — Foundations & Production GenAI
+| Day | Topics | Deliverables & DSA | Status |
+|-----|--------|-------------------|--------|
+| Day 01-07 | Python OOP, Groq, ChromaDB, RAG, FastAPI, SQL | Full RAG & Database Foundation | ✅ Done |
+| Day 08-14 | Modular RAG, LangChain, Ingestion & Splitting | Monotonic Stack & Sliding Window | ✅ Done |
+| Day 15-21 | Hybrid Search, Agents, StateGraph Workflows | Advanced Graph Algorithms | ✅ Done |
+| Day 22 | Enterprise PDF RAG, SSE Streaming & RRF Fusion | Hard Sliding Window (LC 76) | ✅ Done |
+| Day 23 | ⚡ LLM Streaming + Async APIs | FastAPI Streaming API & LRU Cache (LC 146) | ✅ Done |
+| Day 24 | 🧠 Production Prompt Engineering | Templates + Evals & Word Break (LC 139) | ✅ Done |
+| Day 25 | 📦 Structured Outputs + Pydantic | JSON Repair & Trapping Rain Water (LC 42) | ✅ Done |
+| Day 26 | 🛡️ Error Handling + Guardrails | Safety Gateway & Merge k Lists (LC 23) | ✅ Done |
+| Day 27 | 🔍 LLM Observability | Tracing, Percentiles & Median 2 Arrays (LC 4) | ✅ Done |
+| Day 28 | 🔐 GenAI Security | Injection Firewall & Word Ladder (LC 127) | ✅ Done |
+| Day 29 | 🚀 Production RAG Optimization | Reranking, Cache & Tree Codec (LC 297) | ✅ Done |
+| Day 30 | 🏗️ GenAI System Design | Token Bucket Gateway & Autocomplete (LC 642) | ✅ Done |
+| Day 31 | 🏆 GenAI Capstone + FAANG Interview Playbook | Enterprise Support Copilot & LFU Cache (LC 460) | ✅ Done |
 
 ---
 
