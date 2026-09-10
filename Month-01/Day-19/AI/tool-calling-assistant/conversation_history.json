@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp": "2026-08-18 10:15:00",
+    "session_id": "sess_001",
+    "topic": "Python Generators and Iterators",
+    "summary": "User learned about yield expressions, memory profiling of iterators, and custom itertools.",
+    "keywords": [
+      "python",
+      "generators",
+      "yield",
+      "memory",
+      "iterators"
+    ]
+  },
+  {
+    "timestamp": "2026-08-19 14:30:00",
+    "session_id": "sess_002",
+    "topic": "Heap and Priority Queue DSA",
+    "summary": "Discussed min-heap vs max-heap mechanics, Top-K elements, and Java PriorityQueue custom comparators.",
+    "keywords": [
+      "dsa",
+      "heap",
+      "priority queue",
+      "top k",
+      "java"
+    ]
+  },
+  {
+    "timestamp": "2026-08-20 09:00:00",
+    "session_id": "sess_003",
+    "topic": "LLM Function Calling and Schemas",
+    "summary": "Exploring OpenAI-compatible tool calling conventions, tool registration, and error handling loops.",
+    "keywords": [
+      "llm",
+      "function calling",
+      "tools",
+      "schemas",
+      "agents"
+    ]
+  },
+  {
+    "timestamp": "2026-08-20 22:50:24",
+    "session_id": "sess_004",
+    "topic": "LLM Tool Calling Assistant",
+    "summary": "Implemented dynamic schema generation, OpenAI tool calling loop, and safe execution tools.",
+    "keywords": [
+      "tool calling",
+      "agents",
+      "openai",
+      "schemas"
+    ]
+  }
+]

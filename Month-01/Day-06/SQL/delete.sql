@@ -1,6 +1,6 @@
 -- Delete a specific user
 DELETE FROM users WHERE id = 1;
-
+ 
 -- Delete users older than 30
 DELETE FROM users WHERE age > 30;
 

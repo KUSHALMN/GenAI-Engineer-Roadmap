@@ -1,29 +1,31 @@
 # Month 1 - Day 12
 
 ## Topics Learned
-- JWT Authentication with FastAPI
-- Linked List DSA patterns (Reverse, Middle)
-- Modular Auth API architecture
+- Stack DSA — Valid Parentheses, Daily Temperatures, Evaluate RPN
+- Monotonic Stack pattern
+- Advanced RAG Pipeline with source_handler, retriever, prompt_builder
 
 ## DSA (Java)
-- Reverse Linked List — LeetCode #206
-- Middle of Linked List — LeetCode #876
+- Valid Parentheses — LeetCode #20
+- Daily Temperatures — LeetCode #739
+- Evaluate Reverse Polish Notation — LeetCode #150
 
 ## AI Project
-- AI Auth API (FastAPI + JWT)
-  - `config.py` — environment and settings management
-  - `models.py` — database models
-  - `database.py` — database connection setup
-  - `auth.py` — JWT authentication logic
-  - `routes.py` — API routes for auth endpoints
-  - `app.py` — FastAPI app entry point
+- PDF RAG Chatbot (Modular)
+  - `config.py` — centralized settings
+  - `source_handler.py` — PDF loading and chunking
+  - `retriever.py` — ChromaDB store and semantic search
+  - `prompt_builder.py` — context-aware prompt formatting
+  - `rag_pipeline.py` — ingest + query orchestrator
+  - `app.py` — entry point
 
 ## Interview Prep
-- technical_questions.md — JWT auth, Linked List DSA
-- coding_questions.md — Java & Python problems
+- `technical_questions.md` — Stack DSA, RAG concepts
+- `coding_questions.md` — Java & Python code patterns
+- `recruiter_questions.md` — elevator pitch, project walkthrough
 
 ## What I Learned
-Built a production-ready JWT auth API with FastAPI. Linked List problems reinforced pointer manipulation — reverse in-place and find middle using slow/fast pointers.
+Monotonic stack is the key pattern for "next greater element" problems. RAG pipeline is now fully modular — each file has a single responsibility.
 
 ---
 
@@ -32,23 +34,26 @@ Built a production-ready JWT auth API with FastAPI. Linked List problems reinfor
 ```
 Day-12/
 ├── AI/
-│   └── ai-auth-api/
+│   └── pdf-rag-chatbot/
 │       ├── app.py
-│       ├── auth.py
 │       ├── config.py
-│       ├── database.py
-│       ├── models.py
-│       ├── routes.py
+│       ├── source_handler.py
+│       ├── retriever.py
+│       ├── prompt_builder.py
+│       ├── rag_pipeline.py
 │       ├── requirements.txt
 │       └── README.md
 ├── DSA/
-│   ├── reverse_linked_list.java
-│   └── middle_of_linked_list.java
+│   ├── valid_parentheses.java
+│   ├── daily_temperatures.java
+│   └── evaluate_rpn.java
 ├── Interview/
 │   ├── technical_questions.md
-│   └── coding_questions.md
+│   ├── coding_questions.md
+│   └── recruiter_questions.md
 ├── Notes/
-│   └── notes.md
+│   └── day12_notes.md
+├── Resources.md
 └── README.md
 ```
 
@@ -56,14 +61,15 @@ Day-12/
 
 **DSA (Java):**
 ```bash
-javac DSA/reverse_linked_list.java && java -cp DSA reverse_linked_list
-javac DSA/middle_of_linked_list.java && java -cp DSA middle_of_linked_list
+javac DSA/valid_parentheses.java && java -cp DSA valid_parentheses
+javac DSA/daily_temperatures.java && java -cp DSA daily_temperatures
+javac DSA/evaluate_rpn.java && java -cp DSA evaluate_rpn
 ```
 
-**AI Auth API:**
+**PDF RAG Chatbot:**
 ```bash
-cd AI/ai-auth-api
+cd AI/pdf-rag-chatbot
 pip install -r requirements.txt
-# Add .env with SECRET_KEY and DATABASE_URL
+# Add .env with GROQ_API_KEY and place sample.pdf
 python app.py
 ```
