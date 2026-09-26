@@ -177,3 +177,146 @@
 - **DSA Problems Solved (Java):** 40+ LeetCode Medium & Hard problems
 - **Core Stacks Mastered:** Python (FastAPI, asyncio, Pydantic V2, LangChain, LangGraph), Java, PostgreSQL, ChromaDB, Redis, OpenTelemetry, Docker.
 
+---
+
+## Month 02
+
+### Day 01
+- **Topics:** Advanced Agent Foundations, Multi-Tool Agent, Groq LLaMA 3, Coin Change DSA (Java)
+- **What I built:** Agent with Search, Calculator, and Weather tools, and Java Coin Change DP.
+- **Key insight:** ReAct pattern enables models to autonomously plan, execute tools, and synthesize results.
+
+---
+
+### Day 02
+- **Topics:** FastAPI JWT Security, Docker Containerization, Climbing Stairs DSA (Java)
+- **What I built:** Containerized JWT authentication microservice and O(1) space Climbing Stairs DP in Java.
+- **Key insight:** Multi-stage Docker builds reduce image size and enhance container attack surface security.
+
+---
+
+### Day 03
+- **Topics:** LangChain Tool Calling, Pydantic Schemas, House Robber DSA (Java)
+- **What I built:** Native JSON schema tool calling agent with AST-safe expression eval and House Robber I & II DP in Java.
+- **Key insight:** Native tool schemas eliminate regex parsing fragility inherent in naive text-based agent loops.
+
+---
+
+### Day 04
+- **Topics:** LLM Caching, Deterministic Hashing, TTL Cache, LRU Cache from scratch (Python & Java)
+- **What I built:** In-memory LLM response cache with SHA-256 key normalization, savings telemetry, and LeetCode 146 LRU Cache from scratch.
+- **Key insight:** Deterministic key canonicalization (whitespace strip, sorted JSON keys) is crucial to avoid spurious cache misses.
+
+---
+
+### Day 05
+- **Topics:** LLM Evaluation, RAG Triad, Pairwise LLM-as-a-Judge, Two Pointers DSA (Python & Java)
+- **What I built:** Golden evaluation dataset, rule-based token F1 evaluator, RAG Triad (faithfulness/groundedness), and position-bias mitigated LLM Judge.
+- **Key insight:** Swapping candidate presentation order ($A \text{ vs } B$ and $B \text{ vs } A$) is mandatory to eliminate position bias.
+
+---
+
+### Day 06
+- **Topics:** LLM Observability, Structured JSON Logging, Latency Tracking (TTFT/ITL), Sliding Window DSA (Python & Java)
+- **What I built:** JSON logging with contextvars trace propagation, fine-grained span tracker, and Sliding Window algorithms (LC 3, 209, 643).
+- **Key insight:** Tracking Time To First Token (TTFT) and Inter-Token Latency (ITL) separates compute-bound prefill from memory-bound decoding.
+
+---
+
+### Day 07
+- **Topics:** Production Reliability, Exponential Backoff, Rate Limiting, Monotonic Stack DSA (Python & Java)
+- **What I built:** Exponential backoff with full jitter, thread-safe Token Bucket rate limiter, multi-provider fallback client, and Daily Temperatures (LC 739).
+- **Key insight:** Full jitter prevents thundering herd synchronization during upstream provider recovery.
+
+---
+
+### Day 08
+- **Topics:** GenAI Security, Prompt Injection Testing, Tool Permissions, Binary Search DSA (Python & Java)
+- **What I built:** Automated injection test runner, XML delimiter framing, RBAC tool permissions, secret output scanner, and Rotated Binary Search (LC 33).
+- **Key insight:** Defense-in-depth requires isolating context via strict XML frames and enforcing least-privilege tool execution.
+
+---
+
+### Day 09
+- **Topics:** Guardrails, PII Masking, HITL Tool Approvals, Linked List DSA (Python & Java)
+- **What I built:** Input guardrail policy engine, reversible PII pseudonymization, Human-in-the-Loop tool approvals, and Linked List operations.
+- **Key insight:** Reversible pseudonymization enables sending sanitized text to public models while restoring true entities locally.
+
+---
+
+### Day 10
+- **Topics:** Structured Outputs, Pydantic Reflection Retry, Tool Calling, Binary Tree Traversals (Python & Java)
+- **What I built:** Pydantic response models, reflection retry on validation failure, safe tool dispatcher, and Tree BFS/DFS (LC 102, 104, 226).
+- **Key insight:** Feeding exact Pydantic ValidationError text back into model prompts enables reliable self-correction.
+
+---
+
+### Day 11
+- **Topics:** Agent Architectures, ReAct Loop, Workflows vs Agents, BST Operations (Python & Java)
+- **What I built:** Deterministic sequential workflow, intent router, ReAct agent loop with max iteration bounds, and BST operations (LC 700, 701, 450, 98, 235).
+- **Key insight:** Use deterministic DAGs for strict latency/cost SLAs and reserve autonomous agents for open-ended research.
+
+---
+
+### Day 12
+- **Topics:** Model Context Protocol (MCP), JSON-RPC 2.0, Tool Discovery, Heaps DSA (Python & Java)
+- **What I built:** Minimal MCP tool server exposing telemetry and calculator, discovery client, and Priority Queue patterns (LC 215, 347, 23).
+- **Key insight:** Standardized JSON-RPC tool contracts decouple agent brains from tool execution environments.
+
+---
+
+### Day 13
+- **Topics:** Context Engineering, Hierarchical Auto-Summarization, Episodic Memory, Intervals DSA (Python & Java)
+- **What I built:** Conversation buffer, auto-summarization of older turns, long-term memory store with Last-Write-Wins, and Merge Intervals (LC 56, 57, 253).
+- **Key insight:** Hierarchical memory compression preserves critical context while enforcing strict token budget ceilings.
+
+---
+
+### Day 14
+- **Topics:** Advanced RAG, HyDE, Hybrid Search (BM25 + Dense RRF), Cross-Encoder Reranking, Graph BFS/DFS (Python & Java)
+- **What I built:** HyDE query rewriter, Reciprocal Rank Fusion hybrid retriever, contextual reranker, and Graph algorithms (LC 200, 207).
+- **Key insight:** Reciprocal Rank Fusion combines the precision of keyword search with the conceptual recall of dense embeddings.
+
+---
+
+### Day 15
+- **Topics:** Multimodal GenAI, Document OCR Layouts, Vision Prompts, Topological Sort (Python & Java)
+- **What I built:** OCR text & bounding box extractor, multimodal prompt flow, image token estimator, and Topological Sort (LC 210).
+- **Key insight:** 512x512 tile patching dictates vision model token pricing; downscaling high-res documents saves thousands in API costs.
+
+---
+
+### Day 16
+- **Topics:** GenAI Data Engineering, JSONL Validation, Deduplication, Disjoint Set Union (Python & Java)
+- **What I built:** Text cleaning pipeline, JSONL validator, exact SHA-256 + fuzzy Jaccard deduplication, and Union-Find (LC 547, 684).
+- **Key insight:** High-quality deduplication and filtering directly improve fine-tuning convergence speed and eliminate regurgitation.
+
+---
+
+### Day 17
+- **Topics:** Advanced Inference Optimization, Continuous Batching, KV Cache Sizing, Backtracking DSA (Python & Java)
+- **What I built:** Latency tracker, streaming TTFT benchmark, dynamic batching simulator, and Backtracking algorithms (LC 78, 46, 51).
+- **Key insight:** Autoregressive decoding is memory-bandwidth bound; PagedAttention and GQA eliminate KV cache memory fragmentation.
+
+---
+
+### Day 18
+- **Topics:** Model Routing & Adaptation, Fallback Chains, 1D Dynamic Programming (Python & Java)
+- **What I built:** Small vs Large model complexity router, multi-provider fallback router, adaptation decision matrix, and 1D DP (LC 70, 198, 322).
+- **Key insight:** Routing 60% of simple tasks to 8B models cuts inference costs by 50% while maintaining frontier intelligence for complex queries.
+
+---
+
+### Day 19
+- **Topics:** GenAI System Design, LLMOps, Architecture Diagrams, SLOs, 2D DP & Trie (Python & Java)
+- **What I built:** Production RAG and Agent system design specifications, Draw.io architecture diagram, quantitative SLIs/SLOs, and 2D DP (Knapsack, LC 1143, LC 208).
+- **Key insight:** Production architectures require clear defense-in-depth: API gateway, semantic caching, guardrails, and model fallbacks.
+
+---
+
+### Day 20
+- **Topics:** FAANG GenAI Interview Playbook, Production Capstone Service, Java DSA Masterclass
+- **What I built:** Enterprise FastAPI Capstone service with Auth, Caching, RAG, and Security, Dockerfile, FAANG interview Q&A, and Java DSA Masterclass.
+- **Key insight:** Month 02 Days 04 to 20 complete! Fully prepared for Staff/Senior GenAI Engineer production systems and technical interviews.
+
+
