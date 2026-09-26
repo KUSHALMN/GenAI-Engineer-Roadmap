@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2026-09-26T22:00:00.000Z" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="production-genai-arch" name="Production GenAI Architecture">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Client -->
+        <mxCell id="client" value="Client Application&#xa;(Web / Mobile / IDE)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="160" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- API Gateway -->
+        <mxCell id="gateway" value="API Gateway (Envoy)&#xa;Rate Limiting &amp; Auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="240" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="client" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Guardrail -->
+        <mxCell id="guardrail" value="Security &amp; Guardrails&#xa;Prompt Injection &amp; PII" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="240" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gateway" target="guardrail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Cache -->
+        <mxCell id="cache" value="Semantic &amp; Exact Cache&#xa;(Redis / Momento)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="670" y="100" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="guardrail" target="cache">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Hybrid RAG -->
+        <mxCell id="rag" value="Hybrid Retrieval &amp; Reranker&#xa;(OpenSearch + Qdrant)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="670" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="guardrail" target="rag">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Model Gateway -->
+        <mxCell id="model_gw" value="Model Gateway &amp; Router&#xa;(Fallback + Load Balancer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="900" y="240" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rag" target="model_gw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Observability -->
+        <mxCell id="observability" value="LLMOps &amp; Observability&#xa;(Prometheus + OpenTelemetry)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="guardrail" target="observability">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
