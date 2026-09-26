@@ -9,7 +9,7 @@
 ```
 GenAI-Engineer-Roadmap/
 ├── Month-01/  ← Foundations (Git, Python, GenAI Basics, RAG, FastAPI)
-├── Month-02/  ← Production AI (LangChain, Agents, Docker, JWT)
+├── Month-02/  ← Production AI & Systems (Caching, Evals, Security, Agents, MCP, Advanced RAG, Multimodal, Capstone)
 ├── Month-03/  ← Advanced AI Engineering (LangGraph, Hybrid Search, CI/CD)
 ├── Month-04/  ← [Coming Soon]
 ├── Month-05/  ← [Coming Soon]
@@ -23,13 +23,13 @@ GenAI-Engineer-Roadmap/
 └── Learning-Journal.md
 ```
 
-Each Month contains **30 Days**, each Day has:
+Each Month contains daily curriculums with:
 ```
 Day-XX/
-├── Notes/     → notes.md
-├── Python/    → practice scripts
-├── DSA/       → LeetCode solutions
-└── AI/        → AI project files
+├── Notes/     → notes.md / markdown technical deep-dives
+├── Python/    → production scripts, modules & services
+├── DSA/       → LeetCode & DSA implementations in Python & Java
+└── AI/        → AI pipeline, server, and evaluator implementations
 ```
 
 ---
@@ -53,6 +53,28 @@ Day-XX/
 | Day 30 | 🏗️ GenAI System Design | Token Bucket Gateway & Autocomplete (LC 642) | ✅ Done |
 | Day 31 | 🏆 GenAI Capstone + FAANG Interview Playbook | Enterprise Support Copilot & LFU Cache (LC 460) | ✅ Done |
 
+### Month 02 — Production AI Systems, Guardrails & Capstone
+| Day | Topics | Key Deliverables & Algorithms | Status |
+|-----|--------|------------------------------|--------|
+| Day 01-03 | LangChain, ChromaDB, Pinecone | Hybrid Search & Linked List Fundamentals | ✅ Done |
+| Day 04 | LLM Caching & Cost Optimization | In-Memory TTL Cache, SHA256 Keying, LRU Cache & Frequency Counter | ✅ Done |
+| Day 05 | LLM Evaluation & Testing | Rule-based, RAG Triad (Relevance/Faithfulness), LLM Judge, Two Pointers | ✅ Done |
+| Day 06 | LLM Observability & Debugging | Structured Logging, Latency Tracker, Middleware, Sliding Window | ✅ Done |
+| Day 07 | Production Reliability | Exponential Backoff Retry, Rate Limiter, Resilient LLM, Monotonic Stacks | ✅ Done |
+| Day 08 | GenAI Security | Injection Test Suite, Tool Permissions, Sanitizer, Binary Search Patterns | ✅ Done |
+| Day 09 | Guardrails & Safe AI Execution | Input/Output Guardrails, PII Masking, Human-in-the-Loop, Linked Lists | ✅ Done |
+| Day 10 | Structured Outputs & Tool Calling | Pydantic Schema Validation, Function Schemas, Binary Tree Traversals | ✅ Done |
+| Day 11 | Agent Architecture | Sequential Workflow, Intent Router, ReAct Loop, BST Operations & LCA | ✅ Done |
+| Day 12 | Model Context Protocol (MCP) | JSON-RPC 2.0 MCP Server/Client, Calculator Tool, Priority Queues/Heaps | ✅ Done |
+| Day 13 | Context Engineering & Memory | Conversation State, Summary Memory, Episodic RAG, Interval Patterns | ✅ Done |
+| Day 14 | Advanced RAG | Multi-Query Rewriter, Hybrid BM25/Vector RAG, Reranker, Graph Patterns | ✅ Done |
+| Day 15 | Multimodal GenAI | Document OCR/Visual Pipeline, Cross-Modal RAG, Topological Sort | ✅ Done |
+| Day 16 | GenAI Data Engineering | Cleaning Pipeline, JSONL Validator, Deduplication, Union-Find (DSU) | ✅ Done |
+| Day 17 | Advanced Inference Optimization | Latency Profiling (TTFT/tok/s), Quantization Benchmarks, Backtracking | ✅ Done |
+| Day 18 | Model Routing & Adaptation | Cost/Latency Classifier, Fallback Router, 1D Dynamic Programming | ✅ Done |
+| Day 19 | GenAI System Design & LLMOps | Distributed RAG/Agent Architecture, SLOs, Failure Modes, 2D DP & Trie | ✅ Done |
+| Day 20 | FAANG GenAI Interview & Capstone | Enterprise Support Agent Platform, Docker, Evals, Interview QA, Capstone DSA | ✅ Done |
+
 ---
 
 ## 🗓️ Monthly Overview
@@ -60,7 +82,7 @@ Day-XX/
 | Month | Theme | Key Topics |
 |-------|-------|------------|
 | 01 | Foundations | Git, Python, GenAI, RAG, FastAPI, SQL |
-| 02 | Production AI | LangChain, Agents, Docker, JWT, Redis |
+| 02 | Production AI | Caching, Evals, Security, Agents, MCP, Advanced RAG, System Design, Capstone |
 | 03 | Advanced AI | LangGraph, Hybrid Search, CI/CD, DP |
 | 04-09 | TBD | Advanced topics |
 
@@ -68,17 +90,17 @@ Day-XX/
 
 ## 🧩 DSA Progress
 
-Solving LeetCode problems daily in Java covering:
+Solving LeetCode & algorithmic patterns daily in Python and Java covering:
 - Arrays, Strings, HashMaps ✅
-- Binary Search ✅
-- Two Pointers, Sliding Window ✅
-- Linked Lists, Stacks, Queues 🔜
-- Trees, Graphs 🔜
-- Dynamic Programming, Heaps 🔜
+- Binary Search & Rotated Search ✅
+- Two Pointers & Sliding Window ✅
+- Linked Lists, Stacks, Queues & Monotonic Stacks ✅
+- Trees, Binary Search Trees & Heaps/Priority Queues ✅
+- Graphs (BFS/DFS, Topological Sort, DSU) ✅
+- Backtracking & Combinatorial Search ✅
+- Dynamic Programming (1D & 2D) ✅
 
-**Total problems solved: 23**
-
-- Stacks ✅
+**Total problems solved across Month 01 & Month 02: 60+ core algorithmic patterns with comprehensive test suites.**
 
 ---
 
@@ -86,14 +108,13 @@ Solving LeetCode problems daily in Java covering:
 
 | Tool | Purpose |
 |------|---------|
-| Python 3.10+ | Core language |
-| Java | DSA problems |
-| LangChain / LangGraph | AI orchestration |
-| FastAPI | API development |
-| Docker | Containerization |
-| PostgreSQL + Redis | Databases |
-| Groq / OpenAI API | LLM providers |
-| GitHub Actions | CI/CD |
+| Python 3.10+ | Core GenAI development & service engineering |
+| Java 17+ / 25 | DSA algorithms, patterns & unit test harnesses |
+| FastAPI & Pydantic | High-performance API endpoints and structured validation |
+| LangChain / LangGraph | LLM orchestration and workflow state machines |
+| ChromaDB / Vector Stores | Vector storage, embeddings & hybrid search |
+| Docker & Docker Compose | Containerized microservice deployment |
+| JSON-RPC 2.0 / MCP | Model Context Protocol client-server architecture |
 
 ---
 
@@ -101,6 +122,7 @@ Solving LeetCode problems daily in Java covering:
 
 - Never commit `.env` files
 - All API keys stored in `.env` (gitignored)
+- Input/output security guardrails and prompt-injection firewalls
 
 ---
 
