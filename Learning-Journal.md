@@ -320,3 +320,37 @@
 - **Key insight:** Month 02 Days 04 to 20 complete! Fully prepared for Staff/Senior GenAI Engineer production systems and technical interviews.
 
 
+
+---
+
+## Month 02 — New Entries (Days 01–03)
+
+### Day 32 (Month 02 - Day 01)
+- **Topics:** LLM Fine-Tuning + LoRA/PEFT, Dataset Preparation, Training Loop, BLEU/F1 Evaluation, Coin Change DP (LC 322)
+- **What I built:** Full fine-tuning pipeline — `prepare_dataset.py` (Alpaca-format JSONL), `train.py` (LoRA loop), `evaluate.py` (BLEU-1, Keyword F1, Exact Match), and Java Coin Change bottom-up DP.
+- **Key insight:** LoRA trains only ~0.06% of model parameters by injecting low-rank matrices `ΔW = BA` — 10-100x memory savings vs full fine-tuning with minimal quality loss.
+- **DSA insight:** Coin Change = unbounded knapsack DP. Greedy fails on non-canonical coin sets — always use `dp[i] = min(dp[i-coin]+1)`.
+
+---
+
+### Day 33 (Month 02 - Day 02)
+- **Topics:** Docker + JWT Authentication, FastAPI OAuth2, Bcrypt, Token Expiry, Climbing Stairs DP (LC 70)
+- **What I built:** Production FastAPI JWT auth service with `/auth/token`, `/me`, `/protected` endpoints, Dockerfile, docker-compose, 8 unit tests, and Java Climbing Stairs O(1) space DP.
+- **Key insight:** Always pass `algorithms=["HS256"]` explicitly to `jwt.decode()` — prevents the `alg: none` attack where attacker strips signature verification.
+- **DSA insight:** Climbing Stairs = Fibonacci DP. `dp[i] = dp[i-1] + dp[i-2]`. Space-optimize to two variables. Generalizes to k-steps with inner loop.
+
+---
+
+### Day 34 (Month 02 - Day 03)
+- **Topics:** LangChain Tool-Calling Agents, ReAct Pattern, Safe AST Eval, Pydantic Tool Schemas, House Robber DP (LC 198 + 213)
+- **What I built:** LangChain agent with 3 tools (Search, Calculator with safe AST eval, Weather), FastAPI endpoint, 9 unit tests, benchmark analysis, and Java House Robber I + II O(1) space DP.
+- **Key insight:** Native JSON schema tool calling (LangChain `create_tool_calling_agent`) is far more reliable than text-based ReAct parsing — no regex fragility, structured tool inputs enforced by Pydantic.
+- **DSA insight:** House Robber II (circular) = run linear robber twice on `[0, n-2]` and `[1, n-1]`, take max. Breaking the circle by excluding one endpoint reduces it to the linear problem.
+
+---
+
+## 📊 Month 02 Running Summary (Days 01–03)
+- **Days completed:** 3 new days added (Day 01, 02, 03)
+- **Python AI Projects:** Fine-tuning pipeline, JWT auth API, LangChain agent
+- **Java DSA:** Coin Change (LC 322), Climbing Stairs (LC 70), House Robber I+II (LC 198, 213)
+- **New skills:** LoRA/PEFT, Docker, JWT security, LangChain tool calling, safe AST eval
