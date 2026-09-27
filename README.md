@@ -9,7 +9,7 @@
 ```
 GenAI-Engineer-Roadmap/
 ├── Month-01/  ← Foundations (Git, Python, GenAI Basics, RAG, FastAPI)
-├── Month-02/  ← Production AI & Systems (Caching, Evals, Security, Agents, MCP, Advanced RAG, Multimodal, Capstone)
+├── Month-02/  ← Production AI & Systems (Fine-Tuning, Docker, Agents, JWT, LangChain)
 ├── Month-03/  ← Advanced AI Engineering (LangGraph, Hybrid Search, CI/CD)
 ├── Month-04/  ← [Coming Soon]
 ├── Month-05/  ← [Coming Soon]
@@ -27,9 +27,10 @@ Each Month contains daily curriculums with:
 ```
 Day-XX/
 ├── Notes/     → notes.md / markdown technical deep-dives
-├── Python/    → production scripts, modules & services
-├── DSA/       → LeetCode & DSA implementations in Python & Java
-└── AI/        → AI pipeline, server, and evaluator implementations
+├── src/       → production scripts, modules & services
+├── DSA/       → LeetCode & DSA implementations in Java
+├── tests/     → unit & integration test suites
+└── Interview/ → technical & coding interview Q&A
 ```
 
 ---
@@ -53,10 +54,12 @@ Day-XX/
 | Day 30 | 🏗️ GenAI System Design | Token Bucket Gateway & Autocomplete (LC 642) | ✅ Done |
 | Day 31 | 🏆 GenAI Capstone + FAANG Interview Playbook | Enterprise Support Copilot & LFU Cache (LC 460) | ✅ Done |
 
-### Month 02 — Production AI Systems, Guardrails & Capstone
+### Month 02 — Production AI Systems, Docker & Fine-Tuning
 | Day | Topics | Key Deliverables & Algorithms | Status |
 |-----|--------|------------------------------|--------|
-| Day 01-03 | LangChain, ChromaDB, Pinecone | Hybrid Search & Linked List Fundamentals | ✅ Done |
+| Day 01 | 🎯 LLM Fine-Tuning + LoRA | Dataset Prep, LoRA Training Loop, BLEU/F1 Eval & Coin Change (LC 322) | ✅ Done |
+| Day 02 | 🐳 Docker + JWT Authentication | FastAPI JWT Auth, Docker + Compose, Climbing Stairs (LC 70) | ✅ Done |
+| Day 03 | 🤖 LangChain Agents + Tool Use | ReAct Agent, Search/Calc/Weather Tools, FastAPI & House Robber (LC 198 + 213) | ✅ Done |
 | Day 04 | LLM Caching & Cost Optimization | In-Memory TTL Cache, SHA256 Keying, LRU Cache & Frequency Counter | ✅ Done |
 | Day 05 | LLM Evaluation & Testing | Rule-based, RAG Triad (Relevance/Faithfulness), LLM Judge, Two Pointers | ✅ Done |
 | Day 06 | LLM Observability & Debugging | Structured Logging, Latency Tracker, Middleware, Sliding Window | ✅ Done |
@@ -82,7 +85,7 @@ Day-XX/
 | Month | Theme | Key Topics |
 |-------|-------|------------|
 | 01 | Foundations | Git, Python, GenAI, RAG, FastAPI, SQL |
-| 02 | Production AI | Caching, Evals, Security, Agents, MCP, Advanced RAG, System Design, Capstone |
+| 02 | Production AI | Fine-Tuning, LoRA, Docker, JWT, Agents, MCP, Advanced RAG, System Design |
 | 03 | Advanced AI | LangGraph, Hybrid Search, CI/CD, DP |
 | 04-09 | TBD | Advanced topics |
 
@@ -90,7 +93,7 @@ Day-XX/
 
 ## 🧩 DSA Progress
 
-Solving LeetCode & algorithmic patterns daily in Python and Java covering:
+Solving LeetCode & algorithmic patterns daily in Java covering:
 - Arrays, Strings, HashMaps ✅
 - Binary Search & Rotated Search ✅
 - Two Pointers & Sliding Window ✅
@@ -99,8 +102,23 @@ Solving LeetCode & algorithmic patterns daily in Python and Java covering:
 - Graphs (BFS/DFS, Topological Sort, DSU) ✅
 - Backtracking & Combinatorial Search ✅
 - Dynamic Programming (1D & 2D) ✅
+  - Coin Change (LC 322) — Unbounded Knapsack ✅
+  - Climbing Stairs (LC 70) — Fibonacci DP ✅
+  - House Robber (LC 198 + 213) — Skip-Adjacent DP ✅
 
-**Total problems solved across Month 01 & Month 02: 60+ core algorithmic patterns with comprehensive test suites.**
+**Total problems solved across Month 01 & Month 02: 65+ core algorithmic patterns with comprehensive test suites.**
+
+---
+
+## 🏗️ Major Projects
+
+| Project | Stack | Status |
+|---------|-------|--------|
+| PDF RAG Chatbot | FastAPI, ChromaDB, LangChain, Docker | ✅ Done |
+| Enterprise Support Copilot | FastAPI, SSE, RAG, Guardrails | ✅ Done |
+| LangChain Tool-Calling Agent | FastAPI, LangChain, Groq, Pydantic | ✅ Done |
+| JWT Auth API | FastAPI, JWT, Docker, Bcrypt | ✅ Done |
+| LLM Fine-Tuning Pipeline | Python, LoRA, PEFT, BLEU/F1 Eval | ✅ Done |
 
 ---
 
@@ -109,12 +127,15 @@ Solving LeetCode & algorithmic patterns daily in Python and Java covering:
 | Tool | Purpose |
 |------|---------|
 | Python 3.10+ | Core GenAI development & service engineering |
-| Java 17+ / 25 | DSA algorithms, patterns & unit test harnesses |
+| Java 17+ | DSA algorithms, patterns & unit test harnesses |
 | FastAPI & Pydantic | High-performance API endpoints and structured validation |
 | LangChain / LangGraph | LLM orchestration and workflow state machines |
 | ChromaDB / Vector Stores | Vector storage, embeddings & hybrid search |
 | Docker & Docker Compose | Containerized microservice deployment |
+| JWT / OAuth2 | API authentication & authorization |
+| LoRA / PEFT | Parameter-efficient LLM fine-tuning |
 | JSON-RPC 2.0 / MCP | Model Context Protocol client-server architecture |
+| Groq API | Ultra-fast LLM inference (LPU hardware) |
 
 ---
 
@@ -123,6 +144,8 @@ Solving LeetCode & algorithmic patterns daily in Python and Java covering:
 - Never commit `.env` files
 - All API keys stored in `.env` (gitignored)
 - Input/output security guardrails and prompt-injection firewalls
+- JWT with short TTL, blocklist-based revocation
+- Safe AST eval — no raw `eval()` in production tools
 
 ---
 
