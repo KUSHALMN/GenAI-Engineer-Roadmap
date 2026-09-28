@@ -1,115 +1,89 @@
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * LeetCode 146 - LRU Cache
- * Topic: Hash Table, Doubly-Linked List, Design
+ * Topic: Doubly Linked List + HashMap — O(1) get & put
  *
- * Problem: Design a data structure that follows the constraints of a
- * Least Recently Used (LRU) cache. Implement get(key) and put(key, value) in O(1).
+ * Design: HashMap<key, Node> for O(1) lookup.
+ *         Doubly linked list maintains LRU order.
+ *         head.next = most recently used
+ *         tail.prev = least recently used
  *
- * Approach:
- *   - Use a HashMap<Integer, Node> for O(1) key-to-node lookup.
- *   - Use a Doubly Linked List with dummy head and tail to maintain access order in O(1).
- *   - Most recently used nodes are placed near head.
- *   - Least recently used nodes are near tail.
- *
- * Time Complexity:  O(1) for both get and put
- * Space Complexity: O(capacity)
+ * Time:  O(1) get and put
+ * Space: O(capacity)
  */
 public class LRUCache {
 
     private static class Node {
-        int key;
-        int value;
-        Node prev;
-        Node next;
-
-        Node() {}
-        Node(int key, int value) {
-            this.key = key;
-            this.value = value;
-        }
+        int key, val;
+        Node prev, next;
+        Node(int k, int v) { key = k; val = v; }
     }
 
     private final int capacity;
-    private final Map<Integer, Node> cache;
-    private final Node head;
-    private final Node tail;
+    private final HashMap<Integer, Node> map;
+    private final Node head, tail; // sentinels
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        this.cache = new HashMap<>();
-        this.head = new Node();
-        this.tail = new Node();
+        this.map = new HashMap<>();
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
         head.next = tail;
         tail.prev = head;
     }
 
-    private void addNode(Node node) {
-        node.prev = head;
+    public int get(int key) {
+        if (!map.containsKey(key)) return -1;
+        Node node = map.get(key);
+        moveToFront(node);
+        return node.val;
+    }
+
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
+            Node node = map.get(key);
+            node.val = value;
+            moveToFront(node);
+        } else {
+            if (map.size() == capacity) {
+                Node lru = tail.prev;
+                remove(lru);
+                map.remove(lru.key);
+            }
+            Node node = new Node(key, value);
+            insertFront(node);
+            map.put(key, node);
+        }
+    }
+
+    private void remove(Node node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+
+    private void insertFront(Node node) {
         node.next = head.next;
+        node.prev = head;
         head.next.prev = node;
         head.next = node;
     }
 
-    private void removeNode(Node node) {
-        Node prevNode = node.prev;
-        Node nextNode = node.next;
-        prevNode.next = nextNode;
-        nextNode.prev = prevNode;
-    }
-
-    private void moveToHead(Node node) {
-        removeNode(node);
-        addNode(node);
-    }
-
-    private Node popTail() {
-        Node res = tail.prev;
-        removeNode(res);
-        return res;
-    }
-
-    public int get(int key) {
-        Node node = cache.get(key);
-        if (node == null) {
-            return -1;
-        }
-        moveToHead(node);
-        return node.value;
-    }
-
-    public void put(int key, int value) {
-        Node node = cache.get(key);
-        if (node != null) {
-            node.value = value;
-            moveToHead(node);
-        } else {
-            Node newNode = new Node(key, value);
-            cache.put(key, newNode);
-            addNode(newNode);
-
-            if (cache.size() > capacity) {
-                Node tailNode = popTail();
-                cache.remove(tailNode.key);
-            }
-        }
+    private void moveToFront(Node node) {
+        remove(node);
+        insertFront(node);
     }
 
     public static void main(String[] args) {
-        LRUCache lru = new LRUCache(2);
-
-        lru.put(1, 1); // cache is {1=1}
-        lru.put(2, 2); // cache is {1=1, 2=2}
-        System.out.println("get(1): " + lru.get(1)); // return 1
-
-        lru.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
-        System.out.println("get(2): " + lru.get(2)); // return -1 (not found)
-
-        lru.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
-        System.out.println("get(1): " + lru.get(1)); // return -1 (not found)
-        System.out.println("get(3): " + lru.get(3)); // return 3
-        System.out.println("get(4): " + lru.get(4)); // return 4
+        LRUCache cache = new LRUCache(2);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        System.out.println(cache.get(1));   // 1
+        cache.put(3, 3);                    // evicts key 2
+        System.out.println(cache.get(2));   // -1
+        cache.put(4, 4);                    // evicts key 1
+        System.out.println(cache.get(1));   // -1
+        System.out.println(cache.get(3));   // 3
+        System.out.println(cache.get(4));   // 4
     }
 }
