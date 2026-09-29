@@ -1,0 +1,37 @@
+[
+  {
+    "id": "q1",
+    "question": "What is hybrid search in RAG?",
+    "context": "Hybrid search combines dense vector search with sparse BM25 keyword search. Results are merged using Reciprocal Rank Fusion (RRF) to get the best of both retrieval methods.",
+    "expected": "Hybrid search combines dense vector search and BM25 keyword search, merging results with Reciprocal Rank Fusion.",
+    "prediction": "Hybrid search combines vector similarity search with BM25 keyword matching and uses RRF to merge ranked results."
+  },
+  {
+    "id": "q2",
+    "question": "What is a reranker in RAG pipelines?",
+    "context": "A reranker is a cross-encoder model that scores query-document pairs for relevance. It is applied after initial retrieval to reorder candidates by true relevance score.",
+    "expected": "A reranker scores query-document pairs using a cross-encoder and reorders retrieved candidates by relevance.",
+    "prediction": "A reranker uses a cross-encoder to score and reorder retrieved documents based on their relevance to the query."
+  },
+  {
+    "id": "q3",
+    "question": "What is HyDE in RAG?",
+    "context": "HyDE generates a hypothetical answer to the query using an LLM, then embeds that answer to retrieve similar real documents.",
+    "expected": "HyDE generates a hypothetical answer with an LLM and uses its embedding to retrieve relevant documents.",
+    "prediction": "HyDE uses an LLM to generate a hypothetical document, then retrieves real documents similar to that embedding."
+  },
+  {
+    "id": "q4",
+    "question": "What is chunking strategy in document ingestion?",
+    "context": "Chunking splits documents into segments. Fixed-size chunking uses token counts. Semantic chunking splits on topic boundaries. Overlap preserves context across boundaries.",
+    "expected": "Chunking splits documents into fixed-size or semantic segments with overlap to preserve cross-boundary context.",
+    "prediction": "Chunking divides documents into segments using fixed token sizes or semantic boundaries, with overlap to maintain context."
+  },
+  {
+    "id": "q5",
+    "question": "What is context faithfulness in RAG evaluation?",
+    "context": "Faithfulness measures whether the generated answer is supported by the retrieved context. An answer is unfaithful if it contains claims not present in the context.",
+    "expected": "Faithfulness measures if the answer is fully supported by the retrieved context with no unsupported claims.",
+    "prediction": "Faithfulness checks whether every claim in the generated answer is grounded in the retrieved context documents."
+  }
+]
