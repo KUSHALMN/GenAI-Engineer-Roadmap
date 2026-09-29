@@ -1,0 +1,22 @@
+[
+  {
+    "id": "doc-1",
+    "title": "Low-Rank Adaptation (LoRA)",
+    "content": "LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices into each transformer layer, reducing trainable parameters by up to 10,000x and GPU memory requirements by 3x."
+  },
+  {
+    "id": "doc-2",
+    "title": "Quantized Low-Rank Adaptation (QLoRA)",
+    "content": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA), utilizing NormalFloat4 (NF4) data types and double quantization."
+  },
+  {
+    "id": "doc-3",
+    "title": "Model Context Protocol (MCP)",
+    "content": "Model Context Protocol is an open standard that enables AI models to securely connect to external tools, data sources, and services using standardized JSON-RPC client-server primitives."
+  },
+  {
+    "id": "doc-4",
+    "title": "Corrective Retrieval-Augmented Generation (CRAG)",
+    "content": "CRAG designs a retrieval evaluator to evaluate the quality of retrieved documents for an input query, triggering knowledge refinement when confident or web search when ambiguous."
+  }
+]
