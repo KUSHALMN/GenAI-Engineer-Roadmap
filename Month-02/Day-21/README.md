@@ -1,45 +1,56 @@
-# 📅 Day 21 — Month 02: LLM Evaluation Framework + Two Pointers DSA
+# 📅 Day 21 — Month 02: Enterprise LLM Evaluation Service + Two Pointers DSA
 
-> Build a complete LLM evaluation framework with Exact Match, Token F1, and LLM-as-Judge metrics. Master Two Pointers patterns (LC 167, 15, 11) in Java.
+> Build a production-grade LLM evaluation microservice featuring Lexical Metrics (Exact Match, Normalized EM, Token F1), Groq LLM-as-a-Judge, and a FastAPI service. Master Two Pointers patterns (LC 167, 15, 11) in Java.
 
 ---
 
-## 📁 Structure
+## 📁 Product Architecture
 
 ```
 Day-21/
-├── data/
-│   └── eval_dataset.json       # 5 QA samples with context + expected answers
-├── evaluation/
-│   ├── exact_match.py          # EM + Normalized EM scoring
-│   ├── keyword_match.py        # Token F1 + keyword overlap
-│   ├── llm_judge.py            # LLM-as-Judge via Groq (correctness/faithfulness/helpfulness)
-│   └── evaluator.py            # Main orchestrator — runs all metrics, saves report
-├── results/
-│   └── evaluation_report.json  # Output metrics report
+├── AI/
+│   └── llm-eval-framework/
+│       ├── app/
+│       │   ├── api.py                 # FastAPI microservice (/health, /evaluate/*)
+│       │   ├── config.py              # Settings & threshold configs
+│       │   └── runner.py              # Batch evaluation pipeline runner
+│       ├── core/
+│       │   ├── metrics.py             # Exact Match, Normalized EM, Token F1
+│       │   └── llm_judge.py           # Groq LLM-as-a-Judge with offline fallback
+│       ├── data/
+│       │   └── eval_dataset.json      # Gold reference benchmark dataset
+│       ├── tests/
+│       │   └── test_evaluator.py      # Pytest validation test suite
+│       ├── Dockerfile                 # Production Docker image
+│       ├── requirements.txt           # App dependencies
+│       └── README.md                  # Microservice documentation
 ├── DSA/
-│   └── TwoPointers.java        # LC 167 + LC 15 + LC 11 (Java)
-└── Interview/
-    └── technical_questions.md  # RAG Triad, EM limits, position bias, Two Pointers vs Sliding Window
+│   └── TwoPointers.java               # LC 167 + LC 15 + LC 11 (Java)
+├── Interview/
+│   └── technical_questions.md         # RAG Triad, EM limits, position bias
+├── Notes/
+│   └── notes.md                       # Deep-dive study notes
+└── README.md
 ```
 
 ---
 
-## 🧠 AI: LLM Evaluation
+## 🧠 AI: LLM Evaluation Microservice
 
-### Run Evaluator
+### 1. Run Unit Tests
 ```bash
-cd Month-02/Day-21/evaluation
-python evaluator.py
+python -m pytest Month-02/Day-21/AI/llm-eval-framework/tests/test_evaluator.py -v
 ```
 
-### Metrics Pipeline
-| Metric | What it measures |
-|--------|-----------------|
-| Exact Match | Character-perfect match |
-| Normalized EM | Case/punctuation-insensitive match |
-| Token F1 | Keyword overlap precision/recall |
-| LLM Judge | Correctness, faithfulness, helpfulness (1-5) |
+### 2. Run Pipeline
+```bash
+python Month-02/Day-21/AI/llm-eval-framework/app/runner.py
+```
+
+### 3. Start FastAPI Service
+```bash
+uvicorn app.api:app --app-dir Month-02/Day-21/AI/llm-eval-framework --port 8000
+```
 
 ---
 
@@ -50,13 +61,6 @@ cd Month-02/Day-21/DSA
 javac TwoPointers.java && java TwoPointers
 ```
 
-**Expected:**
-```
-[1, 2]
-[[-1, -1, 2], [-1, 0, 1]]
-49
-```
-
 ---
 
-## ✅ Status: Done
+## ✅ Status: Production Complete
