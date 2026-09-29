@@ -1,0 +1,32 @@
+[
+  {
+    "id": "q1",
+    "question": "What is RAG?",
+    "context": "RAG stands for Retrieval-Augmented Generation. It combines a retriever that fetches relevant documents with a generator LLM that produces grounded answers.",
+    "expected": "RAG stands for Retrieval-Augmented Generation. It combines retrieval with generation to produce grounded answers."
+  },
+  {
+    "id": "q2",
+    "question": "What is LoRA?",
+    "context": "LoRA (Low-Rank Adaptation) injects trainable low-rank matrices into transformer layers, enabling efficient fine-tuning with far fewer parameters.",
+    "expected": "LoRA is a parameter-efficient fine-tuning method that injects low-rank matrices into transformer layers."
+  },
+  {
+    "id": "q3",
+    "question": "What is a vector database?",
+    "context": "A vector database stores high-dimensional embeddings and supports fast approximate nearest neighbor search using algorithms like HNSW or IVF.",
+    "expected": "A vector database stores embeddings and enables fast similarity search using ANN algorithms."
+  },
+  {
+    "id": "q4",
+    "question": "What is prompt injection?",
+    "context": "Prompt injection is an attack where malicious input overrides the system prompt, causing the LLM to ignore its instructions and follow attacker commands.",
+    "expected": "Prompt injection is an attack that overrides system instructions by embedding malicious commands in user input."
+  },
+  {
+    "id": "q5",
+    "question": "What is temperature in LLMs?",
+    "context": "Temperature controls the randomness of LLM output by scaling logits before softmax. Low temperature makes output deterministic; high temperature increases creativity.",
+    "expected": "Temperature controls output randomness. Low values make output deterministic; high values increase creativity."
+  }
+]
