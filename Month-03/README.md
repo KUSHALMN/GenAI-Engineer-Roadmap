@@ -6,11 +6,11 @@
 
 ## 🗓️ Day-by-Day Plan
 
-| Day | AI/Theory Topic | DSA Topic |
-|-----|----------------|-----------|
-| 01 | LangGraph (Full State Graph) | Max Depth of Binary Tree |
-| 02 | Multi-Agent Systems | Same Tree |
-| 03 | Advanced Chunking | Invert Binary Tree |
+| Day | AI/Theory Topic | Key Deliverables | DSA (Java) | Status |
+|:---:|:----------------|:-----------------|:-----------|:------:|
+| [Day 01](Day-01/) | Context Engineering & Memory | `conversation_memory.py`, `token_budget.py`, `summarizer.py`, `context_manager.py` | DSU & Kruskal MST LC 547, 684, 1584 (`DisjointSetMST.java`) | ✅ Done |
+| [Day 02](Day-02/) | Advanced RAG & Multi-Stage Retrieval | `hybrid_search.py`, `bm25.py`, `hyde.py`, `reranker.py`, `parent_child_retrieval.py` | Advanced Backtracking LC 51, 79, 46 (`BacktrackingAdvanced.java`) | ✅ Done |
+| [Day 03](Day-03/) | Multimodal GenAI Systems | `ocr_pipeline.py`, `audio_to_text.py`, `text_to_speech.py`, `image_qa.py`, `multimodal_rag.py` | Tree DP & Knapsack LC 337, 416, 322 (`TreeKnapsackDP.java`) | ✅ Done |
 | 04 | Hybrid Search | Binary Tree Level Order Traversal |
 | 05 | Rerankers | Validate Binary Search Tree |
 | 06 | LLM Guardrails | Lowest Common Ancestor of BST |

@@ -77,6 +77,23 @@ Day-XX/
 | Day 18 | Model Routing & Adaptation | Cost/Latency Classifier, Fallback Router, 1D Dynamic Programming | ✅ Done |
 | Day 19 | GenAI System Design & LLMOps | Distributed RAG/Agent Architecture, SLOs, Failure Modes, 2D DP & Trie | ✅ Done |
 | Day 20 | FAANG GenAI Interview & Capstone | Enterprise Support Agent Platform, Docker, Evals, Interview QA, Capstone DSA | ✅ Done |
+| Day 21 | Enterprise LLM Evaluation Service | Lexical Metrics, Groq LLM-as-a-Judge, FastAPI Service & Two Pointers | ✅ Done |
+| Day 22 | Advanced RAG Triad Evaluator | Context Relevance, Faithfulness, Hallucination Detector & Sliding Window | ✅ Done |
+| Day 23 | Corrective RAG (CRAG) & Self-RAG | Document Grading, Knowledge Striping, Self-RAG Critique & LRU Cache | ✅ Done |
+| Day 24 | GenAI Observability & Tracing | Structured JSON Logging, Latency Spans, Cost Tracker & Monotonic Queue | ✅ Done |
+| Day 25 | Production Reliability & Async LLM | Exponential Backoff with Jitter, Circuit Breaker, Rate Limiter & Binary Search | ✅ Done |
+| Day 26 | GenAI Security & Injection Defense | Prompt Injection Detector, PII Scrubber, Tool Allowlist & Fast/Slow Pointers | ✅ Done |
+| Day 27 | Guardrails & Safe AI Execution | Input/Output Guardrails, Schema Validator, HITL Tools & Tree Algorithms | ✅ Done |
+| Day 28 | Structured Output & Tool Calling | Pydantic Schemas, JSON Repair, Tool Dispatcher & Trie Autocomplete | ✅ Done |
+| Day 29 | Autonomous Agents & Workflows | ReAct Loop, State Machine, Semantic Tool Selection & Advanced Heap | ✅ Done |
+| Day 30 | Model Context Protocol (MCP) | JSON-RPC 2.0 Server/Client, Tool/Resource Handlers & Graph Shortest Path | ✅ Done |
+
+### Month 03 — Advanced AI Engineering & Systems
+| Day | Topics | Key Deliverables & Algorithms | Status |
+|-----|--------|------------------------------|--------|
+| Day 01 | Context Engineering & Memory | Sliding Window, Abstractive Summarizer, Episodic Store, DSU & Kruskal MST | ✅ Done |
+| Day 02 | Advanced RAG Architecture | BM25, RRF Hybrid Search, HyDE, Reranker, Parent-Child & Backtracking | ✅ Done |
+| Day 03 | Multimodal GenAI Systems | OCR, Whisper ASR, TTS, Vision QA, Multimodal RAG & Tree Knapsack DP | ✅ Done |
 
 ---
 
