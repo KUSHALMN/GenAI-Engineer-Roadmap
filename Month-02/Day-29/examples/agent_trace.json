@@ -1,0 +1,38 @@
+{
+  "session_id": "sess_1728320400",
+  "goal": "Calculate monthly mortgage for $300,000 at 6.5% interest across 30 years",
+  "status": "COMPLETED",
+  "steps_taken": 2,
+  "trace": [
+    {
+      "step": 1,
+      "type": "thought",
+      "content": "Classified intent as FINANCIAL_MATH. Selecting calculator tool."
+    },
+    {
+      "step": 2,
+      "type": "tool_action",
+      "tool": "calculator",
+      "arguments": {
+        "principal": 300000,
+        "annual_rate": 0.065,
+        "years": 30
+      },
+      "result": {
+        "monthly_payment": 1898.30,
+        "total_payment": 683388.0,
+        "total_interest": 383388.0
+      }
+    },
+    {
+      "step": 3,
+      "type": "final_synthesis",
+      "answer": "Your monthly mortgage payment will be $1,898.30. Over 30 years, total payments will equal $683,388."
+    }
+  ],
+  "metrics": {
+    "total_latency_ms": 340.2,
+    "tokens_consumed": 184,
+    "cost_usd": 0.00014
+  }
+}
