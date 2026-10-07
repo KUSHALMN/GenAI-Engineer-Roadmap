@@ -19,8 +19,6 @@ Day-28/
 │   │   └── tool_executor.py      # Real-world tool implementations
 │   └── tests/
 │       └── test_structured_output.py # Comprehensive unit test suite
-├── Java/
-│   └── TriePatterns.java         # LC 208 + LC 211 + LC 14 (Java)
 ├── DSA/
 │   └── TriePatterns.java         # Alternate DSA reference
 ├── Interview/
@@ -42,6 +40,6 @@ python Month-02/Day-28/AI/tests/test_structured_output.py
 
 ### 2. Compile & Run Java Trie Suite (in `Java/`)
 ```bash
-cd Month-02/Day-28/Java
+cd Month-02/Day-28/DSA
 javac TriePatterns.java && java TriePatterns
 ```

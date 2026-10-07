@@ -21,8 +21,6 @@ Day-02/
 │   │   └── citation_generator.py     # Attribution and source anchors
 │   └── evaluation/
 │       └── rag_comparison.py         # End-to-end pipeline benchmark runner
-├── Java/
-│   └── BacktrackingAdvanced.java     # LC 51 + LC 79 + LC 46 (Java)
 ├── DSA/
 │   └── BacktrackingAdvanced.java     # Alternate DSA reference
 ├── Interview/
@@ -44,6 +42,6 @@ python Month-03/Day-02/AI/evaluation/rag_comparison.py
 
 ### 2. Compile & Run Java Backtracking Suite (in `Java/`)
 ```bash
-cd Month-03/Day-02/Java
+cd Month-03/Day-02/DSA
 javac BacktrackingAdvanced.java && java BacktrackingAdvanced
 ```

@@ -130,8 +130,6 @@ Day-XX/
 ├── AI/                          # 🧠 Python GenAI Services, Engines & Pipelines
 │   ├── <feature_package>/       # Specialized Python package modules
 │   └── examples/ / tests/       # Test runners, verification scripts & payloads
-├── Java/                        # ☕ Java LeetCode DSA Solutions (Standalone)
-│   └── <ProblemSolution>.java   # Clean, fully compilable Java classes with main() test driver
 ├── DSA/                         # 📁 DSA Reference Copy
 │   └── <ProblemSolution>.java   
 ├── Interview/                   # 🎯 Technical Interview Prep
@@ -246,11 +244,11 @@ python Month-02/Day-24/AI/rag/observable_rag.py
 ### Running Java DSA Suites
 ```bash
 # Example: Run Month-03 Day-01 DSU & Kruskal's MST
-cd Month-03/Day-01/Java
+cd Month-03/Day-01/DSA
 javac DisjointSetMST.java && java DisjointSetMST
 
 # Example: Run Month-03 Day-02 Backtracking
-cd ../../Day-02/Java
+cd ../../Day-02/DSA
 javac BacktrackingAdvanced.java && java BacktrackingAdvanced
 ```
 

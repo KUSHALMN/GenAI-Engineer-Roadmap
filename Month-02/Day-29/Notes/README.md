@@ -17,8 +17,6 @@ Day-29/
 │   │   └── workflow.py           # Deterministic sequential workflow DAG
 │   └── examples/
 │       └── agent_trace.json      # Multi-step execution audit trace
-├── Java/
-│   └── HeapAdvancedPatterns.java # LC 23 + LC 347 + LC 295 (Java)
 ├── DSA/
 │   └── HeapAdvancedPatterns.java # Alternate DSA reference
 ├── Interview/
@@ -40,6 +38,6 @@ python Month-02/Day-29/AI/agents/agent_loop.py
 
 ### 2. Compile & Run Java Heap Suite (in `Java/`)
 ```bash
-cd Month-02/Day-29/Java
+cd Month-02/Day-29/DSA
 javac HeapAdvancedPatterns.java && java HeapAdvancedPatterns
 ```

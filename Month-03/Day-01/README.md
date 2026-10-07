@@ -17,8 +17,6 @@ Day-01/
 │   │   └── memory_retrieval.py    # Semantic relevance search over past memories
 │   └── context/
 │       └── context_manager.py     # End-to-end prompt context assembler
-├── Java/
-│   └── DisjointSetMST.java        # LC 547 + LC 684 + LC 1584 (Java)
 ├── DSA/
 │   └── DisjointSetMST.java        # Alternate DSA reference
 ├── Interview/
@@ -40,6 +38,6 @@ python Month-03/Day-01/AI/context/context_manager.py
 
 ### 2. Compile & Run Java DSU Suite (in `Java/`)
 ```bash
-cd Month-03/Day-01/Java
+cd Month-03/Day-01/DSA
 javac DisjointSetMST.java && java DisjointSetMST
 ```

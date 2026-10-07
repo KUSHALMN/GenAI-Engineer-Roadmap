@@ -20,8 +20,6 @@ Day-03/
 │   │   └── document_parser.py    # Unifies PDFs, DOCX, and Markdown into schemas
 │   └── examples/
 │       └── multimodal_demo.py    # End-to-end multi-modal pipeline verification
-├── Java/
-│   └── TreeKnapsackDP.java       # LC 337 + LC 416 + LC 322 (Java)
 ├── DSA/
 │   └── TreeKnapsackDP.java       # Alternate DSA reference
 ├── Interview/
@@ -43,6 +41,6 @@ python Month-03/Day-03/AI/examples/multimodal_demo.py
 
 ### 2. Compile & Run Java Tree DP Suite (in `Java/`)
 ```bash
-cd Month-03/Day-03/Java
+cd Month-03/Day-03/DSA
 javac TreeKnapsackDP.java && java TreeKnapsackDP
 ```

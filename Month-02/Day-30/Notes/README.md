@@ -17,8 +17,6 @@ Day-30/
 │   │   └── schemas.py            # Protocol dataclass definitions
 │   └── examples/
 │       └── mcp_tool_demo.py      # End-to-end client/server test demo
-├── Java/
-│   └── GraphShortestPath.java    # LC 743 + LC 787 (Java)
 ├── DSA/
 │   └── GraphShortestPath.java    # Alternate DSA reference
 ├── Interview/
@@ -40,6 +38,6 @@ python Month-02/Day-30/AI/examples/mcp_tool_demo.py
 
 ### 2. Compile & Run Java Graph Suite (in `Java/`)
 ```bash
-cd Month-02/Day-30/Java
+cd Month-02/Day-30/DSA
 javac GraphShortestPath.java && java GraphShortestPath
 ```

@@ -19,8 +19,6 @@ Day-24/
 │   │   └── observable_rag.py    # Fully instrumented RAG pipeline
 │   └── logs/
 │       └── sample_log.json      # Structured trace payload sample
-├── Java/
-│   └── MonotonicQueueStack.java # LC 239 + LC 739 + LC 496 (Java)
 ├── DSA/
 │   └── MonotonicQueueStack.java # Alternate DSA reference
 ├── Interview/
@@ -42,6 +40,6 @@ python Month-02/Day-24/AI/rag/observable_rag.py
 
 ### 2. Compile & Run Java DSA Suite (in `Java/`)
 ```bash
-cd Month-02/Day-24/Java
+cd Month-02/Day-24/DSA
 javac MonotonicQueueStack.java && java MonotonicQueueStack
 ```

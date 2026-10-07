@@ -18,8 +18,6 @@ Day-25/
 │   │   └── fallback.py          # Cascading multi-provider failover router
 │   └── async/
 │       └── async_llm.py         # Async resilient LLM client with batch generation
-├── Java/
-│   └── BinarySearchAdvanced.java # LC 33 + LC 153 + LC 1011 (Java)
 ├── DSA/
 │   └── BinarySearchAdvanced.java # Alternate DSA reference
 ├── Interview/
@@ -41,6 +39,6 @@ python Month-02/Day-25/AI/async/async_llm.py
 
 ### 2. Compile & Run Java DSA Suite (in `Java/`)
 ```bash
-cd Month-02/Day-25/Java
+cd Month-02/Day-25/DSA
 javac BinarySearchAdvanced.java && java BinarySearchAdvanced
 ```

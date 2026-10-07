@@ -17,8 +17,6 @@ Day-26/
 │   │   └── token_limit.py       # Context exhaustion & DoS ceiling protector
 │   └── examples/
 │       └── malicious_prompts.json # Adversarial threat dataset
-├── Java/
-│   └── LinkedListCyclePatterns.java # LC 141 + LC 142 + LC 234 (Java)
 ├── DSA/
 │   └── LinkedListCyclePatterns.java # Alternate DSA reference
 ├── Interview/
@@ -40,6 +38,6 @@ python Month-02/Day-26/AI/security/prompt_injection.py
 
 ### 2. Compile & Run Java DSA Suite (in `Java/`)
 ```bash
-cd Month-02/Day-26/Java
+cd Month-02/Day-26/DSA
 javac LinkedListCyclePatterns.java && java LinkedListCyclePatterns
 ```

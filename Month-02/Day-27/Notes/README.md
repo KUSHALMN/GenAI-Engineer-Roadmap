@@ -17,8 +17,6 @@ Day-27/
 │   │   └── tool_permission.py    # Read/Write/High-Risk role permission matrix
 │   └── examples/
 │       └── guardrail_tests.json  # Comprehensive safety test cases
-├── Java/
-│   └── BinaryTreeAdvanced.java   # LC 543 + LC 124 + LC 297 (Java)
 ├── DSA/
 │   └── BinaryTreeAdvanced.java   # Alternate DSA reference
 ├── Interview/
@@ -40,6 +38,6 @@ python -c "import sys; sys.path.insert(0, 'Month-02/Day-27/AI'); from guardrails
 
 ### 2. Compile & Run Java Tree Suite (in `Java/`)
 ```bash
-cd Month-02/Day-27/Java
+cd Month-02/Day-27/DSA
 javac BinaryTreeAdvanced.java && java BinaryTreeAdvanced
 ```
