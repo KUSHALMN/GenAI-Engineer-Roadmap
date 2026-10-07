@@ -1,0 +1,35 @@
+{
+  "trace_id": "trace_7a1b8c9d0e1f",
+  "request_id": "req_88f921ab45cd",
+  "timestamp": "2026-10-07T17:45:00.123Z",
+  "service": "production-rag-gateway",
+  "environment": "production",
+  "query": "How does RAG observability work in production?",
+  "spans": [
+    {
+      "span_id": "span_embedding_01",
+      "name": "text_embedding_generation",
+      "duration_ms": 14.5,
+      "status": "OK"
+    },
+    {
+      "span_id": "span_vector_search_02",
+      "name": "vector_db_similarity_search",
+      "duration_ms": 32.1,
+      "status": "OK",
+      "retrieved_count": 3
+    },
+    {
+      "span_id": "span_llm_inference_03",
+      "name": "llm_completion_llama3",
+      "duration_ms": 245.8,
+      "status": "OK",
+      "prompt_tokens": 128,
+      "completion_tokens": 64,
+      "cost_usd": 0.000126
+    }
+  ],
+  "total_latency_ms": 292.4,
+  "cost_usd": 0.000126,
+  "status_code": 200
+}
