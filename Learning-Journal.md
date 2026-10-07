@@ -349,8 +349,89 @@
 
 ---
 
-## 📊 Month 02 Running Summary (Days 01–03)
-- **Days completed:** 3 new days added (Day 01, 02, 03)
-- **Python AI Projects:** Fine-tuning pipeline, JWT auth API, LangChain agent
-- **Java DSA:** Coin Change (LC 322), Climbing Stairs (LC 70), House Robber I+II (LC 198, 213)
-- **New skills:** LoRA/PEFT, Docker, JWT security, LangChain tool calling, safe AST eval
+### Day 21 (Month 02)
+- **Topics:** Enterprise LLM Evaluation Service, Lexical Metrics, Groq LLM-as-a-Judge, Two Pointers (LC 167, 15, 11)
+- **What I built:** FastAPI evaluation microservice with Exact Match, Normalized EM, Token F1, LLM Judge fallback, and Java Two Pointers suite.
+
+---
+
+### Day 22 (Month 02)
+- **Topics:** Advanced RAG Triad Evaluator, Hallucination Detection, Sliding Window (LC 3, 209, 438)
+- **What I built:** Context Relevance, Faithfulness, and Answer Relevance triad scoring pipeline with sentence-level hallucination detection, and Java Sliding Window suite.
+
+---
+
+### Day 23 (Month 02)
+- **Topics:** Corrective RAG (CRAG), Self-RAG Guardrails, LRU Cache (LC 146)
+- **What I built:** Document grading evaluator (CORRECT, AMBIGUOUS, INCORRECT), knowledge striping, Self-RAG critique reflection tokens, and Java LRU Cache O(1).
+
+---
+
+### Day 24 (Month 02)
+- **Topics:** GenAI Observability & Distributed Tracing, Token Economics, Monotonic Queue/Stack (LC 239, 739, 496)
+- **What I built:** ContextVars request ID propagation, structured JSON logger, latency breakdown checkpoints, cost tracker per model, and Java Monotonic Deque for Sliding Window Maximum O(N).
+
+---
+
+### Day 25 (Month 02)
+- **Topics:** Production Reliability & Async LLM, Exponential Backoff with Full Jitter, Circuit Breakers, Advanced Binary Search (LC 33, 153, 1011)
+- **What I built:** Resilient async client, token bucket rate limiter, three-state circuit breaker, fallback cascading router, and Java Binary Search on answer space O(N log(sum-max)).
+
+---
+
+### Day 26 (Month 02)
+- **Topics:** GenAI Security & Threat Defense, Prompt Injection Firewall, PII Masker, Fast/Slow Pointers (LC 141, 142, 234)
+- **What I built:** Multi-vector injection detector, unicode zero-width character scrubber, token limit DoS guard, strict tool execution allowlist, and Java Floyd's cycle detection.
+
+---
+
+### Day 27 (Month 02)
+- **Topics:** Guardrails & Safe AI Execution, Input/Output Gateways, HITL Policies, Advanced Binary Trees (LC 543, 124, 297)
+- **What I built:** Input/output safety guardrail pipelines, JSON schema validator, severity-based PII detector, Human-in-the-Loop tool confirmation gate, and Java Tree Codec (LC 297).
+
+---
+
+### Day 28 (Month 02)
+- **Topics:** Structured Output & Tool Calling Engine, Pydantic Models, JSON Repair, Trie Autocomplete (LC 208, 211, 14)
+- **What I built:** Pydantic dataclass models, regex JSON cleaner & fence stripper, tool dispatcher registry, and Java Trie with wildcard '.' search.
+
+---
+
+### Day 29 (Month 02)
+- **Topics:** Autonomous ReAct Agents & State Workflows, Dynamic Tool Selection, Advanced Heap (LC 23, 347, 295)
+- **What I built:** Autonomous ReAct reasoning loop, state schema with step budgets, intent router, semantic tool filter, and Java Dual-Heap Median Finder O(1).
+
+---
+
+### Day 30 (Month 02)
+- **Topics:** Model Context Protocol (MCP) Architecture, JSON-RPC 2.0, Graph Shortest Path (LC 743, 787)
+- **What I built:** Full MCP Server and Client implementing `tools/list`, `tools/call`, `resources/list`, `resources/read`, and Java Dijkstra O(E log V) & Bellman-Ford O(K*E).
+
+---
+
+## Month 03 — Advanced AI Engineering & Systems
+
+### Day 01 (Month 03)
+- **Topics:** Context Engineering & Multi-Tier Memory, Token Budgets, Disjoint Set Union (LC 547, 684, 1584)
+- **What I built:** Token budget partition manager, sliding window conversation memory, abstractive progressive summarizer, episodic key-value memory store, and Java DSU with Kruskal's MST O(E log E).
+
+---
+
+### Day 02 (Month 03)
+- **Topics:** Advanced Multi-Stage RAG Funnel, BM25, RRF Hybrid Search, HyDE, Reranker, Advanced Backtracking (LC 51, 79, 46)
+- **What I built:** Okapi BM25 sparse index, Reciprocal Rank Fusion (RRF), HyDE hypothetical doc expander, cross-encoder reranker, parent-child hierarchical chunker, and Java N-Queens O(N!).
+
+---
+
+### Day 03 (Month 03)
+- **Topics:** Multimodal GenAI Systems & Document Pipelines, OCR, Whisper ASR, TTS, Vision QA, Tree DP & Knapsack (LC 337, 416, 322)
+- **What I built:** Multi-format document parser, receipt OCR pipeline, CLIP image embeddings, audio speech transcriber, TTS synthesizer, Vision-Language Image QA, Multimodal RAG, and Java House Robber III Tree DP O(N).
+
+---
+
+## 📊 Milestone Summary
+- **Total Days Completed:** 64 Days across Month 01, Month 02, and Month 03.
+- **Month 01 Status:** 100% Completed ✅
+- **Month 02 Status:** 100% Completed ✅
+- **Month 03 Status:** Active & Expanding 🚀
+
