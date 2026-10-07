@@ -28,6 +28,16 @@
 | [Day 18](Day-18/) | Model Routing & Adaptation | `model_router.py`, `provider_interface.py`, `fallback_router.py` | `adaptation_decision.md` | 1D DP (`DynamicProgramming1D.java`) | ✅ Done |
 | [Day 19](Day-19/) | GenAI System Design & LLMOps | Architecture diagrams, SLOs, failure modes | `rag_system_design.md` | 2D DP & Trie (`DynamicProgramming2D.java`) | ✅ Done |
 | [Day 20](Day-20/) | FAANG GenAI Interview & Capstone | `main.py`, `agent_service.py`, `Dockerfile`, `docker-compose.yml` | `genai_interview_answers.md` | Capstone DSA Suite (`CapstoneDSA.java`) | ✅ Done |
+| [Day 21](Day-21/) | Enterprise LLM Evaluation Service | `api.py`, `metrics.py`, `llm_judge.py`, `eval_dataset.json` | `notes.md` | Two Pointers LC 167, 15, 11 (`TwoPointers.java`) | ✅ Done |
+| [Day 22](Day-22/) | Advanced RAG Triad Evaluator | `triad_metrics.py`, `hallucination_detector.py`, `api.py` | `notes.md` | Sliding Window LC 3, 209, 438 (`SlidingWindow.java`) | ✅ Done |
+| [Day 23](Day-23/) | Corrective RAG (CRAG) & Self-RAG | `crag_engine.py`, `retrieval_evaluator.py`, `self_rag_guardrail.py` | `notes.md` | LRU Cache LC 146 (`LRUCachePatterns.java`) | ✅ Done |
+| [Day 24](Day-24/) | GenAI Observability & Distributed Tracing | `logger.py`, `request_id.py`, `latency.py`, `cost_tracker.py`, `observable_rag.py` | `notes.md` | Monotonic Queue & Stack LC 239, 739, 496 (`MonotonicQueueStack.java`) | ✅ Done |
+| [Day 25](Day-25/) | Production Reliability & Resilient Async | `retry.py`, `backoff.py`, `circuit_breaker.py`, `rate_limiter.py`, `async_llm.py` | `notes.md` | Advanced Binary Search LC 33, 153, 1011 (`BinarySearchAdvanced.java`) | ✅ Done |
+| [Day 26](Day-26/) | GenAI Security & Injection Defense | `prompt_injection.py`, `pii_filter.py`, `tool_allowlist.py`, `token_limit.py` | `notes.md` | Fast & Slow Pointer LC 141, 142, 234 (`LinkedListCyclePatterns.java`) | ✅ Done |
+| [Day 27](Day-27/) | Guardrails & Safe AI Execution | `input_guardrail.py`, `output_guardrail.py`, `schema_validator.py`, `tool_permission.py` | `notes.md` | Advanced Binary Tree LC 543, 124, 297 (`BinaryTreeAdvanced.java`) | ✅ Done |
+| [Day 28](Day-28/) | Structured Output & Tool Calling Engine | `models.py`, `structured_llm.py`, `validator.py`, `dispatcher.py`, `schemas.py` | `notes.md` | Trie & Autocomplete LC 208, 211, 14 (`TriePatterns.java`) | ✅ Done |
+| [Day 29](Day-29/) | Autonomous Agents & State Workflows | `agent_loop.py`, `state.py`, `tool_selection.py`, `router.py`, `workflow.py` | `notes.md` | Advanced Heap LC 23, 347, 295 (`HeapAdvancedPatterns.java`) | ✅ Done |
+| [Day 30](Day-30/) | Model Context Protocol (MCP) | `server.py`, `client.py`, `tools.py`, `resources.py`, `schemas.py`, `mcp_tool_demo.py` | `notes.md` | Graph Shortest Path LC 743, 787 (`GraphShortestPath.java`) | ✅ Done |
 
 ---
 

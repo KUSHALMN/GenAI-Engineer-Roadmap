@@ -1,39 +1,25 @@
-# 📅 Notes
+# 📅 Day 30 Study Notes: Model Context Protocol (MCP) & Graph Shortest Paths
 
-**Date:** ___________
+## 🧠 Core Engineering Principles
 
----
+### 1. Model Context Protocol Architecture
+MCP uses JSON-RPC 2.0 messages over standard I/O (`stdio`) or Server-Sent Events (`SSE`):
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client (AI Assistant)
+    participant Server as MCP Server (Data & Tools)
 
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
+    Client->>Server: {"jsonrpc": "2.0", "method": "tools/list"}
+    Server-->>Client: {"result": {"tools": [{"name": "calc", ...}]}}
+    Client->>Server: {"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "calc", "arguments": {...}}}
+    Server-->>Client: {"result": {"content": 700}}
 ```
 
-**Time Complexity:**   
-**Space Complexity:** 
+### 2. Core Protocol Primitives
+- **Tools**: Executable functions that take structured JSON input and execute code/actions.
+- **Resources**: Read-only context documents identified by custom URI schemes.
+- **Prompts**: Standardized reusable prompt templates with variable parameters.
 
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+### 3. Dijkstra vs Bellman-Ford Invariants (Java)
+- Dijkstra tracks finalized shortest distances in a `minDistance` map, skipping nodes already visited.
+- Bellman-Ford snapshotting (`tempPrices = Arrays.copyOf(prices, n)`) prevents cascading multi-edge updates within a single iteration when bounding path lengths to $K$ stops.
