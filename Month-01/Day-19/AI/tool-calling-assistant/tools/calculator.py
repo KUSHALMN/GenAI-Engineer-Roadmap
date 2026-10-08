@@ -27,12 +27,18 @@ SAFE_FUNCTIONS = {
     "cos": math.cos,
     "tan": math.tan,
     "log": math.log,
+    "log2": math.log2,
     "log10": math.log10,
     "exp": math.exp,
     "floor": math.floor,
     "ceil": math.ceil,
     "abs": abs,
     "round": round,
+    "min": min,
+    "max": max,
+    "factorial": lambda x: math.factorial(int(x)),
+    "radians": math.radians,
+    "degrees": math.degrees,
 }
 
 SAFE_CONSTANTS = {
