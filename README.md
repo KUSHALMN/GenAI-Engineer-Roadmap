@@ -26,7 +26,7 @@
 
 | 🗓️ Total Days Completed | 🧠 Production AI Services | ☕ Java DSA Patterns Solved | 🛡️ Security & Guardrail Suites | 🏆 Month Status |
 |:---:|:---:|:---:|:---:|:---:|
-| **64 Days** | **35+ Microservices** | **80+ Algorithms** | **12 Defense Layers** | **Month 03 Active** |
+| **69 Days** | **40+ Microservices** | **95+ Algorithms** | **15 Defense Layers** | **Month 03 Active** |
 
 </div>
 
@@ -37,14 +37,15 @@ timeline
     section Month 01 : Completed ✅
         Foundations & OOP : Python, Groq, ChromaDB, RAG, FastAPI, SQL
         Advanced RAG & SSE : PDF Chunking, Streaming, Monotonic Stacks, Sliding Windows
+        Agent Tool Calling : Function Schemas, Reflection Dispatcher, AST Calculator
     section Month 02 : Completed ✅
         Fine-Tuning & Docker : LoRA, PEFT, JWT Auth, Docker Compose, Caching
         Security & Reliability : Injection Firewall, Rate Limiting, Circuit Breaker, Guardrails
         Agents & MCP : Structured Output, ReAct Loops, Model Context Protocol
     section Month 03 : Active 🚀
-        Context & Memory : Token Budgets, Multi-Tier Memory, Disjoint Set Union
-        Advanced Multi-Stage RAG : Hybrid BM25, RRF Fusion, Cross-Encoder Reranker, HyDE
-        Multimodal Systems : OCR, Whisper ASR, TTS, Vision QA, Tree DP & Knapsack
+        Context & Retrieval : Token Budgets, Multi-Tier Memory, Hybrid BM25 & Dense RRF
+        Rerankers & Guardrails : Cross-Encoders, Context Compression, Dual-Rail Safety
+        Streaming & Security : Real-Time SSE Backpressure, Canary Token Traps, Tree & Graph DSA
     section Months 04-09 : Upcoming ⏳
         Distributed Systems & Pretraining : DeepSpeed, Megatron-LM, vLLM, Triton, Kubernetes
 ```

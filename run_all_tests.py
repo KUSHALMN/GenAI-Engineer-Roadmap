@@ -39,6 +39,31 @@ TEST_SUITES = [
         "cwd": ROOT_DIR / "Month-01" / "Day-22" / "AI" / "pdf-rag-chatbot",
         "cmd": [sys.executable, "tests/test_rag.py"],
     },
+    {
+        "name": "Month-03 Day-04: Hybrid Dense-Sparse Retrieval Engine",
+        "cwd": ROOT_DIR / "Month-03" / "Day-04" / "AI",
+        "cmd": [sys.executable, "hybrid_dense_sparse_engine.py"],
+    },
+    {
+        "name": "Month-03 Day-05: Cross-Encoder Reranker & Context Compression",
+        "cwd": ROOT_DIR / "Month-03" / "Day-05" / "AI",
+        "cmd": [sys.executable, "cross_encoder_reranker.py"],
+    },
+    {
+        "name": "Month-03 Day-06: Enterprise LLM Guardrails Engine",
+        "cwd": ROOT_DIR / "Month-03" / "Day-06" / "AI",
+        "cmd": [sys.executable, "llm_guardrails_engine.py"],
+    },
+    {
+        "name": "Month-03 Day-07: Real-Time SSE Token Streaming Pipeline",
+        "cwd": ROOT_DIR / "Month-03" / "Day-07" / "AI",
+        "cmd": [sys.executable, "streaming_token_pipeline.py"],
+    },
+    {
+        "name": "Month-03 Day-08: API Security & Canary Defense Suite",
+        "cwd": ROOT_DIR / "Month-03" / "Day-08" / "AI",
+        "cmd": [sys.executable, "api_security_suite.py"],
+    },
 ]
 
 

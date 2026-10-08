@@ -11,11 +11,11 @@
 | [Day 01](Day-01/) | Context Engineering & Memory | `conversation_memory.py`, `token_budget.py`, `summarizer.py`, `context_manager.py` | DSU & Kruskal MST LC 547, 684, 1584 (`DisjointSetMST.java`) | ✅ Done |
 | [Day 02](Day-02/) | Advanced RAG & Multi-Stage Retrieval | `hybrid_search.py`, `bm25.py`, `hyde.py`, `reranker.py`, `parent_child_retrieval.py` | Advanced Backtracking LC 51, 79, 46 (`BacktrackingAdvanced.java`) | ✅ Done |
 | [Day 03](Day-03/) | Multimodal GenAI Systems | `ocr_pipeline.py`, `audio_to_text.py`, `text_to_speech.py`, `image_qa.py`, `multimodal_rag.py` | Tree DP & Knapsack LC 337, 416, 322 (`TreeKnapsackDP.java`) | ✅ Done |
-| 04 | Hybrid Search | Binary Tree Level Order Traversal |
-| 05 | Rerankers | Validate Binary Search Tree |
-| 06 | LLM Guardrails | Lowest Common Ancestor of BST |
-| 07 | Streaming Responses | Kth Smallest in BST |
-| 08 | API Security Advanced | Number of Islands |
+| [Day 04](Day-04/) | Hybrid Dense-Sparse Retrieval | `hybrid_dense_sparse_engine.py` (BM25 + Dense + RRF) | Tree BFS & Level Order LC 102, 103, 199 (`BinaryTreeLevelOrder.java`) | ✅ Done |
+| [Day 05](Day-05/) | Cross-Encoder Rerankers & Compression | `cross_encoder_reranker.py` (Attention pair scoring & context compression) | Validate & Recover BST LC 98, 99 (`ValidateBST.java`) | ✅ Done |
+| [Day 06](Day-06/) | Enterprise LLM Guardrails | `llm_guardrails_engine.py` (Input injection, PII masking, Output hallucination rail) | Lowest Common Ancestor LC 235, 236 (`LowestCommonAncestorBST.java`) | ✅ Done |
+| [Day 07](Day-07/) | Real-Time SSE Token Streaming | `streaming_token_pipeline.py` (W3C SSE chunks, backpressure, keepalive ping) | Kth Smallest in BST LC 230 Morris & Stack (`KthSmallestBST.java`) | ✅ Done |
+| [Day 08](Day-08/) | Production API Security & Defense | `api_security_suite.py` (Token bucket limiter, HMAC-SHA256, Canary token traps) | Number of Islands LC 200, 695 DFS/BFS (`NumberOfIslands.java`) | ✅ Done |
 | 09 | Redis Advanced | Clone Graph |
 | 10 | Deployment Advanced | Course Schedule |
 | 11 | AWS/GCP Advanced | Pacific Atlantic Water Flow |
