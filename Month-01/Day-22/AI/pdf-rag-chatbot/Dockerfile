@@ -1,5 +1,5 @@
 # Multi-stage production Dockerfile for Enterprise PDF RAG Chatbot
-FROM python:3.11-slim as builder
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Final runtime image
-FROM python:3.11-slim as runner
+FROM python:3.11-slim AS runner
 
 WORKDIR /app
 

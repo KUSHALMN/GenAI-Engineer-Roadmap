@@ -32,12 +32,12 @@ pipeline = RAGPipeline()
 # Request & Response Schemas
 # =============================================================================
 class QueryRequest(BaseModel):
-    question: str = Field(..., example="What are the key architectural components described in the document?")
+    question: str = Field(..., examples=["What are the key architectural components described in the document?"])
     top_k: Optional[int] = Field(default=4, ge=1, le=20)
 
 class IngestTextRequest(BaseModel):
-    title: str = Field(default="document.txt", example="company_policy.txt")
-    content: str = Field(..., example="This is document content about generative AI systems...")
+    title: str = Field(default="document.txt", examples=["company_policy.txt"])
+    content: str = Field(..., examples=["This is document content about generative AI systems..."])
 
 class CitationItem(BaseModel):
     source: str

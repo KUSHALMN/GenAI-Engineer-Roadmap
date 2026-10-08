@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from retrieval.chunking import RecursiveChunker
 from retrieval.vector_store import VectorStore
 from retrieval.hybrid_retriever import HybridRetriever, BM25Retriever
