@@ -49,7 +49,10 @@ class EmbeddingModel:
             embeddings = self._st_model.encode(texts, convert_to_numpy=True)
             return embeddings.tolist()
 
-        # Deterministic lightweight dense projection fallback
+        # Deterministic lightweight dense projection fallback with term weighting
+        import hashlib
+
+        stopwords = {"what", "is", "a", "the", "of", "in", "for", "with", "from", "to", "and", "an", "are", "this", "that"}
         embeddings: List[List[float]] = []
         for text in texts:
             tokens = _tokenize(text)
@@ -58,20 +61,17 @@ class EmbeddingModel:
                 embeddings.append(vector.tolist())
                 continue
 
-            # Add word and subword features for robust lexical-semantic match
-            features = list(tokens)
             for t in tokens:
-                if len(t) >= 3:
-                    for i in range(len(t) - 2):
-                        features.append(t[i : i + 3])
+                weight = 0.2 if t in stopwords else 3.0
+                h = int(hashlib.md5(t.encode("utf-8")).hexdigest()[:8], 16)
+                vector[h % self.dim] += weight
 
-            for feat in features:
-                hash_val = hash(feat)
-                idx1 = abs(hash_val) % self.dim
-                idx2 = abs(hash(feat + "_salt")) % self.dim
-                sign = 1.0 if (hash_val % 2 == 0) else -1.0
-                vector[idx1] += sign * (1.0 / math.sqrt(len(features)))
-                vector[idx2] += 0.5 * (1.0 / math.sqrt(len(features)))
+            for t in tokens:
+                if t not in stopwords and len(t) >= 3:
+                    for i in range(len(t) - 2):
+                        ng = t[i : i + 3]
+                        h = int(hashlib.md5(ng.encode("utf-8")).hexdigest()[:8], 16)
+                        vector[h % self.dim] += 0.5
 
             norm = np.linalg.norm(vector)
             if norm > 0:
