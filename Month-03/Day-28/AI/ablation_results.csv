@@ -1,0 +1,7 @@
+experiment_name,chunk_size,dense_weight,top_k,reranker_enabled,recall_at_k,mrr,latency_p95_ms
+baseline_dense_only,512,1.0,5,False,0.72,0.65,15.0
+baseline_sparse_only,512,0.0,5,False,0.68,0.61,15.0
+hybrid_no_rerank,512,0.6,5,False,0.84,0.74,27.0
+hybrid_with_cross_encoder,512,0.6,5,True,0.93,0.89,72.0
+small_chunk_hybrid_rerank,256,0.6,10,True,0.95,0.91,72.0
+large_chunk_hybrid_rerank,1024,0.6,5,True,0.81,0.76,72.0
