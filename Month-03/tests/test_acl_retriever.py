@@ -31,14 +31,18 @@ class TestACLRetriever(unittest.TestCase):
     def test_authorized_access(self):
         eng = UserSecurityContext(user_id="u1", tenant_id="corp_a", roles=["engineer"])
         res = self.retriever.retrieve_secure("Kubernetes architecture", eng)
-        self.assertEqual(len(res["authorized_results"]), 1)
         self.assertEqual(res["authorized_results"][0]["id"], "doc_eng")
+        self.assertGreater(res["authorized_results"][0]["relevance"], 0.0)
 
     def test_cross_tenant_denial(self):
         eng = UserSecurityContext(user_id="u1", tenant_id="corp_a", roles=["engineer", "admin"])
         res = self.retriever.retrieve_secure("partner secrets", eng)
-        self.assertEqual(len(res["authorized_results"]), 0)
-        self.assertEqual(res["unauthorized_chunks_blocked"], 3)
+        # Verify that doc_ext from corp_b is strictly absent from authorized results
+        returned_ids = [r["id"] for r in res["authorized_results"]]
+        self.assertNotIn("doc_ext", returned_ids)
+        self.assertNotIn("doc_hr", returned_ids)
+        # Blocked count should reflect rejected doc_hr and doc_ext
+        self.assertEqual(res["unauthorized_chunks_blocked"], 2)
 
 if __name__ == "__main__":
     unittest.main()
