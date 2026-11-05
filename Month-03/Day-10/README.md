@@ -19,5 +19,5 @@ python Month-03/Day-10/AI/query_rewriter.py
 
 # Java DSA
 javac Month-03/Day-10/DSA/TaskScheduler.java
-java -cp Month-03/Day-10 DSA.TaskScheduler
+java -cp Month-03/Day-10/DSA TaskScheduler
 ```

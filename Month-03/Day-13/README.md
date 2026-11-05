@@ -20,5 +20,5 @@ python Month-03/Day-13/AI/reranker_pipeline.py
 
 # Java DSA
 javac Month-03/Day-13/DSA/BellmanFord.java
-java -cp Month-03/Day-13 DSA.BellmanFord
+java -cp Month-03/Day-13/DSA BellmanFord
 ```

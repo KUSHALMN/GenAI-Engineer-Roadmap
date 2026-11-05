@@ -19,5 +19,5 @@ python Month-03/Day-18/AI/build_graph.py
 
 # Java DSA
 javac Month-03/Day-18/DSA/StronglyConnectedComponents.java
-java -cp Month-03/Day-18 DSA.StronglyConnectedComponents
+java -cp Month-03/Day-18/DSA StronglyConnectedComponents
 ```

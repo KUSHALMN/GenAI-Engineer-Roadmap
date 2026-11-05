@@ -19,5 +19,5 @@ python Month-03/Day-12/AI/hyde_retriever.py
 
 # Java DSA
 javac Month-03/Day-12/DSA/DijkstraShortestPath.java
-java -cp Month-03/Day-12 DSA.DijkstraShortestPath
+java -cp Month-03/Day-12/DSA DijkstraShortestPath
 ```

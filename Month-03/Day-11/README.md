@@ -19,5 +19,5 @@ python Month-03/Day-11/AI/multi_query_retriever.py
 
 # Java DSA
 javac Month-03/Day-11/DSA/DisjointSetUnion.java
-java -cp Month-03/Day-11 DSA.DisjointSetUnion
+java -cp Month-03/Day-11/DSA DisjointSetUnion
 ```

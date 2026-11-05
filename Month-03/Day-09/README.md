@@ -20,5 +20,5 @@ python Month-03/Day-09/AI/hybrid_search_engine.py
 
 # Java DSA
 javac Month-03/Day-09/DSA/MedianFinder.java
-java -cp Month-03/Day-09 DSA.MedianFinder
+java -cp Month-03/Day-09/DSA MedianFinder
 ```

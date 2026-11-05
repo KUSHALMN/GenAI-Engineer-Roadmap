@@ -19,5 +19,5 @@ python Month-03/Day-16/AI/citation_engine.py
 
 # Java DSA
 javac Month-03/Day-16/DSA/PrimMST.java
-java -cp Month-03/Day-16 DSA.PrimMST
+java -cp Month-03/Day-16/DSA PrimMST
 ```

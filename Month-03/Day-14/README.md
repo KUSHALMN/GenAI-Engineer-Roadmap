@@ -19,5 +19,5 @@ python Month-03/Day-14/AI/context_compressor.py
 
 # Java DSA
 javac Month-03/Day-14/DSA/FloydWarshall.java
-java -cp Month-03/Day-14 DSA.FloydWarshall
+java -cp Month-03/Day-14/DSA FloydWarshall
 ```

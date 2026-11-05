@@ -19,5 +19,5 @@ python Month-03/Day-19/AI/graph_retriever.py
 
 # Java DSA
 javac Month-03/Day-19/DSA/BipartiteGraph.java
-java -cp Month-03/Day-19 DSA.BipartiteGraph
+java -cp Month-03/Day-19/DSA BipartiteGraph
 ```

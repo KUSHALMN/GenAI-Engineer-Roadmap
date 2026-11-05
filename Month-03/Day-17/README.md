@@ -20,5 +20,5 @@ python Month-03/Day-17/AI/multi_hop_rag.py
 
 # Java DSA
 javac Month-03/Day-17/DSA/TopologicalSort.java
-java -cp Month-03/Day-17 DSA.TopologicalSort
+java -cp Month-03/Day-17/DSA TopologicalSort
 ```

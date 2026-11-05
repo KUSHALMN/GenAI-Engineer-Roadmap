@@ -19,5 +19,5 @@ python Month-03/Day-15/AI/filtered_hybrid_retriever.py
 
 # Java DSA
 javac Month-03/Day-15/DSA/KruskalMST.java
-java -cp Month-03/Day-15 DSA.KruskalMST
+java -cp Month-03/Day-15/DSA KruskalMST
 ```
