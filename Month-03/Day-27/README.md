@@ -19,5 +19,5 @@ python Month-03/Day-27/AI/retrieval_metrics.py
 
 # Java DSA
 javac Month-03/Day-27/DSA/BitmaskDP.java
-java -cp Month-03/Day-27 DSA.BitmaskDP
+java -cp Month-03/Day-27/DSA BitmaskDP
 ```

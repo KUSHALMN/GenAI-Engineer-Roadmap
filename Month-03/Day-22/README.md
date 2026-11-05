@@ -19,5 +19,5 @@ python Month-03/Day-22/AI/acl_retriever.py
 
 # Java DSA
 javac Month-03/Day-22/DSA/AVLTree.java
-java -cp Month-03/Day-22 DSA.AVLTree
+java -cp Month-03/Day-22/DSA AVLTree
 ```

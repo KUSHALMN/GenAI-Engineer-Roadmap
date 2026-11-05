@@ -19,5 +19,5 @@ python Month-03/Day-20/AI/incremental_indexer.py
 
 # Java DSA
 javac Month-03/Day-20/DSA/TreeSerialization.java
-java -cp Month-03/Day-20 DSA.TreeSerialization
+java -cp Month-03/Day-20/DSA TreeSerialization
 ```

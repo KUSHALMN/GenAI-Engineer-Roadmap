@@ -19,5 +19,5 @@ python Month-03/Day-31/AI/enterprise_rag_benchmark.py
 
 # Java DSA Capstone
 javac Month-03/Day-31/DSA/DSAMasteryCapstone.java
-java -cp Month-03/Day-31 DSA.DSAMasteryCapstone
+java -cp Month-03/Day-31/DSA DSAMasteryCapstone
 ```

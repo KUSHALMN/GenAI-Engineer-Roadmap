@@ -19,5 +19,5 @@ python Month-03/Day-23/AI/multilingual_search.py
 
 # Java DSA
 javac Month-03/Day-23/DSA/FenwickTree.java
-java -cp Month-03/Day-23 DSA.FenwickTree
+java -cp Month-03/Day-23/DSA FenwickTree
 ```

@@ -19,5 +19,5 @@ python Month-03/Day-24/AI/query_router.py
 
 # Java DSA
 javac Month-03/Day-24/DSA/SegmentTree.java
-java -cp Month-03/Day-24 DSA.SegmentTree
+java -cp Month-03/Day-24/DSA SegmentTree
 ```

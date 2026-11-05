@@ -19,5 +19,5 @@ python Month-03/Day-21/AI/delete_document_pipeline.py
 
 # Java DSA
 javac Month-03/Day-21/DSA/LowestCommonAncestor.java
-java -cp Month-03/Day-21 DSA.LowestCommonAncestor
+java -cp Month-03/Day-21/DSA LowestCommonAncestor
 ```

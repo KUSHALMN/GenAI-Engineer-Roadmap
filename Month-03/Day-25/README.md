@@ -19,5 +19,5 @@ python Month-03/Day-25/AI/retrieval_cache.py
 
 # Java DSA
 javac Month-03/Day-25/DSA/SparseTableRMQ.java
-java -cp Month-03/Day-25 DSA.SparseTableRMQ
+java -cp Month-03/Day-25/DSA SparseTableRMQ
 ```

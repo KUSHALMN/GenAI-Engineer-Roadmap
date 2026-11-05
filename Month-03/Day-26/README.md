@@ -20,5 +20,5 @@ python Month-03/Day-26/AI/retrieval_dataset_validator.py
 
 # Java DSA
 javac Month-03/Day-26/DSA/BitManipulationPatterns.java
-java -cp Month-03/Day-26 DSA.BitManipulationPatterns
+java -cp Month-03/Day-26/DSA BitManipulationPatterns
 ```

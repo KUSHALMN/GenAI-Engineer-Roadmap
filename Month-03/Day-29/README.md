@@ -20,5 +20,5 @@ python Month-03/Day-29/AI/rag_api_service.py
 
 # Java DSA
 javac Month-03/Day-29/DSA/MixedAdvancedDSASet.java
-java -cp Month-03/Day-29 DSA.MixedAdvancedDSASet
+java -cp Month-03/Day-29/DSA MixedAdvancedDSASet
 ```

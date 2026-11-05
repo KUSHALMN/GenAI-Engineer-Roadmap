@@ -20,5 +20,5 @@ python Month-03/Day-30/AI/rag_v2_audit_release.py
 
 # Java DSA Comprehensive Mock
 javac Month-03/Day-30/DSA/ComprehensiveDSAMock.java
-java -cp Month-03/Day-30 DSA.ComprehensiveDSAMock
+java -cp Month-03/Day-30/DSA ComprehensiveDSAMock
 ```

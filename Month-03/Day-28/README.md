@@ -19,5 +19,5 @@ python Month-03/Day-28/AI/ablation_runner.py
 
 # Java DSA
 javac Month-03/Day-28/DSA/IntervalDP.java
-java -cp Month-03/Day-28 DSA.IntervalDP
+java -cp Month-03/Day-28/DSA IntervalDP
 ```
