@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Self-Balancing AVL Binary Search Tree
  * Invariant: For every node, |height(left) - height(right)| <= 1

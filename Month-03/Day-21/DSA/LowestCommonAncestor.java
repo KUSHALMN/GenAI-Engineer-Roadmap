@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Lowest Common Ancestor (LCA) in Binary Tree & BST
  * 1. LeetCode 236 - LCA of Binary Tree
