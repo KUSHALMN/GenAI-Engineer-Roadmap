@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Fenwick Tree (Binary Indexed Tree - BIT)
  * Solves:

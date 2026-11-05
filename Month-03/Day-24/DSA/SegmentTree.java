@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Segment Tree Implementation
  * Operations:

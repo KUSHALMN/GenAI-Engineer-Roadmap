@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Interval Dynamic Programming
  * LeetCode 312 - Burst Balloons

@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Sparse Table for Range Minimum Query (RMQ)
  * Preprocessing: O(N log N) using Dynamic Programming
