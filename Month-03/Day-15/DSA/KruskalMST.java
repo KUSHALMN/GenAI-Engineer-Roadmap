@@ -1,5 +1,3 @@
-package DSA;
-
 import java.util.*;
 
 /**

@@ -1,5 +1,3 @@
-package DSA;
-
 /**
  * Disjoint Set Union (DSU) / Union-Find with:
  * - Path Compression in find() -> amortized almost O(1) [Inverse Ackermann alpha(N)]
