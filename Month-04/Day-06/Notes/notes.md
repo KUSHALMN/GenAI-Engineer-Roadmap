@@ -1,39 +1,8 @@
-# 📅 Notes
+# Day 06 Notes: Stateful Agent Design
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Core State Components
+- `session_id`: Unique correlation ID across logs and subtasks.
+- `status`: State machine enum enforcing valid transitions.
+- `messages`: Conversation history and system prompts.
+- `tool_cache`: Results of previously executed idempotent tools.
+- `step_count`: Guard against runaway loops.
