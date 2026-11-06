@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 22 Notes: MCP Long-Running Tasks and Notifications
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Asynchronous Lifecycle
+- `tools/call` -> emits `task_id`
+- Server streams `notifications/progress`
+- Client emits `tasks/cancel` if timeout threshold breached.
