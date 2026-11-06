@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 21 Notes: MCP Security Threat Modeling
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Top Threat Vectors
+1. **Indirect Prompt Injection:** Malicious payloads inside retrieved tool data.
+2. **Path Traversal:** File access outside designated directory roots.
+3. **Command Injection:** Unsanitized string concatenation in bash tools.
