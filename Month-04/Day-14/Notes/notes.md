@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 14 Notes: Agent Trajectory Evaluation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Key Evaluation Metrics
+- **Tool Precision:** Proportion of executed tools that were actually needed.
+- **Tool Recall:** Proportion of required tools successfully executed.
+- **Step Efficiency:** Ratio of minimal required steps to actual steps taken.
