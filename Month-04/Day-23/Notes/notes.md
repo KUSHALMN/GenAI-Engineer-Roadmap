@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 23 Notes: Multi-Agent Architecture Trade-Offs
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Topologies
+- **Supervisor-Worker:** High control, centralized aggregation.
+- **Peer-to-Peer:** Emergent problem solving, high message amplification cost.
