@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 26 Notes: Agent Observability
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Tracing Tree Structure
+- `Root Span`: User Session
+  - `Child Span`: Model Inference
+  - `Child Span`: Tool Dispatch
