@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 13 Notes: Agent Failure Recovery
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Failure Taxonomy
+- **Transient (Network/503):** Exponential backoff retry.
+- **Contract/Schema (400):** Reflection & argument repair prompt.
+- **Fatal (Auth/404):** Fallback tool or graceful degradation.
