@@ -1,39 +1,11 @@
-# 📅 Notes
+# Day 04 Notes: ReAct Agent Loop Mechanics
 
-**Date:** ___________
+## 1. Anatomy of a ReAct Loop
+1. **User Goal:** Initial context supplied in system prompt.
+2. **Scratchpad:** Accumulation of previous `Thought`, `Action`, and `Observation` triples.
+3. **Model Generation:** Emits either next action or final conclusion.
+4. **Tool Execution:** Dispatcher executes tool and formats observation.
+5. **Observation Feedback:** Append observation to prompt context for next turn.
 
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 2. Guardrails
+- Always set a hard ceiling `max_steps` to avoid unbounded cloud provider API bills.
