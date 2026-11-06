@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 08 Notes: Agent Checkpoints and Resume
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Checkpointing Patterns
+- **Write-Ahead State:** Save state *before* invoking critical tools or *immediately after* receiving responses.
+- **Storage Backends:** Ephemeral in-memory during testing; DynamoDB/PostgreSQL/Redis in production.
