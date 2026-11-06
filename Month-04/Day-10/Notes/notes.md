@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 10 Notes: Parallel Tool Execution
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Concurrency Mechanics
+- Use `concurrent.futures.ThreadPoolExecutor` for IO-bound web API calls.
+- Always preserve call index order in output results regardless of which task completes first.
