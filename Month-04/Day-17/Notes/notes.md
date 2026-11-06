@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 17 Notes: MCP Resources and Prompts
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Resource URI Patterns
+- `file:///path/to/data.csv`
+- `postgres://tables/users`
+- `system://diagnostics/memory`
