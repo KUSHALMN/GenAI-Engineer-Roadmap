@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 24 Notes: Agent Delegation and Result Synthesis
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Subtask Contract Requirements
+- Well-scoped boundary to prevent mission creep.
+- Explicit JSON response schema to streamline synthesis.
