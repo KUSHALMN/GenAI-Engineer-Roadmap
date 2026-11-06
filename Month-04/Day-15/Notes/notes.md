@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 15 Notes: MCP Protocol Fundamentals
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. MCP Architecture
+- **Host:** Coordinates agents and users (e.g. IDE, LLM app).
+- **Client:** Connects 1:1 with an MCP Server.
+- **Server:** Exposes tools, resources, and prompts over stdio or SSE.
