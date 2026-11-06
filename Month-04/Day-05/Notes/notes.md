@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 05 Notes: Planner-Executor Pattern
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Architecture Flow
+1. **Planner:** Decomposes a macro objective into an actionable DAG of steps.
+2. **Executor:** Dispatches tools sequentially or concurrently according to dependencies.
+3. **Replanner:** Triggered when a step encounters a tool failure, updating downstream steps.
