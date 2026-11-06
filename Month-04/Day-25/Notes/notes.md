@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 25 Notes: Agent Sandboxing and Side-Effect Control
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Sandbox Defenses
+- Root directory jail (`os.path.abspath`).
+- Journaling for atomic rollback.
+- Simulation dry-run flags.
