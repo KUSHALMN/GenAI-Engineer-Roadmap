@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 18 Notes: Build an MCP Client
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Client Responsibilities
+- Lifecycle management (startup, handshake, shutdown).
+- Dynamic capability caching.
+- Synchronous or asynchronous request execution over RPC pipes.
