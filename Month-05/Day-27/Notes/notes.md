@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 27 Notes: Inference Failure Handling
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Failure Modes
+- Context Overflow -> Intelligent Truncation / Summarization.
+- HTTP 429 -> Exponential Jitter Backoff.
+- GPU OOM -> Request Preemption & Eviction.
