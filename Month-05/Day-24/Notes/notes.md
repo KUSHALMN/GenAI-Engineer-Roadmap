@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 24 Notes: Model Gateway and Provider Abstraction
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Gateway Principles
+- Abstract provider endpoints behind a common interface.
+- Provide transparent fallback to maximize uptime SLA.
