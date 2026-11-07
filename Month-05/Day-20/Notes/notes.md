@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 20 Notes: Batching and Continuous Batching
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Batching Comparison
+- **Static:** High latency, waste due to padding.
+- **Dynamic:** Groups similar lengths, but still blocks on longest.
+- **Continuous (Orca / vLLM):** Per-iteration scheduling with zero bubble waste.
