@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 16 Notes: Model Artifact Packaging
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Release Manifest
+- Target base model identifier and commit SHA.
+- LoRA rank, alpha, target modules.
+- Tokenizer files (`tokenizer.json`, `special_tokens_map.json`).
