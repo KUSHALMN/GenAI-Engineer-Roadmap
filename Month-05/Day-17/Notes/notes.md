@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 17 Notes: Inference vs Training Deep Dive
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Inference Latency Metrics
+- **TTFT (Time To First Token):** User-perceived responsiveness (prefill speed).
+- **TPOT (Time Per Output Token):** Streaming reading speed (decode speed).
