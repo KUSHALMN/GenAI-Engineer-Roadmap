@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 10 Notes: Training Loop and Checkpoints
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Checkpoint Hygiene
+- Save optimizer state alongside model weights for seamless restart.
+- Maintain a rolling window of best validation checkpoints to save disk.
