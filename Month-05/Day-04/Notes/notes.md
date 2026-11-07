@@ -1,39 +1,6 @@
-# 📅 Notes
+# Day 04 Notes: Data Splitting and Leakage Prevention
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Splitting Guidelines
+- Always fix random seed for reproducibility (`seed=42`).
+- Check pairwise hash intersections between train and test sets.
+- If data has groupings (e.g. users, documents), split by group, not by random row.
