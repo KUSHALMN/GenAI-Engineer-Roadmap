@@ -1,39 +1,4 @@
-# 📅 Notes
+# Day 23 Notes: Model Server Concurrency
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Concurrency Bottlenecks
+- Beyond GPU KV capacity, requests enter a pending FIFO queue, linearly increasing Time-To-First-Token.
