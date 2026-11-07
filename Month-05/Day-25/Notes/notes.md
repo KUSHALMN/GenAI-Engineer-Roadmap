@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 25 Notes: Model Routing Evaluation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Routing Strategies
+- Rule-based keyword checks for explicit intents.
+- Small embedding classifier for probabilistic intent scoring.
