@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 21 Notes: Inference Serving with vLLM
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. PagedAttention
+- Inspired by OS virtual memory paging.
+- Enables memory sharing across parallel sampling branches (beam search, parallel decoding).
