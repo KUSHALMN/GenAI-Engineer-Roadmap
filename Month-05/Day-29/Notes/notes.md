@@ -1,39 +1,7 @@
-# 📅 Notes
+# Day 29 Notes: Reproducible Model Comparison
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Golden Metrics
+- Accuracy (Exact Match / ROUGE).
+- Latency (TTFT & TPOT).
+- Hardware VRAM (GB).
+- Dollar cost per 1k completed requests.
