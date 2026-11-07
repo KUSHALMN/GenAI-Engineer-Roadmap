@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 22 Notes: Streaming Inference API
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. W3C SSE Standard
+- Format: `data: {...}\n\n`
+- Sentinel termination: `data: [DONE]\n\n`
