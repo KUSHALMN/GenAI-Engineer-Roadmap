@@ -1,39 +1,4 @@
-# 📅 Notes
+# Day 19 Notes: KV Cache and Memory Math
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. KV Cache Formula
+$$\text{Memory (bytes)} = 2 \times 2 \times \text{Layers} \times N_{KV} \times d_{head} \times \text{Batch} \times \text{SeqLen}$$
