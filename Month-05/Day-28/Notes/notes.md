@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 28 Notes: Cost and Capacity Planning
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Capacity Rules of Thumb
+- 1 GPU node (A10G / L4) serves ~80-120 decode tokens/sec.
+- Size for P95 peak concurrency rather than average daily volume.
