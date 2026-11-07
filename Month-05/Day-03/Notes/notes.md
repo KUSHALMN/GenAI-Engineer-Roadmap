@@ -1,39 +1,7 @@
-# 📅 Notes
+# Day 03 Notes: Dataset Cleaning and Validation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Cleaning Checklist
+- Remove empty responses.
+- Enforce min/max token length.
+- Eliminate exact duplicates via SHA-256 content hashes.
+- Strip HTML artifacts and malformed unicode characters.
