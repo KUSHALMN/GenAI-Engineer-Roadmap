@@ -1,39 +1,4 @@
-# 📅 Notes
+# Day 11 Notes: Fine-Tuning Experiment Tracking
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Metric Logging
+- Log training loss per step, validation loss per epoch, and evaluation accuracy on held-out tasks.
