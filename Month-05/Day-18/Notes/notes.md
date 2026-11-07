@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 18 Notes: Quantization Methods
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Trade-Offs
+- 4-bit cuts memory footprint by 75% with negligible perplexity degradation (< 0.1).
+- Enables 70B models to run on single servers.
