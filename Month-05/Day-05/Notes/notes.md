@@ -1,39 +1,5 @@
-# 📅 Notes
+# Day 05 Notes: Synthetic Data Generation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Safe Synthetic Strategies
+- Ground synthetic queries in real documents (Self-Instruct / Evol-Instruct).
+- Use strict deterministic validators or LLM-as-a-judge to filter low-confidence generations.
