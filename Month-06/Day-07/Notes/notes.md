@@ -1,39 +1,10 @@
-# 📅 Notes
+# Engineering Notes — Day 07: Vector Embeddings & Sliding Window Mechanics
 
-**Date:** ___________
+## 1. Cross-Modal Cosine Metric
+$$\text{Cosine}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
+When vectors are L2-normalized ($||A||_2 = 1$), cosine similarity simplifies to the dot product $A \cdot B$.
 
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 2. Sliding Window Invariants
+- Window boundaries `[left, right]`.
+- Expand `right` until condition is satisfied.
+- Contract `left` while condition remains satisfied to find the minimal window.
