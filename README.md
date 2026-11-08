@@ -9,7 +9,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=for-the-badge)](https://modelcontextprotocol.io/)
-[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2005%20Completed%20%7C%20154%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
+[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2006%20In%20Progress%20%7C%20164%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 | 🗓️ Total Days Completed | 🧠 Production AI Services | ☕ Java DSA & Concurrency | 🛡️ Security, Evals & Guardrails | 🏆 Roadmap Status |
 |:---:|:---:|:---:|:---:|:---:|
-| **154 Days** | **160+ Microservices** | **210+ Algorithms & Patterns** | **65+ Defense & Eval Layers** | **Months 01–05 Done (100% Complete) ✅** |
+| **164 Days** | **170+ Microservices** | **220+ Algorithms & Patterns** | **70+ Defense & Eval Layers** | **Month 06 In Progress (Days 01–10 Complete) 🚀** |
 
 </div>
 
@@ -55,8 +55,12 @@ timeline
         Model Adaptation & SFT : Instruction Datasets, SFT Masked Loss, LoRA/QLoRA Math, DPO & Distillation
         Inference Optimization : Prefill vs Decode, KV Cache Sizing, AWQ/GPTQ/GGUF Quantization
         High-Throughput Serving : vLLM PagedAttention, Continuous Batching, SSE Streams, Model Gateway
-    section Months 06-09 : Upcoming ⏳
-        Distributed Pretraining : Megatron-LM, DeepSpeed ZeRO-3, FSDP, Triton Kernels, Multimodal
+    section Month 06 : Active 🚀
+        Multimodal Perception : Architecture Router, Vision APIs, Tile Cropping, CER/WER OCR vs VLM
+        Document AI & Grounding : Layout Reading Order, Table Arithmetic Checksums, Chart Visual Facts
+        Audio & Speech : CLIP Image Embeddings, Multimodal RAG, 16kHz Audio VAD, Whisper Timestamps
+    section Months 07-09 : Upcoming ⏳
+        Distributed Pretraining : Megatron-LM, DeepSpeed ZeRO-3, FSDP, Triton Kernels, Enterprise Systems
 ```
 
 ---
@@ -138,6 +142,23 @@ Day-XX/
 ---
 
 ## 🗓️ Comprehensive Progress Tracker
+
+### 🎙️ Month 06 — Multimodal GenAI, Document AI & Voice (Days 01–10 Complete 🚀)
+
+| Day | GenAI / Multimodal Topic | Key Deliverables (Python in `AI/`) | DSA Revision (Java in `DSA/`) | Status |
+|:---:|:-------------------------|:-----------------------------------|:------------------------------|:------:|
+| [Day 01](Month-06/Day-01/) | **Multimodal Architecture Overview** | `multimodal_architecture_router.py` (Modality token budgeting, early/late fusion) | QuickSort Partitions & Duplicate Handling (`QuickSortPartitions.java`) | ✅ Done |
+| [Day 02](Month-06/Day-02/) | **Vision-Language Model APIs** | `image_qa_vision_service.py` (Tile cropping, detail token costing, visual JSON) | Stable MergeSort & Inversion Counter (`MergeSortStable.java`) | ✅ Done |
+| [Day 03](Month-06/Day-03/) | **OCR Fundamentals vs VLM** | `ocr_engine_comparator.py` (CER/WER metrics, degraded scan simulation) | In-Place HeapSort $O(1)$ Space (`HeapSortInPlace.java`) | ✅ Done |
+| [Day 04](Month-06/Day-04/) | **Document Layout Understanding** | `layout_parser.py` (Header/footer filter, XY-cut reading order) | Stable Counting Sort & Radix Sort (`CountingSortRadixSort.java`) | ✅ Done |
+| [Day 05](Month-06/Day-05/) | **Table Extraction & Reasoning** | `table_extractor_validator.py` (Row/col arithmetic sums, hallucination audit) | Binary Search Patterns LC 33, 34, 162 (`BinarySearchPatternsRevision.java`) | ✅ Done |
+| [Day 06](Month-06/Day-06/) | **Charts & Visual Data Extraction** | `chart_qa_extractor.py` (Axis parsing, observed facts vs speculative inferences) | Two Pointers: 3Sum, Container, Rain Water LC 15, 11, 42 (`TwoPointersRevision.java`) | ✅ Done |
+| [Day 07](Month-06/Day-07/) | **Multimodal Image Embeddings** | `multimodal_image_index.py` (CLIP dual-encoder, cosine similarity search) | Sliding Window: LC 3, 76, 1004 (`SlidingWindowRevision.java`) | ✅ Done |
+| [Day 08](Month-06/Day-08/) | **Multimodal RAG Pipeline** | `multimodal_rag_pipeline.py` (Fused text/image/table retrieval & provenance) | Prefix/Suffix: Product Except Self, Subarray Sum LC 238, 560, 523 (`PrefixSuffixPatterns.java`) | ✅ Done |
+| [Day 09](Month-06/Day-09/) | **Audio Pipeline Foundations** | `audio_preprocess_vad.py` (Resampling to 16kHz, energy/ZCR Voice Activity Detection) | Fast & Slow Pointers: Cycles & Happy Number LC 141, 142, 202 (`FastSlowPointersRevision.java`) | ✅ Done |
+| [Day 10](Month-06/Day-10/) | **Speech-to-Text Integration** | `speech_to_text_transcriber.py` (Word-level timestamps, SRT export, silence filters) | Advanced Linked Lists: k-Group Reversal & Reorder LC 25, 143 (`LinkedListAdvancedRevision.java`) | ✅ Done |
+
+---
 
 ### 🚀 Month 05 — Fine-Tuning, Model Adaptation & High-Throughput Inference (100% Completed ✅)
 
