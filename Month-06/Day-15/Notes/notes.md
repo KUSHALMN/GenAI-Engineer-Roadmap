@@ -1,39 +1,8 @@
-# 📅 Notes
+# Engineering Notes — Day 15: Speech-to-Speech & Heap Invariants
 
-**Date:** ___________
+## 1. Latency Budget for Conversational AI
+- Total human conversational reaction time: $\approx 200 - 300$ ms.
+- Budget: VAD detection ($120$ ms) + Model inference ($100$ ms) + Audio decoding ($30$ ms).
 
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 2. PriorityQueue Space Invariant
+- Min-Heap maintaining $K$ elements: Space is strictly $O(K)$.
