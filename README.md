@@ -32,36 +32,19 @@
 </div>
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'fontSize': '14px', 'fontFamily': 'Inter, sans-serif'}}}%%
-timeline
-    title 9-Month GenAI Engineering Evolution
-    section Month 01 : Completed ✅
-        Foundations & OOP : Python, Groq, ChromaDB, RAG, FastAPI, SQLite
-        Advanced RAG & SSE : PDF Chunking, SSE Streaming, Monotonic Stacks, Sliding Windows
-        Agent Tool Calling : Function Schemas, Reflection Dispatcher, AST Safe Calculator
-    section Month 02 : Completed ✅
-        Fine-Tuning & Docker : LoRA, PEFT, JWT Auth, Docker Compose, Semantic Caching
-        Security & Reliability : Prompt Injection Firewall, Rate Limiter, Circuit Breaker, Guardrails
-        Agents & MCP : Structured Output, ReAct Loops, Model Context Protocol (MCP)
-    section Month 03 : Completed ✅
-        Advanced RAG & Search : Hybrid BM25 & Dense RRF, Cross-Encoder Rerankers, Context Compression
-        Knowledge Graphs & ACL : GraphRAG, Multi-Hop Chains, Permission ACLs, Multilingual Search
-        Evaluation & Metrics : Golden Datasets, MRR, NDCG@K, Ablation Benchmarking, FastAPI Release
-    section Month 04 : Completed ✅
-        Agent Architectures : ReAct Cycles, Planner-Executor, Checkpoint Crash Recovery, HITL Gates
-        Enterprise MCP : JSON-RPC 2.0 Stdio/SSE Servers, Dynamic Tool Routing, RBAC & Sandboxing
-        Multi-Agent Swarms : Orchestrator-Worker, Peer-to-Peer, OpenTelemetry Tracing, Regression Suite
-    section Month 05 : Completed ✅
-        Model Adaptation & SFT : Instruction Datasets, SFT Masked Loss, LoRA/QLoRA Math, DPO & Distillation
-        Inference Optimization : Prefill vs Decode, KV Cache Sizing, AWQ/GPTQ/GGUF Quantization
-        High-Throughput Serving : vLLM PagedAttention, Continuous Batching, SSE Streams, Model Gateway
-    section Month 06 : Completed ✅
-        Multimodal Perception : Architecture Router, Vision APIs, Tile Cropping, CER/WER OCR vs VLM
-        Document AI & Grounding : Layout Reading Order, Table Arithmetic Checksums, Chart Visual Facts
-        Audio & Voice Systems : CLIP Embeddings, Multimodal RAG, 16kHz VAD, STT Timestamps, Streaming TTS
-        Video & Systems AI : Video RAG, Turn-Taking, Safety Guardrails, FastAPI Service, Project 6 Release
-    section Months 07-09 : Upcoming ⏳
-        Distributed Pretraining : Megatron-LM, DeepSpeed ZeRO-3, FSDP, Triton Kernels, Enterprise Systems
+flowchart LR
+    subgraph Evolution["🗺️ 9-Month GenAI Engineering Evolution Roadmap"]
+        direction LR
+        M1["<b>Month 01</b><br/>Foundations & OOP<br/>• Python, Groq, ChromaDB<br/>• RAG, FastAPI, SQLite<br/><b>Status: Completed ✅</b>"]
+        M2["<b>Month 02</b><br/>Fine-Tuning & Security<br/>• LoRA, PEFT, Docker<br/>• Guardrails, Circuit Breaker<br/><b>Status: Completed ✅</b>"]
+        M3["<b>Month 03</b><br/>Advanced RAG & Search<br/>• Hybrid BM25 & Dense RRF<br/>• Cross-Encoders, GraphRAG<br/><b>Status: Completed ✅</b>"]
+        M4["<b>Month 04</b><br/>Agents & MCP Swarms<br/>• ReAct, Planner-Executor<br/>• JSON-RPC 2.0, HITL Gates<br/><b>Status: Completed ✅</b>"]
+        M5["<b>Month 05</b><br/>SFT & Inference Engine<br/>• Masked Loss, DPO, AWQ<br/>• vLLM, PagedAttention<br/><b>Status: Completed ✅</b>"]
+        M6["<b>Month 06</b><br/>Multimodal & Voice AI<br/>• VLM APIs, Layout Parser<br/>• VAD, Whisper, Video RAG<br/><b>Status: Completed ✅</b>"]
+        M7["<b>Months 07-09</b><br/>Distributed Pretraining<br/>• Megatron-LM, ZeRO-3<br/>• FSDP, Triton Kernels<br/><b>Status: Upcoming ⏳</b>"]
+
+        M1 --> M2 --> M3 --> M4 --> M5 --> M6 -.-> M7
+    end
 ```
 
 ---
