@@ -4,9 +4,9 @@ Parses semi-structured table matrices, validates row/column arithmetic sums,
 and flags LLM hallucinations when summary figures contradict cell values.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 import re
-from typing import Any, Dict, List, Optional, Tuple
+from typing import List, Optional
 
 
 @dataclass

@@ -7,7 +7,7 @@ W3C Server-Sent Events (SSE) token generation, and file size validation.
 from dataclasses import dataclass
 import json
 import time
-from typing import Any, Dict, Iterator, List
+from typing import Any, Dict, Iterator
 
 
 @dataclass

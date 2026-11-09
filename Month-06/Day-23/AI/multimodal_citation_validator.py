@@ -6,7 +6,7 @@ Flags ungrounded assertions and gracefully admits lack of evidence.
 
 from dataclasses import dataclass
 import re
-from typing import Dict, List, Tuple
+from typing import List
 
 
 @dataclass

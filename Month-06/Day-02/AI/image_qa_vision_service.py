@@ -3,7 +3,7 @@ Vision-Language Model (VLM) API Service & Visual Reasoning Engine.
 Dynamic tile cropping, token costing, and structured visual QA.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 import math
 import time
 from typing import Any, Dict, List, Tuple

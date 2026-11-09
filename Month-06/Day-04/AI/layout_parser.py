@@ -4,9 +4,9 @@ Detects paragraphs, titles, tables, headers, footers, and resolves
 multi-column reading order using XY-cut geometric projections.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
 
 
 class ElementType(Enum):

@@ -4,11 +4,9 @@ Identifies chart types, extracts axes and series data, and strictly
 separates directly observed facts from inferred explanations.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-import json
-import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List
 
 
 class ChartType(Enum):

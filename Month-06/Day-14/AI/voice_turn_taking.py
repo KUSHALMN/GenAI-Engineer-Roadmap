@@ -4,9 +4,8 @@ Detects speech onset, conversational pauses, and speech endpointing
 using dual-threshold energy windowing and adaptive silence timers.
 """
 
-from dataclasses import dataclass, field
-import time
-from typing import Any, Dict, List, Optional, Tuple
+from dataclasses import dataclass
+from typing import Any, Dict, Optional, Tuple
 
 
 @dataclass

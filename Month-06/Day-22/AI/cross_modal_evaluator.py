@@ -4,9 +4,8 @@ Measures Recall@K, Mean Reciprocal Rank (MRR), and Normalized Discounted
 Cumulative Gain (NDCG@K) across text-image and text-audio search queries.
 """
 
-from dataclasses import dataclass
 import math
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 
 class CrossModalEvaluator:

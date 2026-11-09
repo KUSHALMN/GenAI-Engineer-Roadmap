@@ -4,7 +4,7 @@ Text-to-Speech (TTS) Streaming Synthesizer Engine.
 
 from dataclasses import dataclass
 import re
-from typing import Iterator, List
+from typing import Iterator
 
 
 @dataclass

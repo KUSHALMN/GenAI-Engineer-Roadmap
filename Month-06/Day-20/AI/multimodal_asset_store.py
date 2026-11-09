@@ -6,8 +6,7 @@ transcripts, and tenant access control policies.
 
 from dataclasses import dataclass, field
 import hashlib
-import time
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 
 @dataclass

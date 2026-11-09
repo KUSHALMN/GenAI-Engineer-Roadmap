@@ -4,10 +4,10 @@ Computes Word Error Rate (WER), Character Error Rate (CER),
 Word Information Lost (WIL), and Term-Specific Accuracy (TSA) across accents & acoustic noise.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 import difflib
 import re
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import List, Optional, Set
 
 
 @dataclass

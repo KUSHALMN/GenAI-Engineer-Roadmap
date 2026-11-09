@@ -5,7 +5,6 @@ retrieval recall, grounding faithfulness, end-to-end latency, and cost.
 """
 
 from dataclasses import dataclass
-from typing import Any, Dict, List
 
 
 @dataclass

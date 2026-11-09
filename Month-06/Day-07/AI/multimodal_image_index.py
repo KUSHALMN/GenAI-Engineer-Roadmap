@@ -7,7 +7,6 @@ similarity, and cross-modal (Text-to-Image and Image-to-Image) retrieval.
 from dataclasses import dataclass, field
 import math
 import random
-import time
 from typing import Any, Dict, List, Optional, Tuple
 
 

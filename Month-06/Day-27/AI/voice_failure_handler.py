@@ -5,7 +5,6 @@ and user interruptions with conversational fallback prompts.
 """
 
 from dataclasses import dataclass
-from typing import Dict, List, Tuple
 
 
 @dataclass

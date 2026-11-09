@@ -4,10 +4,9 @@ Simulates automatic speech recognition with word alignment, speaker tags,
 confidence metrics, and silence hallucination filtering.
 """
 
-from dataclasses import dataclass, field
-import json
+from dataclasses import dataclass
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import List
 
 
 @dataclass

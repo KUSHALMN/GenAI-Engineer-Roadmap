@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 import math
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
 
 
 class ModalityType(Enum):

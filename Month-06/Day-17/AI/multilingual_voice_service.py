@@ -5,7 +5,7 @@ and normalizes phonetic terms across English, Spanish, and German.
 """
 
 from dataclasses import dataclass
-from typing import Dict, List, Tuple
+from typing import List
 
 
 @dataclass

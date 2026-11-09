@@ -7,7 +7,7 @@ and video streams with progress tracking, exponential retries, and cancellation.
 from dataclasses import dataclass, field
 from enum import Enum
 import time
-from typing import Any, Callable, Dict, List, Optional
+from typing import Any, Dict, List
 
 
 class JobStatus(Enum):

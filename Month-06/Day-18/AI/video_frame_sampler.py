@@ -5,7 +5,7 @@ and generates timestamped video clip summaries.
 """
 
 from dataclasses import dataclass
-from typing import List, Tuple
+from typing import List
 
 
 @dataclass

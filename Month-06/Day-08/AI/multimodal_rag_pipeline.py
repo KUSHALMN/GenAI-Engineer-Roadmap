@@ -4,10 +4,8 @@ Combines text chunks, page screenshots, and table data while
 preserving strict citation provenance (doc name, page number, bounding box).
 """
 
-from dataclasses import dataclass, field
-import json
-import time
-from typing import Any, Dict, List, Optional, Tuple
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Tuple
 
 
 @dataclass

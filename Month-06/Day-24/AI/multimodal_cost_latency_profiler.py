@@ -5,7 +5,7 @@ across image resolutions, audio durations, and video frame rates.
 """
 
 from dataclasses import dataclass
-from typing import Dict, List
+from typing import List
 
 
 @dataclass

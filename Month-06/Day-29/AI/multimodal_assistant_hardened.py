@@ -4,7 +4,6 @@ Combines document parsing, chart reasoning, audio VAD, and voice synthesis
 into an end-to-end hardened multimodal knowledge service with OpenTelemetry spans.
 """
 
-from dataclasses import dataclass
 import time
 from typing import Any, Dict
 

@@ -4,9 +4,8 @@ Connects spoken speech transcription to JSON tool invocation,
 enforces approval gates for high-risk actions, and produces verbal responses.
 """
 
-from dataclasses import dataclass, field
-import json
-from typing import Any, Callable, Dict, List, Optional
+from dataclasses import dataclass
+from typing import Any, Callable, Dict, Optional
 
 
 @dataclass

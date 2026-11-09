@@ -3,10 +3,8 @@ OCR Fundamentals vs. Vision-Language Extraction Comparator.
 Calculates CER, WER, and compares traditional OCR with VLM on degraded scans.
 """
 
-from dataclasses import dataclass
 import difflib
-import time
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict
 
 
 class MetricsCalculator:

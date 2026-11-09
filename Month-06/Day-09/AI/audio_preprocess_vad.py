@@ -4,10 +4,9 @@ Handles audio metadata, resamples to 16kHz mono PCM, computes Short-Time Energy
 and Zero-Crossing Rate (ZCR), and chunks speech into active voiced intervals.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 import math
-import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import List, Tuple
 
 
 @dataclass

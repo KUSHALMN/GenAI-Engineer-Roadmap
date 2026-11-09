@@ -4,10 +4,9 @@ Manages bidirectional WebSocket sessions, partial audio chunk buffering,
 live streaming transcription, and user interruption (barge-in) cancellation.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List
 
 
 class SessionState(Enum):
