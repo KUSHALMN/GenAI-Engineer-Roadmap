@@ -111,16 +111,11 @@ flowchart TD
 
 ---
 
-## 🧪 Testing & Benchmarks
+## 🏗️ Directory Architecture
 
-Run the automated test suites covering all 30 multimodal components:
-```bash
-# Test Days 01 - 10
-python Month-06/tests/test_multimodal_days01_10.py
-
-# Test Days 11 - 30
-python Month-06/tests/test_multimodal_days11_30.py
-
-# Latency and throughput benchmark profiler
-python Month-06/benchmarks/benchmark_multimodal_suite.py
-```
+Every day module strictly adheres to the established repository standard:
+- `AI/` — **Python GenAI engines, multimodal perception, audio/voice pipelines, and safety auditors.**
+- `DSA/` — **Runnable Java solutions with comprehensive `main` verification test drivers.**
+- `Interview/` — **Technical Q&A deep-dives covering systems design, architectures, and algorithm invariants.**
+- `Notes/` — **Explanatory engineering notes detailing theory, architecture, and production trade-offs.**
+- `README.md` — **Individual day guide with problem breakdown, folder layout, and run instructions.**
