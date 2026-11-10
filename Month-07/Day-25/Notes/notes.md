@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 25: Production RAG Deployment & Defensive Coding
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Kubernetes Container Lifecycle
+- Define `initialDelaySeconds` and `failureThreshold` on startup probes to prevent premature pod restarts during model weight initialization.
