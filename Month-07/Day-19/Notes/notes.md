@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 19: SLIs, Error Budgets & Task Scheduling
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Multi-Window Multi-Burn-Rate Alerting
+- Avoid alerting on raw single-minute spikes (causes alert fatigue).
+- Trigger pager alerts only when 1-hour and 6-hour burn rates both exceed thresholds simultaneously.
