@@ -1,39 +1,8 @@
-# 📅 Notes
+# 📝 Notes — Day 04: Multi-Tenancy Data Design & Structural Patterns
 
-**Date:** ___________
+## 1. Vector Search Isolation
+- In Qdrant/Pinecone/Milvus, tenant filtering can be performed via payload filters or metadata namespaces.
+- Separate namespaces avoid the "noisy neighbor" vector index rebalancing issue.
 
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 2. Row-Level Security (RLS)
+- PostgreSQL native RLS (`ALTER TABLE docs ENABLE ROW LEVEL SECURITY`) automatically enforces `WHERE tenant_id = current_setting('app.current_tenant')` at the database engine layer.
