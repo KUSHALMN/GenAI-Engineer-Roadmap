@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 21: Disaster Recovery & Object Storage
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. High-Availability Backup Strategy
+- **Base Backups:** Daily full pg_basebackup uploaded to multi-region object storage.
+- **Continuous WAL Archiving:** Every 16MB WAL segment archived immediately to S3 with object locking (WORM: Write Once Read Many).
