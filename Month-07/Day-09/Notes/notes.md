@@ -1,39 +1,7 @@
-# 📅 Notes
+# 📝 Notes — Day 09: Docker Hardening & Concurrency
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Container Security Checklist
+- Run as non-root user (`USER appuser`).
+- Never run Docker daemon with `--privileged`.
+- Mount root filesystem as read-only (`--read-only`) with writable `/tmp` tmpfs.
+- Scan images using Trivy or Grype in CI pipelines before registry push.
