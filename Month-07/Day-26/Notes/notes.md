@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 26: Production Agent Deployment & Ring Buffers
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Agent Sandbox Security
+- Enforce strict tool execution timeouts (e.g., 10s max per tool call).
+- Restrict filesystem access to isolated scratch directories using Linux cgroups / Docker containers.
