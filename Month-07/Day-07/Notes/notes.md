@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 07: Object Storage & Transaction Isolation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Cloud Storage Architecture
+- **S3 Multipart Upload:** Files > 100MB should be split into 5MB-5GB parts and uploaded in parallel with automatic retries for failed parts.
+- **Object Lifecycle Policies:** Transition objects from Standard -> Infrequent Access (IA) after 30 days -> Glacier Deep Archive after 90 days.
