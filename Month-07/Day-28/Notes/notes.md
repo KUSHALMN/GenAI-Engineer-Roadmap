@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 28: Chaos Engineering & High-Throughput Metrics
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Principles of Chaos Engineering
+- Define steady-state hypothesis (e.g., P95 latency < 500ms, error rate < 0.1%).
+- Introduce realistic failure blast radius.
+- Measure steady-state preservation.
