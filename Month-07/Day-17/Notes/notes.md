@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 17: Load Balancing & Autoscaling
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Load Balancing Algorithms for Inference
+- **Least Connections / Least In-Flight:** Strongly preferred over Round-Robin because LLM response times vary drastically by output token length.
+- **Session Affinity (Sticky Sessions):** Can be useful for multi-turn conversations leveraging prefix caching.
