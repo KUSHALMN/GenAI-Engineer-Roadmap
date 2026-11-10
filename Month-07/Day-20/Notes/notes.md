@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 20: Incident Response & Runbook Automation
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Automated Failover Invariants
+- Provider failovers must have hysteresis to prevent rapid flapping back and forth.
+- All failover events must generate an audit log with timestamp, triggering error, and target destination.
