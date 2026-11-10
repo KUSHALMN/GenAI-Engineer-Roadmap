@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 10: Container Networking & Backpressure
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Container Networking Modes
+- **Bridge Network:** Default Docker network isolated on host via iptables NAT.
+- **Overlay Network:** Multi-host networking across Kubernetes nodes via VXLAN encapsulation.
+- **mTLS (Mutual TLS):** Cryptographic identity verification where both client and server present TLS certificates.
