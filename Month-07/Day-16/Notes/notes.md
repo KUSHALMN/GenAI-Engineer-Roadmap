@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 16: Rate Limiting & Elevator System Design
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Multi-Tenant Rate Limiting
+- Return standard headers: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `Retry-After`.
+- Store quota counters in Redis with sliding-window Lua scripts for atomic updates across multi-pod deployments.
