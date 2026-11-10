@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 03: Authorization & Behavioral Patterns
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Multi-Tenant Authorization Invariants
+- **Fail-Closed Default:** If a permission check encounters an unhandled exception or missing context, access is denied.
+- **Tenant Context Propagation:** Tenant IDs must originate from verified cryptographic JWT claims, never from user-supplied query strings or body parameters.
+- **Hierarchical Scopes:** Resource:Action format (e.g., `workspace:document:write`).
