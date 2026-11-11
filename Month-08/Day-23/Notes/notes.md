@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 23: Capacity & Queueing Theory
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Tail Latency Explosion:** As utilization $\rho \to 1.0$, latency scales asymptotically as $\frac{1}{1 - \rho}$. Clusters should target $\le 70\%$ steady-state utilization.
+- **PriorityBlockingQueue:** Unbounded lock-free / condition-variable heap in `java.util.concurrent`. Never blocks on `offer()`, but blocks on `poll()` when empty.
