@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 02: Golden Dataset Governance & Frequency Maps
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Golden Dataset Lifecycle
+- Immutable version tags (`v1.0.0-GOLD`, `v1.1.0-GOLD`).
+- Provenance audits: Store annotator identity, timestamp, and source document versions.
