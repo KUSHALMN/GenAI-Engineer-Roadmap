@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 15: Prompt Injection Defenses & Backtracking
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Multi-Layered Defense In Depth
+- Layer 1: Regex / keyword heuristic blocklist.
+- Layer 2: XML boundary containment.
+- Layer 3: Secondary classifier LLM verifying output safety before streaming to user.
