@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 06: Agent Evaluation Metrics & Binary Search
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Agent Evaluation Frameworks
+- Trajectory auditing: Parse Observe-Think-Act steps.
+- Infinite loop detection: Terminate trajectory if the same tool+args hash repeats 3+ times consecutively.
