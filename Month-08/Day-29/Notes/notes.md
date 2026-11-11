@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 29: Governance Pipeline Integration & FAANG Hard Mock
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Gateway Pipelining:** Fast deterministic fail-fast gates ensure malicious prompts never consume expensive inference tokens.
+- **Sliding Window Array Count:** An integer array `int[128]` indexed by char is 5x faster than `HashMap<Character, Integer>` due to zero hashing overhead.
