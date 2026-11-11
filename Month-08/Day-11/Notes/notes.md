@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 11: Online Quality Monitoring & Heaps
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Online Telemetry Sampling Strategies
+- Sample 5% of production query/response pairs for automated LLM-as-a-judge evaluation.
+- Sample 100% of negative feedback interactions for human review triage.
