@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 27: Eval Platform APIs & Monotonic Stack
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **CI/CD Quality Gates:** Block pull request merges if evaluation regression delta $\Delta_{\text{quality}} < -1.5\%$.
+- **Histogram Sentinel Bar:** Appending a virtual bar of height 0 at index $n$ automatically flushes all remaining elements from the monotonic stack.
