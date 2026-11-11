@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 09: Prompt Versioning & Binary Trees
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Prompt Registry Schema
+- Track template text, input variable schemas, target model ID, temperature, and top_p.
+- Pair every version with its corresponding automated evaluation run ID.
