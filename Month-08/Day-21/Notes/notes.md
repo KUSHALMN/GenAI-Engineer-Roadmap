@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 21: Cost Observability & Java Collections
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Token Economics:** Output tokens are typically 3x more expensive than prompt tokens due to auto-regressive KV cache generation.
+- **Java Collection Allocations:** Prefer primitive specialized collections (Trove, fastutil) or pre-sized `ArrayList(initialCapacity)` to prevent repeated array reallocations and arraycopy costs.
