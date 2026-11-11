@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 13: Safety Evaluation & Shortest Paths
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Adversarial Taxonomy (OWASP Top 10 for LLMs)
+- LLM01: Prompt Injection.
+- LLM02: Sensitive Information Disclosure.
+- LLM06: Excessive Agency / Unbounded Tool Use.
