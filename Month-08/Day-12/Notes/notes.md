@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 12: Drift Detection & Graph Algorithms
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. Statistical Drift Metrics
+- Population Stability Index (PSI).
+- Earth Mover's Distance / Wasserstein Distance on embedding vectors.
