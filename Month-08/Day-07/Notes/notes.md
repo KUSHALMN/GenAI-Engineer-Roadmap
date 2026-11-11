@@ -1,39 +1,5 @@
-# 📅 Notes
+# 📝 Notes — Day 07: Regression Gates & Linked Lists
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. CI Quality Gate Rules
+- Set strict zero-tolerance regression policies on safety and PII masking.
+- Allow bounded trade-offs (e.g., slight accuracy gain in exchange for 30% latency reduction).
