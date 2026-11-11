@@ -1,39 +1,6 @@
-# 📅 Notes
+# 📝 Notes — Day 05: RAG Evaluation Metrics & Prefix Sums
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+## 1. RAG Triad Metrics
+1. **Context Relevance:** Query -> Retrieved Context.
+2. **Groundedness / Faithfulness:** Retrieved Context -> Generated Answer.
+3. **Answer Relevance:** Query -> Generated Answer.
