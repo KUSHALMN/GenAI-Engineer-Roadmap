@@ -9,7 +9,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=for-the-badge)](https://modelcontextprotocol.io/)
-[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2007%20Completed%20%7C%20205%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
+[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2008%20Completed%20%7C%20236%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 | 🗓️ Total Days Completed | 🧠 Production AI Services | ☕ Java DSA & Concurrency | 🛡️ Security, Evals & Guardrails | 🏆 Roadmap Status |
 |:---:|:---:|:---:|:---:|:---:|
-| **205 Days** | **220+ Microservices** | **270+ Algorithms & Patterns** | **100+ Defense & Cloud Patterns** | **Month 07 Completed (Days 01–31 Complete) ✅** |
+| **236 Days** | **250+ Microservices** | **300+ Algorithms & Patterns** | **115+ Defense & Governance Layers** | **Month 08 Completed (Days 01–31 Complete) ✅** |
 
 </div>
 
@@ -42,9 +42,10 @@ flowchart LR
         M5["<b>Month 05</b><br/>SFT & Inference Engine<br/>• Masked Loss, DPO, AWQ<br/>• vLLM, PagedAttention<br/><b>Status: Completed ✅</b>"]
         M6["<b>Month 06</b><br/>Multimodal & Voice AI<br/>• VLM APIs, Layout Parser<br/>• VAD, Whisper, Video RAG<br/><b>Status: Completed ✅</b>"]
         M7["<b>Month 07</b><br/>Cloud & LLMOps Infra<br/>• Multi-Tenant APIs, Docker<br/>• Redis, Celery, OTel, Canary<br/><b>Status: Completed ✅</b>"]
-        M8["<b>Months 08-09</b><br/>Distributed Pretraining<br/>• Megatron-LM, ZeRO-3<br/>• FSDP, Triton Kernels<br/><b>Status: Upcoming ⏳</b>"]
+        M8["<b>Month 08</b><br/>Evals & Governance<br/>• LLM-Judge, RAG Triad, PII<br/>• FinOps, Multi-Region, Chaos<br/><b>Status: Completed ✅</b>"]
+        M9["<b>Month 09</b><br/>Distributed Pretraining<br/>• Megatron-LM, ZeRO-3<br/>• FSDP, Triton Kernels<br/><b>Status: Upcoming ⏳</b>"]
 
-        M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 -.-> M8
+        M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8 -.-> M9
     end
 ```
 
@@ -127,6 +128,44 @@ Day-XX/
 ---
 
 ## 🗓️ Comprehensive Progress Tracker
+
+### 🛡️ Month 08 — Evaluation, Governance, Safety & Scale (100% Completed ✅)
+
+| Day | GenAI / Governance & Eval Topic | Key Deliverables (Python in `AI/`) | Timed DSA Problem Set (Java in `DSA/`) | Status |
+|:---:|:--------------------------------|:-----------------------------------|:---------------------------------------|:------:|
+| [Day 01](Month-08/Day-01/) | **Evaluation Strategy & Architecture** | `evaluation_strategy_planner.py` (Curated test suites, LLM-as-judge matrix) | Arrays & Hashing: Two Sum LC 1 (`ArraysHashingTimedSet.java`) | ✅ Done |
+| [Day 02](Month-08/Day-02/) | **Golden Datasets & Annotation** | `golden_dataset_governance.py` (Dataset schema, Cohen's Kappa, stratified split) | Strings & Frequency: Valid Anagram LC 242 (`StringsFrequencyMaps.java`) | ✅ Done |
+| [Day 03](Month-08/Day-03/) | **Human Evaluation & Rubrics** | `human_evaluation_rubrics.py` (Likert scoring, inter-annotator agreement) | Two Pointers: 3Sum LC 15 (`TwoPointersTimedSet.java`) | ✅ Done |
+| [Day 04](Month-08/Day-04/) | **LLM-as-a-Judge Calibration** | `llm_as_judge_calibration.py` (Pairwise ELO, position bias, rubric grounding) | Sliding Window: Longest Substring LC 3 (`SlidingWindowTimedSet.java`) | ✅ Done |
+| [Day 05](Month-08/Day-05/) | **RAG Evaluation Metrics** | `rag_evaluation_metrics.py` (RAG triad: faithfulness, answer relevance, context) | Prefix Sum: Subarray Sum Equals K LC 560 (`PrefixSumSubarrays.java`) | ✅ Done |
+| [Day 06](Month-08/Day-06/) | **Agent Evaluation & Trajectory** | `agent_evaluation_metrics.py` (Tool call precision, step efficiency, loop detection) | Binary Search: Search Rotated Array LC 33 (`BinarySearchTimedSet.java`) | ✅ Done |
+| [Day 07](Month-07/Day-07/) | **Regression Testing & CI Gates** | `regression_gate_validator.py` (Automated PR gate, regression delta budget) | Linked Lists: Reverse Linked List LC 206 (`LinkedListsTimedSet.java`) | ✅ Done |
+| [Day 08](Month-08/Day-08/) | **Prompt A/B Testing & Analysis** | `ab_testing_framework.py` (Frequentist Z-score, sample sizing, power analysis) | Stacks & Monotonic Queues: Daily Temps LC 739 (`StacksQueuesTimedSet.java`) | ✅ Done |
+| [Day 09](Month-08/Day-09/) | **Prompt Version Registry** | `prompt_version_registry.py` (Immutable SHA-256 prompts, rollback manager) | Binary Trees: Maximum Depth LC 104 (`BinaryTreesTimedSet.java`) | ✅ Done |
+| [Day 10](Month-08/Day-10/) | **Experiment Tracking Manifests** | `experiment_tracking_manifest.py` (Lineage logging, parameter diffing) | BST: Validate Binary Search Tree LC 98 (`BstTimedSet.java`) | ✅ Done |
+| [Day 11](Month-08/Day-11/) | **Online Quality Monitoring** | `online_quality_monitor.py` (Production sampling, thumbs up/down, latency drift) | Heaps & Priority Queues: Kth Largest LC 215 (`HeapsTopKTimedSet.java`) | ✅ Done |
+| [Day 12](Month-08/Day-12/) | **Data & Concept Drift Detection** | `drift_detector_engine.py` (KS-Test, PSI drift scores, feature divergence) | Graphs BFS & DFS: Number of Islands LC 200 (`GraphsBfsDfsTimedSet.java`) | ✅ Done |
+| [Day 13](Month-08/Day-13/) | **Safety Evaluation Datasets** | `safety_eval_dataset_builder.py` (Adversarial jailbreaks, refusal rubrics) | Graphs Shortest Path: Network Delay LC 743 (`GraphsShortestPathsTimedSet.java`) | ✅ Done |
+| [Day 14](Month-08/Day-14/) | **Red Teaming Methodology** | `red_teaming_orchestrator.py` (Automated attack mutation, vulnerability scoring) | Topological Sort & DSU: Course Schedule LC 210 (`TopologicalSortDsuTimedSet.java`) | ✅ Done |
+| [Day 15](Month-08/Day-15/) | **Layered Prompt Injection Defenses**| `layered_injection_defense.py` (Dual-layer token classifier, delimiter escaping) | Backtracking: Subsets LC 78 (`BacktrackingTimedSet.java`) | ✅ Done |
+| [Day 16](Month-08/Day-16/) | **Privacy & PII Handling** | `pii_masking_vault.py` (Deterministic surrogate tokenization, demasking vault) | 1D Dynamic Programming: House Robber LC 198 (`DynamicProgramming1DTimedSet.java`) | ✅ Done |
+| [Day 17](Month-08/Day-17/) | **AI Governance & System Cards** | `ai_governance_system_card.py` (EU AI Act & NIST RMF schemas, readiness scoring) | 2D Dynamic Programming: LCS LC 1143 (`DynamicProgramming2DTimedSet.java`) | ✅ Done |
+| [Day 18](Month-08/Day-18/) | **Policy Enforcement & Safety** | `content_safety_policy_engine.py` (Multi-category taxonomy, severity gatekeeper) | Advanced DP: Longest Increasing Subseq LC 300 (`DynamicProgrammingAdvancedTimedSet.java`) | ✅ Done |
+| [Day 19](Month-08/Day-19/) | **Uncertainty & Abstention** | `uncertainty_abstention_engine.py` (Semantic entropy, token logprob perplexity) | Trie & Bit Manipulation: Implement Trie LC 208 (`TrieBitManipulationTimedSet.java`) | ✅ Done |
+| [Day 20](Month-08/Day-20/) | **Citation & Provenance Audits** | `citation_provenance_auditor.py` (RAG claim extraction, attribution precision) | Range Queries: Fenwick Tree LC 307 (`RangeQueryFenwickTree.java`) | ✅ Done |
+| [Day 21](Month-08/Day-21/) | **Cost Observability & Budgets** | `cost_observability_engine.py` (Token cost accounting, budget tripwires) | Java Collections Cost & Amortized Analysis (`JavaCollectionsCostComplexity.java`) | ✅ Done |
+| [Day 22](Month-08/Day-22/) | **Pareto Optimization (QLC)** | `pareto_optimization_engine.py` (Non-dominated frontier: Quality, Latency, Cost) | Concurrency: Bounded Concurrency Limiter (`BoundedConcurrencyLimiter.java`) | ✅ Done |
+| [Day 23](Month-08/Day-23/) | **Capacity & Queueing Analysis** | `capacity_queueing_analyzer.py` (Little's Law, M/M/c queueing, GPU cluster sizing) | Low-Level Design: Priority Task Queue (`DistributedTaskQueueLowLevelDesign.java`) | ✅ Done |
+| [Day 24](Month-08/Day-24/) | **Failure & Chaos Testing** | `llmops_chaos_test_suite.py` (Network latency, 429 quota exhaustion simulation) | Mixed Hard Mock A: Rain Water & Merge K Lists (`MixedDsaMockA.java`) | ✅ Done |
+| [Day 25](Month-08/Day-25/) | **Multi-Region Data Residency** | `multi_region_residency_router.py` (Geofenced enclaves: EU GDPR, US, APAC) | Mixed Hard Mock B: Binary Tree Max Path & Balloons (`MixedDsaMockB.java`) | ✅ Done |
+| [Day 26](Month-08/Day-26/) | **Model Deprecation & Canary** | `model_upgrade_migration_plan.py` (Zero-downtime cutover, shadow traffic canary) | Mixed Hard Mock C: LRU Cache LC 146 (`MixedDsaMockC.java`) | ✅ Done |
+| [Day 27](Month-08/Day-27/) | **Evaluation Platform API** | `evaluation_platform_api.py` (Asynchronous REST API, CI/CD commit gate check) | Monotonic Stack & Edit Distance LC 84 & 72 (`AlgorithmCommunicationMock.java`) | ✅ Done |
+| [Day 28](Month-08/Day-28/) | **Evaluation Dashboards** | `evaluation_dashboard_reporter.py` (Executive Markdown report, delta tracking) | Weak Topic Repair: Maximal Rectangle LC 85 & Tree Codec LC 297 (`DsaWeakTopicRepair.java`) | ✅ Done |
+| [Day 29](Month-08/Day-29/) | **Governance Platform Integrator** | `governance_project_integrator.py` (End-to-end gateway: safety, PII, budgets) | FAANG Timed Mock: Median Sorted Arrays LC 4 & Min Window LC 76 (`FaangComprehensiveTimedMock.java`) | ✅ Done |
+| [Day 30](Month-08/Day-30/) | **Project 8 Capstone Release** | `project8_llmops_governance_release.py` (Production manifest, compliance release) | DSA Readiness Mastery: Missing Positive LC 41 & Window Max LC 239 (`DsaReadinessMasteryIndex.java`) | ✅ Done |
+| [Day 31](Month-08/Day-31/) | **Platform Concurrency Benchmark** | `enterprise_governance_benchmark.py` (Synthetic load tester, P95/P99 latency) | Advanced Concurrency: Lock-Free Treiber Stack (`LockFreeTreiberStack.java`) | ✅ Done |
+
+---
 
 ### ☁️ Month 07 — Production Backend, Cloud & LLMOps Infrastructure (100% Completed ✅)
 
