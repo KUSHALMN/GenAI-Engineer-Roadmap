@@ -9,7 +9,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=for-the-badge)](https://modelcontextprotocol.io/)
-[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2008%20Completed%20%7C%20236%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
+[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2009%20In%20Progress%20%7C%20246%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 | 🗓️ Total Days Completed | 🧠 Production AI Services | ☕ Java DSA & Concurrency | 🛡️ Security, Evals & Guardrails | 🏆 Roadmap Status |
 |:---:|:---:|:---:|:---:|:---:|
-| **236 Days** | **250+ Microservices** | **300+ Algorithms & Patterns** | **115+ Defense & Governance Layers** | **Month 08 Completed (Days 01–31 Complete) ✅** |
+| **246 Days** | **260+ Microservices** | **310+ Algorithms & Patterns** | **125+ Defense & Scaling Patterns** | **Month 09 in Progress (Days 01–10 Complete) 🚀** |
 
 </div>
 
@@ -43,9 +43,9 @@ flowchart LR
         M6["<b>Month 06</b><br/>Multimodal & Voice AI<br/>• VLM APIs, Layout Parser<br/>• VAD, Whisper, Video RAG<br/><b>Status: Completed ✅</b>"]
         M7["<b>Month 07</b><br/>Cloud & LLMOps Infra<br/>• Multi-Tenant APIs, Docker<br/>• Redis, Celery, OTel, Canary<br/><b>Status: Completed ✅</b>"]
         M8["<b>Month 08</b><br/>Evals & Governance<br/>• LLM-Judge, RAG Triad, PII<br/>• FinOps, Multi-Region, Chaos<br/><b>Status: Completed ✅</b>"]
-        M9["<b>Month 09</b><br/>Distributed Pretraining<br/>• Megatron-LM, ZeRO-3<br/>• FSDP, Triton Kernels<br/><b>Status: Upcoming ⏳</b>"]
+        M9["<b>Month 09</b><br/>Distributed Pretraining<br/>• Megatron-LM, ZeRO-3<br/>• FSDP, Triton Kernels<br/><b>Status: In Progress 🚀</b>"]
 
-        M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8 -.-> M9
+        M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8 --> M9
     end
 ```
 
@@ -128,6 +128,23 @@ Day-XX/
 ---
 
 ## 🗓️ Comprehensive Progress Tracker
+
+### ⚡ Month 09 — Distributed Pretraining & High-Performance Scaling (Days 01–10 Complete 🚀)
+
+| Day | Distributed Pretraining & GPU Kernel Topic | Key Deliverables (Python in `AI/`) | Timed DSA Problem Set (Java in `DSA/`) | Status |
+|:---:|:-------------------------------------------|:-----------------------------------|:---------------------------------------|:------:|
+| [Day 01](Month-09/Day-01/) | **BPE Tokenizer Pretraining** | `bpe_tokenizer_trainer.py` (Byte fallback, iterative pair merges) | 0/1 Knapsack: Partition Equal Subset LC 416 (`KnapsackZeroOneTimedSet.java`) | ✅ Done |
+| [Day 02](Month-09/Day-02/) | **Sharded Streaming DataLoaders** | `sharded_streaming_dataloader.py` (Binary chunking, mmap, rank hashing) | Bellman-Ford: Cheapest Flights Within K Stops LC 787 (`BellmanFordShortestPath.java`) | ✅ Done |
+| [Day 03](Month-09/Day-03/) | **DDP Ring All-Reduce** | `ddp_ring_allreduce.py` (Scatter-Reduce & All-Gather simulation) | Floyd-Warshall: Smallest Neighbors at Threshold LC 1334 (`FloydWarshallAllPairs.java`) | ✅ Done |
+| [Day 04](Month-09/Day-04/) | **Megatron-LM Tensor Parallelism** | `megatron_tensor_parallel.py` (Column & row parallel projections, GeLU) | Prim's Algorithm: Min Cost to Connect All Points LC 1584 (`PrimsMinimumSpanningTree.java`) | ✅ Done |
+| [Day 05](Month-09/Day-05/) | **Pipeline Parallelism & 1F1B** | `pipeline_parallel_scheduler.py` (1F1B scheduling, bubble calculations) | Kruskal's Algorithm & DSU: Connecting Cities LC 1135 (`KruskalsDisjointSetMst.java`) | ✅ Done |
+| [Day 06](Month-09/Day-06/) | **ZeRO Memory Optimization (1/2/3)** | `zero_memory_partitioner.py` (16B/param breakdown, VRAM scaling) | Trie with Wildcard Matching: Add & Search Words LC 211 (`TrieWildcardAutocomplete.java`) | ✅ Done |
+| [Day 07](Month-09/Day-07/) | **PyTorch FSDP & Checkpointing** | `fsdp_activation_checkpointing.py` (Layer-by-layer unshard, recompute) | Segment Tree: Range Minimum Query O(log N) (`SegmentTreeRangeMinimumQuery.java`) | ✅ Done |
+| [Day 08](Month-09/Day-08/) | **3D Parallelism Orchestrator** | `three_d_parallelism_orchestrator.py` (3D Cartesian grid, group mapping) | Kahn's Topological Sort: Course Schedule II LC 210 (`TopologicalSortKahnsAlgo.java`) | ✅ Done |
+| [Day 09](Month-09/Day-09/) | **FlashAttention Tiled Softmax** | `flash_attention_simulator.py` (Online softmax, SRAM tiling, O(N) memory)| KMP Algorithm: Find First Occurrence in String LC 28 (`KmpStringMatching.java`) | ✅ Done |
+| [Day 10](Month-09/Day-10/) | **Triton GPU Custom Kernels** | `triton_kernel_simulator.py` (Block pointers, fused Add + RMSNorm) | Rabin-Karp Algorithm: Repeated DNA Sequences LC 187 (`RabinKarpRollingHash.java`) | ✅ Done |
+
+---
 
 ### 🛡️ Month 08 — Evaluation, Governance, Safety & Scale (100% Completed ✅)
 
