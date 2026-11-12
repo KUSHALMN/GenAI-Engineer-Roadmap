@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 07: FSDP & Segment Trees
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Activation Checkpointing Overhead:** Recomputing forward passes during backward adds exactly $1 \times \text{Forward Time} \approx 33\%$ to total step compute time, but often allows doubling micro-batch size.
+- **Segment Tree Indices:** For node $p$, left child is $2p + 1$ and right child is $2p + 2$ in 0-based indexing.
