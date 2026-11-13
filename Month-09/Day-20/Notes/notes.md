@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 20: Pretraining Metrics & DSU Clustering
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Perplexity to BPB Conversion:** $\text{BPB} = \frac{\text{loss}}{\ln(2)} \times \frac{\text{tokens}}{\text{bytes}}$.
+- **DSU Path Compression:** Flattens the component tree on each lookup so subsequent queries execute in $O(1)$ amortized time.
