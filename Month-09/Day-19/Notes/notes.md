@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 19: Hardware Profiling & N-Queens
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **6P Rule of Thumb:** In Transformer pretraining, computing the forward pass takes $2P$ FLOPs per token, and the backward pass takes $4P$ FLOPs per token (total $6P$).
+- **Bitmask Diagonal Shifting:** Shifting diagonal bitmasks by 1 simulates the geometric projection onto the adjacent chessboard row.
