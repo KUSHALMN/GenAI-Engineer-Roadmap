@@ -1,0 +1,40 @@
+{
+  "cluster_topology": {
+    "world_size": 64,
+    "nodes": 8,
+    "gpus_per_node": 8,
+    "interconnect": {
+      "intra_node": "NVLink-4 (900 GB/s)",
+      "inter_node": "InfiniBand NDR (400 Gb/s)"
+    },
+    "parallelism_dimensions": {
+      "tensor_parallel_size": 8,
+      "pipeline_parallel_size": 2,
+      "data_parallel_size": 4,
+      "context_parallel_size": 1,
+      "expert_parallel_size": 4
+    }
+  },
+  "training_hyperparameters": {
+    "global_batch_size": 1024,
+    "micro_batch_size": 2,
+    "sequence_length": 8192,
+    "precision": "BF16",
+    "optimizer": "AdamW",
+    "learning_rate": {
+      "max_lr": 3e-4,
+      "min_lr": 3e-5,
+      "warmup_steps": 2000,
+      "total_steps": 100000,
+      "scheduler": "CosineAnnealing"
+    },
+    "gradient_clipping_norm": 1.0,
+    "weight_decay": 0.1
+  },
+  "benchmark_baselines": {
+    "target_mfu_percentage": 48.5,
+    "target_tokens_per_sec": 380000,
+    "checkpoint_save_latency_sec": 0.85,
+    "straggler_tolerance_ratio": 1.5
+  }
+}
