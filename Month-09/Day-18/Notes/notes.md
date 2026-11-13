@@ -1,39 +1,4 @@
-# 📅 Notes
+# 📝 Notes — Day 18: Fault Tolerance & Interval DP
 
-**Date:** ___________
-
----
-
-## 🧠 Topic: 
-
-### What I Learned
-- 
-
-### Key Concepts
-- 
-
-### Interview Q&A
-- Q: 
-  A: 
-
----
-
-## 🧩 DSA Problem: 
-
-**Approach:** 
-
-**Solution:**
-```python
-# Write your solution here
-```
-
-**Time Complexity:**   
-**Space Complexity:** 
-
----
-
-## 💡 Key Takeaway
-
-
-## 🔗 Resources
-- 
+- **Straggler Mitigation:** A single thermal-throttling GPU stalls the entire cluster in synchronous All-Reduce; straggler detectors flag and drain offending nodes automatically.
+- **Virtual Balloon Boundaries:** Array padding with `arr[0] = 1` and `arr[n+1] = 1` simplifies edge boundary cases to zero.
