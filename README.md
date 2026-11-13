@@ -9,7 +9,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=for-the-badge)](https://modelcontextprotocol.io/)
-[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2009%20In%20Progress%20%7C%20246%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
+[![Status](https://img.shields.io/badge/Roadmap%20Status-Month%2009%20In%20Progress%20%7C%20256%20Days%20Done-brightgreen?style=for-the-badge)](#-comprehensive-progress-tracker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 | 🗓️ Total Days Completed | 🧠 Production AI Services | ☕ Java DSA & Concurrency | 🛡️ Security, Evals & Guardrails | 🏆 Roadmap Status |
 |:---:|:---:|:---:|:---:|:---:|
-| **246 Days** | **260+ Microservices** | **310+ Algorithms & Patterns** | **125+ Defense & Scaling Patterns** | **Month 09 in Progress (Days 01–10 Complete) 🚀** |
+| **256 Days** | **270+ Microservices** | **320+ Algorithms & Patterns** | **135+ Defense & Scaling Patterns** | **Month 09 in Progress (Days 01–20 Complete) 🚀** |
 
 </div>
 
@@ -129,7 +129,7 @@ Day-XX/
 
 ## 🗓️ Comprehensive Progress Tracker
 
-### ⚡ Month 09 — Distributed Pretraining & High-Performance Scaling (Days 01–10 Complete 🚀)
+### ⚡ Month 09 — Distributed Pretraining & High-Performance Scaling (Days 01–20 Complete 🚀)
 
 | Day | Distributed Pretraining & GPU Kernel Topic | Key Deliverables (Python in `AI/`) | Timed DSA Problem Set (Java in `DSA/`) | Status |
 |:---:|:-------------------------------------------|:-----------------------------------|:---------------------------------------|:------:|
@@ -143,6 +143,16 @@ Day-XX/
 | [Day 08](Month-09/Day-08/) | **3D Parallelism Orchestrator** | `three_d_parallelism_orchestrator.py` (3D Cartesian grid, group mapping) | Kahn's Topological Sort: Course Schedule II LC 210 (`TopologicalSortKahnsAlgo.java`) | ✅ Done |
 | [Day 09](Month-09/Day-09/) | **FlashAttention Tiled Softmax** | `flash_attention_simulator.py` (Online softmax, SRAM tiling, O(N) memory)| KMP Algorithm: Find First Occurrence in String LC 28 (`KmpStringMatching.java`) | ✅ Done |
 | [Day 10](Month-09/Day-10/) | **Triton GPU Custom Kernels** | `triton_kernel_simulator.py` (Block pointers, fused Add + RMSNorm) | Rabin-Karp Algorithm: Repeated DNA Sequences LC 187 (`RabinKarpRollingHash.java`) | ✅ Done |
+| [Day 11](Month-09/Day-11/) | **Mixture of Experts (MoE) Routing**| `moe_expert_router.py` (Top-2 gating, capacity factor, aux loss) | Edit Distance: Dynamic Programming LC 72 (`EditDistanceTimedSet.java`) | ✅ Done |
+| [Day 12](Month-09/Day-12/) | **Megatron Sequence Parallelism** | `megatron_sequence_parallel.py` (Activation sharding $s / tp$) | Hierholzer's Algorithm: Reconstruct Itinerary LC 332 (`HierholzersEulerianPath.java`) | ✅ Done |
+| [Day 13](Month-09/Day-13/) | **RingAttention Context Parallel** | `ring_attention_simulator.py` (Circular KV transfer, million tokens) | Longest Valid Parentheses: Stack & O(1) Space LC 32 (`LongestValidParenthesesTimedSet.java`) | ✅ Done |
+| [Day 14](Month-09/Day-14/) | **Mixed Precision Stability** | `mixed_precision_numerical_stability.py` (BF16, FP8 E4M3/E5M2) | Monotonic Stack: Largest Rectangle in Histogram LC 84 (`LargestRectangleHistogramTimedSet.java`) | ✅ Done |
+| [Day 15](Month-09/Day-15/) | **Distributed Checkpointing (DCP)**| `distributed_async_checkpointing.py` (Sharded async state-dict) | Maximal Rectangle: 2D Monotonic Stack LC 85 (`MaximalRectangleTimedSet.java`) | ✅ Done |
+| [Day 16](Month-09/Day-16/) | **Collective Communication Topologies**| `collective_communication_topology.py` (All-to-All, NVLink vs IB) | Monotonic Deque: Sliding Window Maximum LC 239 (`SlidingWindowMaximumTimedSet.java`) | ✅ Done |
+| [Day 17](Month-09/Day-17/) | **Megatron Pretraining Loop** | `megatron_pretraining_engine.py` (Cosine warmup, norm clipping) | Binary Search: Find Minimum in Rotated Sorted Array II LC 154 (`RotatedArrayMinBinarySearch.java`) | ✅ Done |
+| [Day 18](Month-09/Day-18/) | **Elastic Fault Tolerance** | `elastic_fault_tolerance_engine.py` (Heartbeat, straggler eviction) | Interval Dynamic Programming: Burst Balloons LC 312 (`BurstBalloonsTimedSet.java`) | ✅ Done |
+| [Day 19](Month-09/Day-19/) | **Hardware MFU Profiling** | `hardware_profiling_mfu_analyzer.py` (6P rule, Roofline MFU/HFU) | Bitmask Backtracking: N-Queens II LC 52 (`NQueensBacktrackingTimedSet.java`) | ✅ Done |
+| [Day 20](Month-09/Day-20/) | **Pretraining Evaluation Suite** | `pretraining_eval_suite.py` (Perplexity, Bits-Per-Byte BPB) | Disjoint Set Union: Accounts Merge LC 721 (`AccountsMergeDisjointSet.java`) | ✅ Done |
 
 ---
 
